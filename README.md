@@ -1,4 +1,4 @@
-# MusicScienceMeetings
+# Music Science Meetings
 A repository for conferences / meetings, mailing lists, and discussion groups related to music science.
 
 ## Conference / Meeting Lists
@@ -14,8 +14,16 @@ A repository for conferences / meetings, mailing lists, and discussion groups re
 * [Society for Music Theory](https://societymusictheory.org/events)
 * [American Musicology Society](https://www.amsmusicology.org/events/event_list.asp)
 * [International Musicological Society](https://www.musicology.org/upcoming-ims-events)
+* [Acoustical Society of America](https://acousticalsociety.org/asa-meetings/)
 
 ## Mailing Lists
-*https://sites.google.com/view/sysmus/join-sysmus/sysmus-group-email-list
+* [Auditory](http://www.auditory.org/)
+* [SysMus](https://sites.google.com/view/sysmus/join-sysmus/sysmus-group-email-list)
+* [Society for Ethnomusicology](https://www.ethnomusicology.org/page/Links_ELists/Email-Discussion-Lists.htm)
+* [International Council for Traditional Music](http://ictmusic.org/ictm-mailing-list-listserv)
 
 ## Online Discussion Groups
+* [Singing Voice and Artificial Intelligence](https://groups.google.com/g/singing-voice-group)
+* [Computational Musicology](https://groups.google.com/g/computational-musicology)
+* [E.A.R.S.](https://sites.google.com/view/ears2020/home)
+* [Music Reading Group](https://groups.google.com/g/musicreadinggroup)

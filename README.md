@@ -1,6 +1,8 @@
 # Music Science Meetings
 A repository for conferences / meetings, mailing lists, and discussion groups related to music science.
 
+If you are interested in contributing, or suggesting additional resources, please post an [Issue](https://github.com/jomimc/MusicScienceMeetings/issues).
+
 ## Conference / Meeting Lists
 * [Music Technology](http://conferences.smcnetwork.org/)
 * [Society for Music Perception and Cognition (SMPC)](https://www.musicperception.org/smpc-events.html)

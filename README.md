@@ -23,9 +23,11 @@ If you are interested in contributing, or suggesting additional resources, pleas
 * [SysMus](https://sites.google.com/view/sysmus/join-sysmus/sysmus-group-email-list)
 * [Society for Ethnomusicology](https://www.ethnomusicology.org/page/Links_ELists/Email-Discussion-Lists.htm)
 * [International Council for Traditional Music](http://ictmusic.org/ictm-mailing-list-listserv)
+* [Low Countries Music Research Network](https://groups.google.com/g/locomus)
 
 ## Online Discussion Groups
 * [Singing Voice and Artificial Intelligence](https://groups.google.com/g/singing-voice-group)
 * [Computational Musicology](https://groups.google.com/g/computational-musicology)
 * [E.A.R.S.](https://sites.google.com/view/ears2020/home)
 * [Music Reading Group](https://groups.google.com/g/musicreadinggroup)
+* [Low Countries Music Research Network](https://sites.google.com/view/locomus/home/)

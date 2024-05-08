@@ -17,6 +17,7 @@ If you are interested in contributing, or suggesting additional resources, pleas
 * [American Musicology Society](https://www.amsmusicology.org/events/event_list.asp)
 * [International Musicological Society](https://www.musicology.org/upcoming-ims-events)
 * [Acoustical Society of America](https://acousticalsociety.org/asa-meetings/)
+* [International Association of Empirical Aesthetics](https://www.science-of-aesthetics.org/)
 
 ## Mailing Lists
 * [Auditory](http://www.auditory.org/)

@@ -28,9 +28,10 @@ If you are interested in contributing, or suggesting additional resources, pleas
 * [International Council for Traditional Music](http://ictmusic.org/ictm-mailing-list-listserv)
 * [Low Countries Music Research Network](https://groups.google.com/g/locomus)
 
-## Online Discussion Groups
+## Online Discussion (Google) Groups
 * [Singing Voice and Artificial Intelligence](https://groups.google.com/g/singing-voice-group)
 * [Computational Musicology](https://groups.google.com/g/computational-musicology)
 * [E.A.R.S.](https://sites.google.com/view/ears2020/home)
 * [Music Reading Group](https://groups.google.com/g/musicreadinggroup)
 * [Low Countries Music Research Network](https://sites.google.com/view/locomus/home/)
+* [New-Auditory](https://groups.google.com/g/new-auditory/about)

@@ -18,6 +18,8 @@ If you are interested in contributing, or suggesting additional resources, pleas
 * [International Musicological Society](https://www.musicology.org/upcoming-ims-events)
 * [Acoustical Society of America](https://acousticalsociety.org/asa-meetings/)
 * [International Association of Empirical Aesthetics](https://www.science-of-aesthetics.org/)
+* [Computational Humanities Research](https://computational-humanities-research.org/conference/)
+* [International Conference on Computational and Cognitive Musicology](https://digital.musicology.org/icccm2025/)
 
 ## Mailing Lists
 * [Auditory](http://www.auditory.org/)

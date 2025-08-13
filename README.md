@@ -5,7 +5,7 @@ If you are interested in contributing, or suggesting additional resources, pleas
 
 ## Conference / Meeting Lists
 * [Music Technology](http://conferences.smcnetwork.org/)
-* [Society for Music Perception and Cognition (SMPC)](https://www.musicperception.org/smpc-events.html)
+* [Society for Music Perception and Cognition (SMPC)](https://www.musicperception.org/events)
 * [European Society for the Cognitive Sciences of Music](https://www.escomsociety.org/conferences)
 * [International Council for Traditional Music](https://ictmusic.org/events)
 * [International Conference on Music Perception and Cognition](https://www.icmpc.org/icmpc_upcoming_conference.html)
@@ -14,8 +14,8 @@ If you are interested in contributing, or suggesting additional resources, pleas
 * [International Society for Music Information Retreival (ISMIR)](https://www.ismir.net/conferences/)
 * [University of Arts in Belgrade](https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/)
 * [Society for Music Theory](https://societymusictheory.org/events)
-* [American Musicology Society](https://www.amsmusicology.org/events/event_list.asp)
-* [International Musicological Society](https://www.musicology.org/upcoming-ims-events)
+* [American Musicology Society](https://www.amsmusicology.org/events/)
+* [International Musicological Society](https://www.musicology.org/events/)
 * [Acoustical Society of America](https://acousticalsociety.org/asa-meetings/)
 * [International Association of Empirical Aesthetics](https://www.science-of-aesthetics.org/)
 * [Computational Humanities Research](https://computational-humanities-research.org/conference/)

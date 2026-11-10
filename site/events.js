@@ -2360,6 +2360,28 @@ window.EVENTS = [
   ]
  },
  {
+  "id": "sem-2027",
+  "name": "SEM Annual Meeting 2027",
+  "series": [
+   "Society for Ethnomusicology Annual Meeting"
+  ],
+  "via": [],
+  "start": "2027-10-20",
+  "end": "2027-10-24",
+  "location": "Omaha, Nebraska, USA",
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
+  "url": "https://www.ethnomusicology.org/page/Conf_Future",
+  "deadlines": [],
+  "status": null,
+  "verified": false,
+  "tags": [
+   "ethnomusicology"
+  ]
+ },
+ {
   "id": "smt-2027",
   "name": "SMT 2027 Annual Meeting (50th)",
   "series": [

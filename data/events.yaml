@@ -1,5 +1,5 @@
-# Events: one entry per edition of a meeting. Generated 2026-11-10 by
-# sandbox/build_events/build_events.py from this session's extraction outputs.
+# Events: one entry per edition of a meeting. MASTER FILE: hand edits are kept.
+# Updated weekly by scripts/update.py (GitHub Actions -> pull request).
 #
 # Fields
 #   id         unique slug, usually <series>-<year>
@@ -12,9 +12,13 @@
 #              registration | late_registration | other. date absent = only
 #              approximate (wording in note).
 #   status     upcoming | ongoing | past | announced (no dates yet), as of `checked`
-#   verified   true = read from the official page/feed by the pipeline/session;
-#              false = reported by a web-search agent, needs confirming
+#   verified   true = read from the official page/feed; false = reported by a
+#              web search, needs confirming
 #   source     where the facts came from;  checked = date of that check
+#   tags       optional topic tags; replace the series' topics on the site
+#   region     optional override of the region inferred from location
+#   locked     true = the updater never changes this event; or a list of
+#              field names it must not change (e.g. [start, end])
 #   notes      free text
 
 - id: evolang-2026
@@ -620,9 +624,25 @@
   tags:
   - theory
   - musicology
+- id: sma-2026-2
+  series:
+  - sma
+  name: Mainstreams and Exceptions (SMA Formal Theory Study Group)
+  type: conference
+  start: '2026-11-12'
+  end: '2026-11-12'
+  url: https://docs.google.com/document/d/1X8apeL-1u0rJErRuOHYrhbI3pO1mi3MTfqmCcOkwvxI/edit?usp=sharing
+  deadlines:
+  - type: registration
+    date: '2026-11-01'
+  verified: true
+  source: https://www.sma.ac.uk/events/forthcoming/
+  checked: '2026-11-10'
+  status: upcoming
 - id: ams-2026
   series:
   - ams
+  - ims
   name: 2026 AMS Annual Meeting - Online
   type: conference
   start: '2026-11-14'
@@ -681,8 +701,9 @@
   url: https://apcsociety.org/
   status: upcoming
   verified: true
-  source: https://www.musicperception.org/events
+  source: https://apcsociety.org/
   checked: '2026-11-10'
+  format: in-person
 - id: jam-2026-articulating-orality-and-notati
   series:
   - smt-events
@@ -725,6 +746,7 @@
   - musicology
   - theory
   - ethnomusicology
+  location: twitch.tv/bardicknowledge
 - id: ictmd-dialogues-2026
   series:
   - ictm
@@ -788,6 +810,7 @@
 - id: amps-apscom-2026
   series:
   - apscom
+  - sempre
   name: AMPS/APSCOM 2026
   type: conference
   start: '2026-12-08'
@@ -958,8 +981,9 @@
     note: 'Pre-Conference Symposium: Thursday, June 18, 2026, 13:00-19:00 (GMT-4)'
   status: upcoming
   verified: true
-  source: https://ictmusic.org/events
+  source: https://ictmd.org/ictmd2027
   checked: '2026-11-10'
+  format: in-person
 - id: technology-and-agency-in-global-music-hi-2027
   series:
   - ims
@@ -1267,6 +1291,39 @@
   notes: 'Theme: musical participation in education, cognition and knowledge. The dedicated edition page returned
     the same content via WebFetch as the /conferences page. Changes: location: London, UK (King''s College); deadline
     added'
+- id: tenor-2027
+  series:
+  - tenor
+  name: TENOR 2027
+  type: conference
+  start: '2027-04-21'
+  end: '2027-04-23'
+  location: Ghent, Belgium
+  url: https://orpheusinstituut.be/en/news-and-events/tenor2027
+  verified: true
+  source: https://www.tenor-conference.org/
+  checked: '2026-11-10'
+  status: upcoming
+- id: rma-2027
+  series:
+  - rma
+  name: Music and/as Process Study Group Annual Conference, 2027
+  type: conference
+  start: '2027-04-23'
+  end: '2027-04-23'
+  location: The Open University, Milton Keynes
+  format: in-person
+  url: https://www.rma.ac.uk/2026/10/31/call-for-proposals-music-and-as-process-study-group-annual-conference-2027/
+  deadlines:
+  - type: deadline
+    date: '2026-11-30'
+    note: 'DEADLINE: 23:59, Monday November 30, 2026'
+  - type: notification
+    date: '2027-01-08'
+  verified: true
+  source: https://www.rma.ac.uk/2026/10/31/call-for-proposals-music-and-as-process-study-group-annual-conference-2027/
+  checked: '2026-11-10'
+  status: upcoming
 - id: music-and-the-extended-mind-a-conference-2027
   series:
   - smpc-events
@@ -1309,15 +1366,17 @@
     date: '2027-05-03'
     note: Last changes to abstracts for publication
   status: upcoming
-  verified: false
-  source: https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html
+  verified: true
+  source: https://music-encoding.org/conference/2027/call/
   checked: '2026-11-10'
   notes: 'Read from the MEI-L mailing-list CFP post by Johannes Kepper (the organisers'' announcement), not a conference
     page; music-encoding.org/conference/2027 not checked. Marked unconfirmed because no edition page was read; details
     look consistent with the MEC 2026 CFP format. Changes: all fields filled: dates 7-10 June 2027, Rome, deadlines'
+  format: in-person
 - id: musical-care-2027
   series:
   - musical-care
+  - sempre
   name: Musical Care International Conference (inaugural)
   type: conference
   start: '2027-06-09'
@@ -1338,6 +1397,19 @@
   checked: '2026-11-10'
   notes: 'Dialogue-based sessions; in-person or online contributions. Changes: location detailed; 23 Oct 2026 call
     date added as ambiguous note'
+- id: acoustics27-2027
+  series:
+  - acoustics27
+  name: EAA 2027 Summer School
+  type: conference
+  start: '2027-06-18'
+  end: '2027-06-20'
+  location: Ghent, Belgium
+  url: https://acoustics27.com/
+  verified: true
+  source: https://acoustics27.com/
+  checked: '2026-11-10'
+  status: upcoming
 - id: acoustics27
   series:
   - acoustics27
@@ -1369,6 +1441,42 @@
   source: https://acoustics27.com/
   checked: '2026-11-10'
   notes: 'Summer school in Ghent 18-20 June. No explicit format statement. Changes: none (deadlines added)'
+  format: in-person
+- id: nime-2027
+  series:
+  - nime
+  name: NIME 2027
+  type: conference
+  location: Paris, France (De Vinci Higher Education)
+  url: https://forum.nime.org/t/announcing-nime-2027/1099
+  deadlines:
+  - type: call_opens
+    note: call for participation said to be circulated in October 2026
+  status: upcoming
+  verified: true
+  source: https://nime.org/
+  checked: '2026-11-10'
+  notes: 'Official announcement (posted 8 Oct 2026) confirms Paris/De Vinci but gives no dates, so confirmed=false
+    (no dates read). Theme ''Sensorial Symbiosis: Bodies, Machines, and Time''; chairs Sofy Yuditskaya, Xiao Xiao,
+    Paul Strohmeier; contact generalchairs@nime2027.org suggests site nime2027.org (not checked). Changes: none
+    (dates still unpublished); theme and chairs found'
+  start: '2027-06-21'
+  end: '2027-06-25'
+- id: icmc-2027
+  series:
+  - icmc
+  name: ICMC Conference 2027
+  type: conference
+  start: '2027-07-02'
+  end: '2027-07-08'
+  location: Kainan University, Taoyuan, Taiwan
+  deadlines:
+  - type: other
+    note: REGISTRATION WILL BE OPEN SOON!
+  verified: true
+  source: https://www.computermusic.org/
+  checked: '2026-11-10'
+  status: upcoming
 - id: ims-2027
   series:
   - ims
@@ -1392,6 +1500,7 @@
   series:
   - icmpc
   - escom
+  - sempre
   name: ICMPC-ESCOM 2027 (19th ICMPC / 13th ESCOM)
   type: conference
   start: '2027-08-16'
@@ -1500,6 +1609,37 @@
   source: https://www.iaspm.net/iaspm-international-conference/
   checked: '2026-11-10'
   notes: Submissions by email to the address on the page. Format not stated.
+- id: nime-2028
+  series:
+  - nime
+  name: NIME2028
+  type: conference
+  start: '2028-06-26'
+  end: '2028-06-29'
+  location: Auckland University, Auckland, New Zealand
+  url: https://nime2028.org
+  verified: true
+  source: https://nime.org/
+  checked: '2026-11-10'
+  status: upcoming
+- id: evolang-xvii-nijmegen-2028
+  series:
+  - evolang
+  name: Evolang XVII (Nijmegen 2028)
+  type: conference
+  location: Nijmegen, Netherlands
+  verified: true
+  source: https://www.evolang.org/
+  checked: '2026-11-10'
+- id: icad-2027-32nd-international-conference
+  series:
+  - icad
+  name: ICAD 2027 (32nd International Conference on Auditory Display)
+  type: conference
+  location: Athens, Greece
+  verified: true
+  source: https://icad.org/
+  checked: '2026-11-10'
 - id: isps-2027
   series:
   - isps
@@ -1517,24 +1657,16 @@
   checked: '2026-11-10'
   notes: Location confirmed; dates still unpublished. Page also contains stale ISPS 2025 Shanghai programme text
     (29 Oct-1 Nov 2025); ignore.
-- id: nime-2027
+- id: oxford-seminars-in-music-theory-and-anal
   series:
-  - nime
-  name: NIME 2027
+  - sma
+  name: Oxford Seminars in Music Theory and Analysis (OSiMTA)
   type: conference
-  location: Paris, France (De Vinci Higher Education)
-  url: https://forum.nime.org/t/announcing-nime-2027/1099
-  deadlines:
-  - type: call_opens
-    note: call for participation said to be circulated in October 2026
-  status: announced
-  verified: false
-  source: https://forum.nime.org/t/announcing-nime-2027/1099
+  location: Faculty of Music, University of Oxford
+  url: https://www.music.ox.ac.uk/oxford-seminar-music-theory-analysis-osimta
+  verified: true
+  source: https://www.sma.ac.uk/events/forthcoming/
   checked: '2026-11-10'
-  notes: 'Official announcement (posted 8 Oct 2026) confirms Paris/De Vinci but gives no dates, so confirmed=false
-    (no dates read). Theme ''Sensorial Symbiosis: Bodies, Machines, and Time''; chairs Sofy Yuditskaya, Xiao Xiao,
-    Paul Strohmeier; contact generalchairs@nime2027.org suggests site nime2027.org (not checked). Changes: none
-    (dates still unpublished); theme and chairs found'
 - id: rppw-21
   series:
   - rppw
@@ -1560,3 +1692,12 @@
   source: https://www.musicperception.org/pastmeetings
   checked: '2026-11-10'
   notes: Exact dates not on past-meetings page; programme/abstract book PDF linked.
+- id: the-neurosciences-and-music-ix
+  series:
+  - neuromusic
+  name: The Neurosciences and Music IX
+  type: conference
+  url: https://neuromusic.fondazione-mariani.org/neuromusic_IX
+  verified: true
+  source: https://neuromusic.fondazione-mariani.org/
+  checked: '2026-11-10'

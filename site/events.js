@@ -899,10 +899,38 @@ window.EVENTS = [
   ]
  },
  {
+  "id": "sma-2026-2",
+  "name": "Mainstreams and Exceptions (SMA Formal Theory Study Group)",
+  "series": [
+   "Society for Music Analysis (conference and TAGS)"
+  ],
+  "via": [],
+  "start": "2026-11-12",
+  "end": "2026-11-12",
+  "location": null,
+  "format": "not stated",
+  "regions": [
+   "Not stated"
+  ],
+  "url": "https://docs.google.com/document/d/1X8apeL-1u0rJErRuOHYrhbI3pO1mi3MTfqmCcOkwvxI/edit?usp=sharing",
+  "deadlines": [
+   {
+    "type": "registration",
+    "date": "2026-11-01"
+   }
+  ],
+  "status": "upcoming",
+  "verified": true,
+  "tags": [
+   "theory"
+  ]
+ },
+ {
   "id": "ams-2026",
   "name": "2026 AMS Annual Meeting - Online",
   "series": [
-   "American Musicological Society"
+   "American Musicological Society",
+   "International Musicological Society"
   ],
   "via": [],
   "start": "2026-11-14",
@@ -983,7 +1011,7 @@ window.EVENTS = [
   "start": "2026-11-19",
   "end": "2026-11-19",
   "location": "San Diego, CA",
-  "format": "not stated",
+  "format": "in-person",
   "regions": [
    "North America"
   ],
@@ -1039,7 +1067,7 @@ window.EVENTS = [
   ],
   "start": "2026-11-21",
   "end": null,
-  "location": null,
+  "location": "twitch.tv/bardicknowledge",
   "format": "online",
   "regions": [
    "Online only"
@@ -1158,7 +1186,8 @@ window.EVENTS = [
   "id": "amps-apscom-2026",
   "name": "AMPS/APSCOM 2026",
   "series": [
-   "Asia-Pacific Society for the Cognitive Sciences of Music (incl. AMPS/APSCOM)"
+   "Asia-Pacific Society for the Cognitive Sciences of Music (incl. AMPS/APSCOM)",
+   "SEMPRE conferences (Society for Education, Music and Psychology Research)"
   ],
   "via": [],
   "start": "2026-12-08",
@@ -1182,7 +1211,8 @@ window.EVENTS = [
   "status": "upcoming",
   "verified": false,
   "tags": [
-   "cognition"
+   "cognition",
+   "education"
   ]
  },
  {
@@ -1372,7 +1402,7 @@ window.EVENTS = [
   "start": "2027-01-14",
   "end": "2027-01-20",
   "location": "Universidad Alberto Hurtado, Santiago, Chile",
-  "format": "not stated",
+  "format": "in-person",
   "regions": [
    "Latin America"
   ],
@@ -1857,6 +1887,60 @@ window.EVENTS = [
   ]
  },
  {
+  "id": "tenor-2027",
+  "name": "TENOR 2027",
+  "series": [
+   "TENOR (Technologies for Music Notation and Representation)"
+  ],
+  "via": [],
+  "start": "2027-04-21",
+  "end": "2027-04-23",
+  "location": "Ghent, Belgium",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://orpheusinstituut.be/en/news-and-events/tenor2027",
+  "deadlines": [],
+  "status": "upcoming",
+  "verified": true,
+  "tags": [
+   "technology"
+  ]
+ },
+ {
+  "id": "rma-2027",
+  "name": "Music and/as Process Study Group Annual Conference, 2027",
+  "series": [
+   "Royal Musical Association Annual Conference"
+  ],
+  "via": [],
+  "start": "2027-04-23",
+  "end": "2027-04-23",
+  "location": "The Open University, Milton Keynes",
+  "format": "in-person",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.rma.ac.uk/2026/10/31/call-for-proposals-music-and-as-process-study-group-annual-conference-2027/",
+  "deadlines": [
+   {
+    "type": "deadline",
+    "date": "2026-11-30",
+    "note": "DEADLINE: 23:59, Monday November 30, 2026"
+   },
+   {
+    "type": "notification",
+    "date": "2027-01-08"
+   }
+  ],
+  "status": "upcoming",
+  "verified": true,
+  "tags": [
+   "musicology"
+  ]
+ },
+ {
   "id": "music-and-the-extended-mind-a-conference-2027",
   "name": "Music and the Extended Mind: A Conference on Musical Intelligence in the 21st Century",
   "series": [],
@@ -1895,7 +1979,7 @@ window.EVENTS = [
   "start": "2027-06-07",
   "end": "2027-06-10",
   "location": "German Historical Institute and Pontifical Institute of Sacred Music, Rome, Italy",
-  "format": "not stated",
+  "format": "in-person",
   "regions": [
    "Europe"
   ],
@@ -1922,7 +2006,7 @@ window.EVENTS = [
    }
   ],
   "status": "upcoming",
-  "verified": false,
+  "verified": true,
   "tags": [
    "musicology",
    "technology"
@@ -1932,7 +2016,8 @@ window.EVENTS = [
   "id": "musical-care-2027",
   "name": "Musical Care International Conference (inaugural)",
   "series": [
-   "Musical Care International Conference"
+   "Musical Care International Conference",
+   "SEMPRE conferences (Society for Education, Music and Psychology Research)"
   ],
   "via": [],
   "start": "2027-06-09",
@@ -1953,7 +2038,31 @@ window.EVENTS = [
   "status": "upcoming",
   "verified": true,
   "tags": [
+   "cognition",
+   "education",
    "health"
+  ]
+ },
+ {
+  "id": "acoustics27-2027",
+  "name": "EAA 2027 Summer School",
+  "series": [
+   "Acoustics '27 (joint ASA / European Acoustics Association)"
+  ],
+  "via": [],
+  "start": "2027-06-18",
+  "end": "2027-06-20",
+  "location": "Ghent, Belgium",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://acoustics27.com/",
+  "deadlines": [],
+  "status": "upcoming",
+  "verified": true,
+  "tags": [
+   "auditory"
   ]
  },
  {
@@ -1967,7 +2076,7 @@ window.EVENTS = [
   "start": "2027-06-21",
   "end": "2027-06-25",
   "location": "Brussels, Belgium (SQUARE and Bozar)",
-  "format": "not stated",
+  "format": "in-person",
   "regions": [
    "Europe"
   ],
@@ -2006,6 +2115,51 @@ window.EVENTS = [
   ]
  },
  {
+  "id": "nime-2027",
+  "name": "NIME 2027",
+  "series": [
+   "New Interfaces for Musical Expression"
+  ],
+  "via": [],
+  "start": "2027-06-21",
+  "end": "2027-06-25",
+  "location": "Paris, France (De Vinci Higher Education)",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://forum.nime.org/t/announcing-nime-2027/1099",
+  "deadlines": [],
+  "status": "upcoming",
+  "verified": true,
+  "tags": [
+   "performance",
+   "technology"
+  ]
+ },
+ {
+  "id": "icmc-2027",
+  "name": "ICMC Conference 2027",
+  "series": [
+   "International Computer Music Conference"
+  ],
+  "via": [],
+  "start": "2027-07-02",
+  "end": "2027-07-08",
+  "location": "Kainan University, Taoyuan, Taiwan",
+  "format": "not stated",
+  "regions": [
+   "Asia"
+  ],
+  "url": "https://www.computermusic.org/",
+  "deadlines": [],
+  "status": "upcoming",
+  "verified": true,
+  "tags": [
+   "technology"
+  ]
+ },
+ {
   "id": "ims-2027",
   "name": "IMS2027 \"Musical Ecosystems\" (22nd IMS Congress)",
   "series": [
@@ -2039,7 +2193,8 @@ window.EVENTS = [
   "name": "ICMPC-ESCOM 2027 (19th ICMPC / 13th ESCOM)",
   "series": [
    "International Conference on Music Perception and Cognition",
-   "European Society for the Cognitive Sciences of Music"
+   "European Society for the Cognitive Sciences of Music",
+   "SEMPRE conferences (Society for Education, Music and Psychology Research)"
   ],
   "via": [],
   "start": "2027-08-16",
@@ -2075,7 +2230,8 @@ window.EVENTS = [
   "status": "upcoming",
   "verified": true,
   "tags": [
-   "cognition"
+   "cognition",
+   "education"
   ]
  },
  {
@@ -2208,6 +2364,75 @@ window.EVENTS = [
   ]
  },
  {
+  "id": "nime-2028",
+  "name": "NIME2028",
+  "series": [
+   "New Interfaces for Musical Expression"
+  ],
+  "via": [],
+  "start": "2028-06-26",
+  "end": "2028-06-29",
+  "location": "Auckland University, Auckland, New Zealand",
+  "format": "not stated",
+  "regions": [
+   "Oceania"
+  ],
+  "url": "https://nime2028.org",
+  "deadlines": [],
+  "status": "upcoming",
+  "verified": true,
+  "tags": [
+   "performance",
+   "technology"
+  ]
+ },
+ {
+  "id": "evolang-xvii-nijmegen-2028",
+  "name": "Evolang XVII (Nijmegen 2028)",
+  "series": [
+   "Evolution of Language (EvoLang)"
+  ],
+  "via": [],
+  "start": null,
+  "end": null,
+  "location": "Nijmegen, Netherlands",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.evolang.org/",
+  "deadlines": [],
+  "status": null,
+  "verified": true,
+  "tags": [
+   "cognition",
+   "language"
+  ]
+ },
+ {
+  "id": "icad-2027-32nd-international-conference",
+  "name": "ICAD 2027 (32nd International Conference on Auditory Display)",
+  "series": [
+   "International Conference on Auditory Display"
+  ],
+  "via": [],
+  "start": null,
+  "end": null,
+  "location": "Athens, Greece",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://icad.org/",
+  "deadlines": [],
+  "status": null,
+  "verified": true,
+  "tags": [
+   "auditory",
+   "technology"
+  ]
+ },
+ {
   "id": "isps-2027",
   "name": "ISPS 2027",
   "series": [
@@ -2231,26 +2456,25 @@ window.EVENTS = [
   ]
  },
  {
-  "id": "nime-2027",
-  "name": "NIME 2027",
+  "id": "oxford-seminars-in-music-theory-and-anal",
+  "name": "Oxford Seminars in Music Theory and Analysis (OSiMTA)",
   "series": [
-   "New Interfaces for Musical Expression"
+   "Society for Music Analysis (conference and TAGS)"
   ],
   "via": [],
   "start": null,
   "end": null,
-  "location": "Paris, France (De Vinci Higher Education)",
+  "location": "Faculty of Music, University of Oxford",
   "format": "not stated",
   "regions": [
    "Europe"
   ],
-  "url": "https://forum.nime.org/t/announcing-nime-2027/1099",
+  "url": "https://www.music.ox.ac.uk/oxford-seminar-music-theory-analysis-osimta",
   "deadlines": [],
-  "status": "announced",
-  "verified": false,
+  "status": null,
+  "verified": true,
   "tags": [
-   "performance",
-   "technology"
+   "theory"
   ]
  },
  {
@@ -2295,6 +2519,29 @@ window.EVENTS = [
   "verified": true,
   "tags": [
    "cognition"
+  ]
+ },
+ {
+  "id": "the-neurosciences-and-music-ix",
+  "name": "The Neurosciences and Music IX",
+  "series": [
+   "The Neurosciences and Music (Fondazione Mariani)"
+  ],
+  "via": [],
+  "start": null,
+  "end": null,
+  "location": null,
+  "format": "not stated",
+  "regions": [
+   "Not stated"
+  ],
+  "url": "https://neuromusic.fondazione-mariani.org/neuromusic_IX",
+  "deadlines": [],
+  "status": null,
+  "verified": true,
+  "tags": [
+   "cognition",
+   "neuroscience"
   ]
  }
 ];

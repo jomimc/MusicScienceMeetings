@@ -11,12 +11,13 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 | 2026-11-08 – 2026-11-12 | [ISMIR 2026](https://ismir2026.ismir.net) | NYU Abu Dhabi, Abu Dhabi, UAE |  |
 | 2026-11-09 – 2026-11-11 | [60th International Musicological Colloquium Brno](https://janacek-brno.cz/en/aktualita-kolokvium/) | Brno, Czech Republic (Masaryk University, Institute of Musicology; part of Janáček Brno 2026 festival) |  |
 | 2026-11-11 | [Celebrating the legacy of the late Arnold Whittall (1935-2026)](https://societymusictheory.org/events/celebrating-legacy-late-arnold-whittall-1935-2026-2026) | King's College London |  |
+| 2026-11-12 | [Mainstreams and Exceptions (SMA Formal Theory Study Group)](https://docs.google.com/document/d/1X8apeL-1u0rJErRuOHYrhbI3pO1mi3MTfqmCcOkwvxI/edit?usp=sharing) |  |  |
 | 2026-11-14 – 2026-11-20 | [2026 AMS Annual Meeting - Online](https://www.amsmusicology.org/calendar/2026-ams-annual-meeting-online/) | Online |  |
 | 2026-11-16 – 2026-11-18 | [IMS Study Group: Comparative Perspectives on Genetic Criticism in Music](https://www.musicology.org/events/comparative-perspectives-on-genetic-criticism-in-music/) | Rome (DHI Rome) |  |
 | 2026-11-18 – 2026-11-20 | [26th International Conference "Principles of Music Composing: Interaction between Technologies and Conventions"](https://societymusictheory.org/events/26th-international-conference-principles-music-composing-interaction-between-technologies) | Vilnius, Lithuania |  |
 | 2026-11-19 | [Auditory Perception, Cognition and Action Meeting](https://apcsociety.org/) | San Diego, CA |  |
 | 2026-11-20 | [JAM 2026 – Articulating Orality and Notation in Music (Journées d'Analyse Musicale)](https://societymusictheory.org/events/jam-2026-articulating-orality-and-notation-music-2026) | Bordeaux, France |  |
-| 2026-11-21 | [AMS/SMT/SEM After Dark XI](https://societymusictheory.org/events/ams-smt-sem-after-dark-xi-2026) |  |  |
+| 2026-11-21 | [AMS/SMT/SEM After Dark XI](https://societymusictheory.org/events/ams-smt-sem-after-dark-xi-2026) | twitch.tv/bardicknowledge |  |
 | 2026-11-28 | [ICTMD Dialogues 2026: Ethics of Care in Times of Crises](http://ictmd.org/ictmd-dialogues-2026-programme-and-registration) | Online (via Zoom) |  |
 | 2026-12-01 | [John Adams’s On the Transmigration of Souls and 9/11 Memorialization](https://www.amsmusicology.org/calendar/john-adamss-on-the-transmigration-of-souls-and-9-11-memorialization/) | Library of Congress, Washington, DC |  |
 | 2026-12-02 – 2026-12-04 | [Musikgeschichte in Bildern 2.0 (IMS Musical Iconography SG)](https://www.musicology.org/events/musikgeschichte-in-bildern-2-0-2/) | Vienna |  |
@@ -45,16 +46,22 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 | 2027-04-07 – 2027-04-08 | [Workshop in preparation for a special issue (Journal of Musicological Research): International Music Competitions: Intersections of Art, Society, and Politics](https://societymusictheory.org/events/workshop-preparation-special-issue-journal-musicological-research-2027) | University of Music and Performing Arts Vienna (Austria) |  |
 | 2027-04-10 – 2027-04-11 | [AAWM Special Topics Symposium: Colouring Global Voices - Vocal Timbre in World Music Traditions](https://conferences.iftawm.org/) | Online (hosted by AAWM journal and Centre for Swedish Folk Music and Jazz Research, Sweden) | 2026-12-15 (abstract) |
 | 2027-04-15 – 2027-04-16 | [SEMPRE Spring Conference 2027](https://sempre.org.uk/conference/sempre-spring-conference-2027/) | King's College London, UK | 2026-12-04 (deadline) |
+| 2027-04-21 – 2027-04-23 | [TENOR 2027](https://orpheusinstituut.be/en/news-and-events/tenor2027) | Ghent, Belgium |  |
+| 2027-04-23 | [Music and/as Process Study Group Annual Conference, 2027](https://www.rma.ac.uk/2026/10/31/call-for-proposals-music-and-as-process-study-group-annual-conference-2027/) | The Open University, Milton Keynes | 2026-11-30 (deadline) |
 | 2027-05-05 – 2027-05-06 | [Music and the Extended Mind: A Conference on Musical Intelligence in the 21st Century](https://music.fsu.edu/c21mp/) | Florida State University |  |
-| 2027-06-07 – 2027-06-10 | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) ⚠️ | German Historical Institute and Pontifical Institute of Sacred Music, Rome, Italy | 2026-12-18 (paper) |
+| 2027-06-07 – 2027-06-10 | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) | German Historical Institute and Pontifical Institute of Sacred Music, Rome, Italy | 2026-12-18 (paper) |
 | 2027-06-09 – 2027-06-11 | [Musical Care International Conference (inaugural)](https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference) | Queen Margaret University, near Musselburgh / Edinburgh, UK (+ online) | 2027-02-26 (early registration) |
+| 2027-06-18 – 2027-06-20 | [EAA 2027 Summer School](https://acoustics27.com/) | Ghent, Belgium |  |
 | 2027-06-21 – 2027-06-25 | [Acoustics '27 (joint ASA / EAA meeting)](https://acoustics27.com/) | Brussels, Belgium (SQUARE and Bozar) | 2026-11-16 (call opens) |
+| 2027-06-21 – 2027-06-25 | [NIME 2027](https://forum.nime.org/t/announcing-nime-2027/1099) | Paris, France (De Vinci Higher Education) |  |
+| 2027-07-02 – 2027-07-08 | [ICMC Conference 2027](https://www.computermusic.org/) | Kainan University, Taoyuan, Taiwan |  |
 | 2027-08-02 – 2027-08-06 | [IMS2027 "Musical Ecosystems" (22nd IMS Congress)](https://ims2027.musicology.org) | Stavanger, Norway |  |
 | 2027-08-16 – 2027-08-20 | [ICMPC-ESCOM 2027 (19th ICMPC / 13th ESCOM)](https://www.jyu.fi/en/events/icmpc-escom-2027-conference) | Helsinki, Finland | 2026-11-15 (abstract) |
 | 2027-08-24 – 2027-08-27 | [DAFx27](https://dafx27.deib.polimi.it/) | Cremona Campus of Politecnico di Milano, Cremona, Italy |  |
 | 2027-09-12 – 2027-09-16 | [ISMIR 2027](https://ismir2027.ismir.net) | Mile End Campus, Queen Mary University of London, UK | 2027-03-09 (abstract) |
 | 2027-11-04 – 2027-11-07 | [SMT 2027 Annual Meeting (50th)](https://societymusictheory.org/meetings/smt-2027/cfp) | Baltimore, MD | 2026-12-14 (call opens) |
 | 2027-11-29 – 2027-12-03 | [IASPM 2027 (24th) "Pop! Goes the World!!!"](https://www.iaspm.net/iaspm-international-conference/) | Wellington, New Zealand (Te Herenga Waka / Victoria University of Wellington) | 2026-12-01 (abstract) |
+| 2028-06-26 – 2028-06-29 | [NIME2028](https://nime2028.org) | Auckland University, Auckland, New Zealand |  |
 
 ## Open deadlines
 
@@ -68,25 +75,27 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 | 2026-11-18 | notification | [DMRN+21](https://www.qmul.ac.uk/dmrn/dmrn21/) |
 | 2026-11-22 | deadline — Deadline: Sunday, November 22, 2026 | [2027 Indiana University 33rd Annual Symposium of Research in Music](https://societymusictheory.org/events/2027-indiana-university-33rd-annual-symposium-research-music-2027) |
 | 2026-11-30 | registration | [CHR 2027 (7th Computational Humanities Research Conference)](https://2027.computational-humanities-research.org/) |
+| 2026-11-30 | deadline — DEADLINE: 23:59, Monday November 30, 2026 | [Music and/as Process Study Group Annual Conference, 2027](https://www.rma.ac.uk/2026/10/31/call-for-proposals-music-and-as-process-study-group-annual-conference-2027/) |
 | 2026-12-01 | deadline — Deadline: Tuesday, December 1, 2026 | [FSU MTS Forum (44th annual Music Theory Forum)](https://societymusictheory.org/events/fsu-mts-forum-2027) |
 | 2026-12-01 | abstract | [IASPM 2027 (24th) "Pop! Goes the World!!!"](https://www.iaspm.net/iaspm-international-conference/) |
 | 2026-12-04 | deadline — Deadline: Friday, December 4, 2026 | [Joint Conference of the South Central Society for Music Theory and Music Theory Southeast 2027](https://societymusictheory.org/events/joint-conference-south-central-society-music-theory-and-music-theory-southeast-2027-2027) |
 | 2026-12-04 | deadline — conference submissions (also Aubrey Hickman Award applications) | [SEMPRE Spring Conference 2027](https://sempre.org.uk/conference/sempre-spring-conference-2027/) |
 | 2026-12-14 | call opens | [SMT 2027 Annual Meeting (50th)](https://societymusictheory.org/meetings/smt-2027/cfp) |
 | 2026-12-15 | abstract — 11:59pm Pacific Time; 350 words max | [AAWM Special Topics Symposium: Colouring Global Voices - Vocal Timbre in World Music Traditions](https://conferences.iftawm.org/) |
-| 2026-12-18 | paper — Proposal deadline, AoE, 'will not be extended' | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) ⚠️ |
+| 2026-12-18 | paper — Proposal deadline, AoE, 'will not be extended' | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) |
+| 2027-01-08 | notification | [Music and/as Process Study Group Annual Conference, 2027](https://www.rma.ac.uk/2026/10/31/call-for-proposals-music-and-as-process-study-group-annual-conference-2027/) |
 | 2027-01-15 | notification | [AAWM Special Topics Symposium: Colouring Global Voices - Vocal Timbre in World Music Traditions](https://conferences.iftawm.org/) |
 | 2027-01-25 | abstract — Also paper submission period for FA27 Proceedings ends | [Acoustics '27 (joint ASA / EAA meeting)](https://acoustics27.com/) |
-| 2027-02-08 | notification | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) ⚠️ |
+| 2027-02-08 | notification | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) |
 | 2027-02-15 | paper | [SMT 2027 Annual Meeting (50th)](https://societymusictheory.org/meetings/smt-2027/cfp) |
 | 2027-02-26 | early registration — early bird; booking link not yet live | [Musical Care International Conference (inaugural)](https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference) |
 | 2027-03-09 | abstract — tentative | [ISMIR 2027](https://ismir2027.ismir.net) |
 | 2027-03-15 | early registration — Early bird deadline | [Acoustics '27 (joint ASA / EAA meeting)](https://acoustics27.com/) |
 | 2027-03-16 | paper — tentative | [ISMIR 2027](https://ismir2027.ismir.net) |
 | 2027-04-01 | notification — No later than | [IASPM 2027 (24th) "Pop! Goes the World!!!"](https://www.iaspm.net/iaspm-international-conference/) |
-| 2027-04-05 | registration — Registration deadline for authors | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) ⚠️ |
+| 2027-04-05 | registration — Registration deadline for authors | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) |
 | 2027-04-18 | early registration | [ICMPC-ESCOM 2027 (19th ICMPC / 13th ESCOM)](https://www.jyu.fi/en/events/icmpc-escom-2027-conference) |
-| 2027-05-03 | other — Last changes to abstracts for publication | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) ⚠️ |
+| 2027-05-03 | other — Last changes to abstracts for publication | [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html) |
 | 2027-05-19 | other — Final program release | [Acoustics '27 (joint ASA / EAA meeting)](https://acoustics27.com/) |
 | 2027-06-02 | notification — tentative | [ISMIR 2027](https://ismir2027.ismir.net) |
 | 2027-06-23 | other — camera-ready (tentative) | [ISMIR 2027](https://ismir2027.ismir.net) |
@@ -95,9 +104,12 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 
 ## Announced, dates not yet published
 
+- [Evolang XVII (Nijmegen 2028)](https://www.evolang.org/) — Nijmegen, Netherlands
+- [ICAD 2027 (32nd International Conference on Auditory Display)](https://icad.org/) — Athens, Greece
 - [ISPS 2027](https://performancescience.org/conference/isps-2027/) — Rio de Janeiro, Brazil (Location confirmed; dates still unpublished. Page also contains stale ISPS 2025 Shanghai programme text (29 Oct-1 Nov 2025); ignore.)
-- [NIME 2027](https://forum.nime.org/t/announcing-nime-2027/1099) ⚠️ — Paris, France (De Vinci Higher Education) (Official announcement (posted 8 Oct 2026) confirms Paris/De Vinci but gives no dates, so confirmed=false (no dates read). Theme 'Sensorial Symbiosis: Bodies, Machines, and Time'; chairs Sofy Yuditskaya, Xiao Xiao, Paul Strohmeier; contact generalchairs@nime2027.org suggests site nime2027.org (not checked). Changes: none (dates still unpublished); theme and chairs found)
+- [Oxford Seminars in Music Theory and Analysis (OSiMTA)](https://www.music.ox.ac.uk/oxford-seminar-music-theory-analysis-osimta) — Faculty of Music, University of Oxford
 - [RPPW 21](https://www.rppw.org/) — McMaster University, Hamilton, Canada (Dates not listed. The 2028 reading is from a single banner sentence summarised by WebFetch; worth a recheck. Changes: year resolved: site banner says next meeting at McMaster in 2028 (not 2027))
+- [The Neurosciences and Music IX](https://neuromusic.fondazione-mariani.org/neuromusic_IX)
 
 ## Past editions
 

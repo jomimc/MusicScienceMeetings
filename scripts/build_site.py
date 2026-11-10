@@ -33,7 +33,8 @@ REGIONS = [
                r"Cremona|L'Aquila|Spain|Barcelona|Portugal|Coimbra|Austria|Vienna|Belgium|Brussels|Croatia|"
                r"Zagreb|Slovenia|Ljubljana|Serbia|Belgrade|Bulgaria|Plovdiv|Greece|Thessaloniki|Finland|"
                r"Helsinki|Norway|Stavanger|Netherlands|Amsterdam|Czech|Brno|Sweden|Denmark|Switzerland|Poland|"
-               r"Lithuania|Vilnius|Latvia|Estonia|"
+               r"Lithuania|Vilnius|Latvia|Estonia|England|Scotland|Wales|Milton Keynes|Glasgow|Cardiff|"
+               r"Birmingham|Leeds|Sheffield|Bristol|Liverpool|Newcastle|Nottingham|Southampton|Huddersfield|"
                r"King's College"),
 ]
 

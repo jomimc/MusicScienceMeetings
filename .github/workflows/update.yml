@@ -1,0 +1,67 @@
+# Weekly update: read sources, extract events with Claude Haiku, open a pull request.
+# Schedule: Mondays 06:00 UTC. To go monthly later, change cron to "0 6 1 * *" (1st of month).
+# Manual run: Actions tab -> "Weekly update" -> Run workflow (tick "force" to re-extract every page).
+# Needs: repository secret ANTHROPIC_API_KEY, and Settings -> Actions -> General ->
+#   "Allow GitHub Actions to create and approve pull requests".
+name: Weekly update
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-extract every page (ignore change detection)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install "anthropic>=2.7" pyyaml beautifulsoup4 lxml
+
+      - name: Update events
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/update.py --report report.md ${{ inputs.force && '--force' || '' }}
+
+      - name: Rebuild site and data README
+        run: |
+          python scripts/build_site.py
+          python scripts/build_readme.py
+
+      - name: Open or update pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+          if git diff --quiet -- data/events.yaml data/state.json; then
+            echo "No data changes; no pull request." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          BRANCH=auto/weekly-update
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data/ site/
+          git commit -m "Weekly update $(date -u +%F)"
+          git push --force origin "$BRANCH"
+          if gh pr view "$BRANCH" --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit "$BRANCH" --title "Weekly update $(date -u +%F)" --body-file report.md
+          else
+            gh pr create --base main --head "$BRANCH" --title "Weekly update $(date -u +%F)" --body-file report.md
+          fi

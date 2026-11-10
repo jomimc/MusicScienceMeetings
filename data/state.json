@@ -1,0 +1,151 @@
+{
+ "pages": {
+  "http://ictmd.org/ictmd-dialogues-2026-programme-and-registration": {
+   "hash": "627a14e9dd75f182"
+  },
+  "http://ictmd.org/ictmd-dialogues-2026-upcoming-event": {
+   "hash": "627a14e9dd75f182"
+  },
+  "https://2027.computational-humanities-research.org/": {
+   "hash": "0ed03b8e1a038449"
+  },
+  "https://2027.computational-humanities-research.org/cfp/": {
+   "hash": "3cafb6bb4d78c1e5"
+  },
+  "https://acoustics27.com/": {
+   "hash": "8329bf1cfd731ca3"
+  },
+  "https://apcsociety.org/": {
+   "hash": "0459aa1d78324ab3"
+  },
+  "https://computational-humanities-research.org/conference/": {
+   "hash": "b17540b26ca7f4bb"
+  },
+  "https://dafx.de/": {
+   "hash": "f12ae2db438248f4"
+  },
+  "https://digital.musicology.org/": {
+   "hash": "89907cec2998be78"
+  },
+  "https://digital.musicology.org/icccm-2026/": {
+   "hash": "836e4a0d2f1c79a0"
+  },
+  "https://dlfm.web.ox.ac.uk/": {
+   "hash": "386e8a6857d47e47"
+  },
+  "https://europeanmusictheory.eu/": {
+   "hash": "82590b439a9fd806"
+  },
+  "https://icad.org/": {
+   "hash": "d8aa34030ceaca1c"
+  },
+  "https://ictmd.org/ictmd2027": {
+   "hash": "04f529282bb48673"
+  },
+  "https://ictmusic.org/events": {
+   "hash": "7d39c40d69a60064"
+  },
+  "https://ismir2026.ismir.net": {
+   "hash": "d5b3813e747a390d"
+  },
+  "https://ismir2027.ismir.net": {
+   "hash": "a9ae3ba6240d5670"
+  },
+  "https://musel.consaq.it/": {
+   "hash": "23afad59a36078a5"
+  },
+  "https://music-encoding.org/conference/2026/call/": {
+   "hash": "7b83134846b942b3"
+  },
+  "https://music-encoding.org/conference/2027/call/": {
+   "hash": "fb67e6cbe3d5141e"
+  },
+  "https://music.phil.muni.cz/mmk": {
+   "hash": "413e52e36e3ca5c1"
+  },
+  "https://neuromusic.fondazione-mariani.org/": {
+   "hash": "b86a163f18151dfd"
+  },
+  "https://nime.org/": {
+   "hash": "78ff6870028959e8"
+  },
+  "https://performancescience.org/conference/isps-2027/": {
+   "hash": "938edafee385c999"
+  },
+  "https://sempre.org.uk/conferences": {
+   "hash": "85dbb85c6b2e61a7"
+  },
+  "https://sites.google.com/view/sysmus/sysmus/the-upcoming-sysmus": {
+   "hash": "c1b84664ec748d60"
+  },
+  "https://societymusictheory.org/events": {
+   "hash": "1d7e02a7335db932"
+  },
+  "https://societymusictheory.org/meetings/smt-2026": {
+   "hash": "af98331ae01a59ec"
+  },
+  "https://societymusictheory.org/meetings/smt-2027/cfp": {
+   "hash": "60f990c2e4384def"
+  },
+  "https://www.audiomostly.com/": {
+   "hash": "2c48f22663d4ca21"
+  },
+  "https://www.computermusic.org/": {
+   "hash": "1882ce4bcbeb2806"
+  },
+  "https://www.escomsociety.org/conferences": {
+   "hash": "367f90b54b1de944"
+  },
+  "https://www.escomsociety.org/icmpc": {
+   "hash": "7bd8565cc0d6fa8c"
+  },
+  "https://www.evolang.org/": {
+   "hash": "abd1db11adc4f3cf"
+  },
+  "https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/": {
+   "hash": "a7ab5a00b3e67356"
+  },
+  "https://www.iaspm.net/iaspm-international-conference/": {
+   "hash": "c6b81a7fbf1eb8a2"
+  },
+  "https://www.jyu.fi/en/events/icmpc-escom-2027-conference": {
+   "hash": "95795003e25ff847"
+  },
+  "https://www.musicperception.org/events?format=json": {
+   "hash": "7addac165c4f7be2"
+  },
+  "https://www.musicperception.org/pastmeetings": {
+   "hash": "422434830d39e1f4"
+  },
+  "https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference": {
+   "hash": "add78561432f63bd"
+  },
+  "https://www.qmul.ac.uk/dmrn/": {
+   "hash": "7b0a31da20ff30df"
+  },
+  "https://www.rma.ac.uk/2026/09/30/conference-report-enmesh-2026-european-network-for-mental-health-service-evaluation/": {
+   "hash": "b9dbaf2d2a204714"
+  },
+  "https://www.rma.ac.uk/2026/10/08/conference-report-rma-music-and-philosophy-study-group-9-10-july-2026/": {
+   "hash": "8918d46f615d19cd"
+  },
+  "https://www.rma.ac.uk/2026/10/23/conference-report-women-and-musical-histories-1789-1914-2-4-september-2026/": {
+   "hash": "b9594b7f1228aa15"
+  },
+  "https://www.rma.ac.uk/2026/10/31/call-for-proposals-music-and-as-process-study-group-annual-conference-2027/": {
+   "hash": "91a833dd265167b4"
+  },
+  "https://www.rppw.org/": {
+   "hash": "e7eafcdd85deb908"
+  },
+  "https://www.sma.ac.uk/events/forthcoming/": {
+   "hash": "d03e3ac7952d6df4"
+  },
+  "https://www.tenor-conference.org/": {
+   "hash": "f9f3e87dd302976c"
+  },
+  "https://www.uni-wuerzburg.de/en/zpd/events/icccm-2026/": {
+   "hash": "421458f49be03239"
+  }
+ }
+}

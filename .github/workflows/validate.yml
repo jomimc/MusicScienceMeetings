@@ -1,0 +1,38 @@
+# Catch broken files before they reach the site: YAML (forms, workflows, data),
+# Python scripts, and the site's JavaScript. Runs on every push and pull request.
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: YAML files parse
+        run: |
+          python - <<'EOF'
+          import glob, sys, yaml
+          bad = 0
+          for f in sorted(glob.glob(".github/**/*.yml", recursive=True) + glob.glob("data/*.yaml")):
+              try:
+                  yaml.safe_load(open(f))
+                  print("ok  ", f)
+              except yaml.YAMLError as e:
+                  bad += 1
+                  print(f"::error file={f}::{e}")
+          sys.exit(bad)
+          EOF
+      - name: Python scripts compile
+        run: python -m py_compile scripts/*.py
+      - name: Site JavaScript syntax
+        run: node --check site/app.js

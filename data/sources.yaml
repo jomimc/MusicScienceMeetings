@@ -622,6 +622,16 @@
   notes: Carried deadline extensions.
   surveyed: 2026-11-10
 
+- id: user-submissions
+  name: Submitted via the "Add a meeting" form
+  kind: aggregator
+  topics: []
+  url: https://github.com/jomimc/MusicScienceMeetings/issues?q=label%3A%22new+event%22
+  method: manual
+  status: ok
+  notes: Catch-all series for submitted meetings that don't match a tracked series (scripts/intake.py).
+  surveyed: 2026-11-10
+
 # Mailing lists / groups from README (survey 2026-11-10): not readable without
 # membership or JS; kept for completeness.
 - {id: sysmus-list, name: SysMus conference series Google Group, kind: mailing_list, topics: [cognition], url: "https://groups.google.com/group/sysmus-conferences", method: manual, status: blocked, notes: "Restricted group; would need a bot inbox.", surveyed: 2026-11-10}

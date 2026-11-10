@@ -317,10 +317,15 @@ class Run:
         """Find the existing event for a candidate. Rules are tried strongest first,
         each over ALL events, so a weak match never beats a strong one elsewhere."""
         nu = norm_url(c["url"])
-        ser = lambda e: bool(set(e.get("series", [])) & set(c["series"]))
+        ser0 = lambda e: bool(set(e.get("series", [])) & set(c["series"]))
+        years = lambda name, start: set(re.findall(r"\b(20\d\d)\b", name or "")) | ({start[:4]} if start else set())
+        cy = years(c["name"], c["start"])
+        # different editions of a series must never match: if both sides carry a year, they must agree
+        same_year = lambda e: not cy or not years(e["name"], e.get("start")) or bool(cy & years(e["name"], e.get("start")))
+        ser = lambda e: ser0(e) and same_year(e)
         rules = [
             # same URL plus similar name or same start (one page can host several events, e.g. a summer school)
-            lambda e: nu and nu == norm_url(e.get("url")) and (similar(e["name"], c["name"]) or (c["start"] and c["start"] == e.get("start"))),
+            lambda e: nu and nu == norm_url(e.get("url")) and same_year(e) and (similar(e["name"], c["name"]) or (c["start"] and c["start"] == e.get("start"))),
             lambda e: c["start"] and ser(e) and e.get("start") == c["start"] and similar(e["name"], c["name"], 0.15),
             lambda e: c["start"] and e.get("start") == c["start"] and similar(e["name"], c["name"]),
             lambda e: c["start"] and e.get("start") and ser(e) and e["start"][:4] == c["start"][:4] and similar(e["name"], c["name"]),

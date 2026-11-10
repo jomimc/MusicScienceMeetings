@@ -1,0 +1,75 @@
+# Turn "Add a meeting" / "Correct a meeting" issues into pull requests.
+# Runs when such an issue is opened or edited, or by hand for an existing issue:
+#   Actions -> "Issue intake" -> Run workflow -> issue number.
+# The pull request says "Closes #N", so merging it closes the issue.
+name: Issue intake
+
+on:
+  issues:
+    types: [opened, edited]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue number to process"
+        required: true
+        type: number
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: intake-${{ github.event.issue.number || inputs.issue }}
+  cancel-in-progress: false
+
+jobs:
+  intake:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.labels.*.name, 'new event') ||
+      contains(github.event.issue.labels.*.name, 'correction')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ISSUE: ${{ github.event.issue.number || inputs.issue }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install "anthropic>=2.7" pyyaml beautifulsoup4 lxml
+
+      - name: Apply issue to data
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/intake.py --issue "$ISSUE" --report report.md
+
+      - name: Rebuild site and data README
+        run: |
+          python scripts/build_site.py
+          python scripts/build_readme.py
+
+      - name: Open or update pull request, comment on issue
+        run: |
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+          if git diff --quiet -- data/events.yaml; then
+            gh issue comment "$ISSUE" --body-file report.md
+            exit 0
+          fi
+          BRANCH="intake/issue-$ISSUE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data/ site/
+          git commit -m "Intake from issue #$ISSUE"
+          git push --force origin "$BRANCH"
+          TITLE="$(gh issue view "$ISSUE" --json title -q .title)"
+          if gh pr view "$BRANCH" --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit "$BRANCH" --body-file report.md
+            gh issue comment "$ISSUE" --body "Updated the pull request after your edit: $(gh pr view "$BRANCH" --json url -q .url)"
+          else
+            gh pr create --base main --head "$BRANCH" --title "Intake: $TITLE" --body-file report.md
+            gh issue comment "$ISSUE" --body "Thanks! A pull request with this change is ready for review: $(gh pr view "$BRANCH" --json url -q .url)"
+          fi

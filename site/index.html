@@ -22,9 +22,20 @@
       <label class="check"><input type="checkbox" id="show-past"> Show past</label>
     </div>
     <div class="row">
+      <span class="label">Format</span>
+      <div id="f-format" class="tags"></div>
+    </div>
+    <div class="row">
+      <span class="label">Region</span>
+      <div id="f-region" class="tags"></div>
+    </div>
+    <div class="row">
       <span class="label">Tags</span>
-      <div id="tags" class="tags"></div>
-      <button type="button" id="clear-tags" class="link" hidden>clear</button>
+      <div id="f-tags" class="tags"></div>
+    </div>
+    <div class="row">
+      <span class="label"></span>
+      <button type="button" id="clear-filters" class="link" hidden>clear all filters</button>
     </div>
   </section>
 
@@ -33,6 +44,8 @@
 
   <footer>
     <p>⚠ = found by web search, not yet checked against the official page.
+      Filters: any selected value within a row matches; rows combine (format AND region AND tags).
+      Region is inferred from the location text.
       Source: <a href="https://github.com/jomimc/MusicScienceMeetings">github.com/jomimc/MusicScienceMeetings</a></p>
   </footer>
 

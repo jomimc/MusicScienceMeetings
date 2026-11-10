@@ -9,19 +9,19 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 | Dates | Meeting | Location | Next deadline |
 |---|---|---|---|
 | 2026-11-08 – 2026-11-12 | [ISMIR 2026](https://ismir2026.ismir.net) ⚠️ | NYU Abu Dhabi, UAE |  |
-| 2026-11-09 – 2026-11-11 | 60th International Musicological Colloquium Brno ⚠️ |  |  |
-| 2026-11-11 | [Celebrating the legacy of the late Arnold Whittall (1935-2026)](https://societymusictheory.org/events/celebrating-legacy-late-arnold-whittall-1935-2026-2026) | King's College London (livestreamed) |  |
+| 2026-11-09 – 2026-11-11 | [60th International Musicological Colloquium Brno](https://janacek-brno.cz/en/aktualita-kolokvium/) ⚠️ | Brno, Czech Republic |  |
+| 2026-11-11 | [Celebrating the legacy of the late Arnold Whittall (1935-2026)](https://societymusictheory.org/events/celebrating-legacy-late-arnold-whittall-1935-2026-2026) | King's College London |  |
 | 2026-11-14 – 2026-11-20 | [2026 AMS Annual Meeting - Online](https://www.amsmusicology.org/calendar/2026-ams-annual-meeting-online/) | Online |  |
 | 2026-11-16 – 2026-11-18 | [IMS Study Group: Comparative Perspectives on Genetic Criticism in Music](https://www.musicology.org/events/comparative-perspectives-on-genetic-criticism-in-music/) | Rome (DHI Rome) |  |
-| 2026-11-18 | 26th International Conference "Principles of Music Composing: Interaction between Technologies and Conventions" |  |  |
+| 2026-11-18 – 2026-11-20 | [26th International Conference "Principles of Music Composing: Interaction between Technologies and Conventions"](https://societymusictheory.org/events/26th-international-conference-principles-music-composing-interaction-between-technologies) | Vilnius, Lithuania |  |
 | 2026-11-19 | [Auditory Perception, Cognition and Action Meeting](https://apcsociety.org/) | San Diego, CA |  |
-| 2026-11-20 | [JAM 2026 - Articulating Orality and Notation in Music](https://societymusictheory.org/events/jam-2026-articulating-orality-and-notation-music-2026) | Bordeaux, France |  |
+| 2026-11-20 | [JAM 2026 – Articulating Orality and Notation in Music (Journées d'Analyse Musicale)](https://societymusictheory.org/events/jam-2026-articulating-orality-and-notation-music-2026) | Bordeaux, France |  |
 | 2026-11-21 | [AMS/SMT/SEM After Dark XI](https://societymusictheory.org/events/ams-smt-sem-after-dark-xi-2026) |  |  |
 | 2026-11-28 | [ICTMD Dialogues 2026: Ethics of Care in Times of Crises](http://ictmd.org/ictmd-dialogues-2026-programme-and-registration) | Online (via Zoom) |  |
 | 2026-12-01 | [John Adams’s On the Transmigration of Souls and 9/11 Memorialization](https://www.amsmusicology.org/calendar/john-adamss-on-the-transmigration-of-souls-and-9-11-memorialization/) | Library of Congress, Washington, DC |  |
 | 2026-12-02 – 2026-12-04 | [Musikgeschichte in Bildern 2.0 (IMS Musical Iconography SG)](https://www.musicology.org/events/musikgeschichte-in-bildern-2-0-2/) | Vienna |  |
-| 2026-12-02 | [SWS Vienna ART 2026 - When Science Meets Art](https://societymusictheory.org/events/sws-vienna-art-2026-when-science-meets-art-2026) | Schönbrunn Palace, Vienna, Austria |  |
-| 2026-12-08 – 2026-12-11 | AMPS/APSCOM 2026 ⚠️ | Surfers Paradise, Australia (Crowne Plaza) |  |
+| 2026-12-02 | [SWS Vienna ART 2026 – When Science Meets Art](https://societymusictheory.org/events/sws-vienna-art-2026-when-science-meets-art-2026) | Schönbrunn Palace, Vienna, Austria |  |
+| 2026-12-08 – 2026-12-11 | [AMPS/APSCOM 2026](https://sempre.org.uk/conferences) ⚠️ | Surfers Paradise, Australia (Crowne Plaza) |  |
 | 2026-12-10 | [Early Music 101: Filling Up Your Toolkit](https://www.amsmusicology.org/calendar/filling-up-toolkit/) | NY |  |
 | 2026-12-11 | [DMRN+21](https://www.qmul.ac.uk/dmrn/dmrn21/) ⚠️ | London, King's College London (Strand) |  |
 | 2026-12-12 | [2026 Music Leadership Forum](https://www.amsmusicology.org/calendar/2026-music-leadership-forum/) | New York University, 20 Cooper Square, Floor 3, New York, NY, 10003, United States |  |
@@ -31,20 +31,20 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 | 2027-01-14 – 2027-01-20 | [49th ICTMD World Conference](https://ictmd.org/ictmd2027) | Universidad Alberto Hurtado, Santiago, Chile |  |
 | 2027-01-21 | [Technology and Agency in Global Music History (IMS Global History of Music SG study day)](https://www.musicology.org/events/technology-and-agency/) | online |  |
 | 2027-02-19 | [2027 Indiana University 33rd Annual Symposium of Research in Music](https://societymusictheory.org/events/2027-indiana-university-33rd-annual-symposium-research-music-2027) | Bloomington, IN | 2026-11-22 (deadline) |
-| 2027-02-19 – 2027-02-20 | [Music Theory Society of the Mid-Atlantic 25th annual meeting](https://societymusictheory.org/events/music-theory-society-mid-atlantic-2027) | Virginia Tech, Blacksburg, VA |  |
-| 2027-02-20 | [14th Annual GAMuT Student Conference](https://societymusictheory.org/events/call-papers-14th-annual-gamut-student-conference-2027) | University of North Texas - University Union Building | 2026-11-11 (deadline) |
+| 2027-02-19 – 2027-02-20 | [Music Theory Society of the Mid-Atlantic (25th annual meeting)](https://societymusictheory.org/events/music-theory-society-mid-atlantic-2027) | Virginia Tech, Blacksburg, VA |  |
+| 2027-02-20 | [Call for Papers - 14th Annual GAMuT Student Conference](https://societymusictheory.org/events/call-papers-14th-annual-gamut-student-conference-2027) | University of North Texas - University Union Building | 2026-11-11 (deadline) |
 | 2027-02-25 | [Mind, Music, and Body. A cross-disciplinary approach to the musical mind.](https://www.depts.ttu.edu/pragmaticism/about/docs/2026-02-13_CFP-Music-APA-2027.pdf) | Denver, Colorado |  |
-| 2027-03-04 – 2027-03-06 | [Society for Christian Scholarship in Music 2027 annual meeting](https://societymusictheory.org/events/society-christian-scholarship-music-2027) | Yale Institute of Sacred Music in New Haven, CT |  |
+| 2027-03-04 – 2027-03-06 | [Society for Christian Scholarship in Music (2027 annual meeting)](https://societymusictheory.org/events/society-christian-scholarship-music-2027) | Yale Institute of Sacred Music in New Haven, CT |  |
 | 2027-03-05 – 2027-03-07 | [At Play: Performance, Analysis, and Artistic Research](https://www.colorado.edu/music/At-play) | University of Colorado Boulder |  |
 | 2027-03-05 – 2027-03-07 | [IMSEA2027 (9th IMS East Asia regional meeting)](https://www.musicology.org/events/imsea2027/) | Fukuoka, Kyushu University |  |
-| 2027-03-06 | [FSU MTS Forum 2027 (44th annual Music Theory Forum)](https://societymusictheory.org/events/fsu-mts-forum-2027) | Florida State University College of Music, Tallahassee, Florida | 2026-12-01 (deadline) |
+| 2027-03-06 | [FSU MTS Forum (44th annual Music Theory Forum)](https://societymusictheory.org/events/fsu-mts-forum-2027) | Florida State University College of Music, Tallahassee, Florida | 2026-12-01 (deadline) |
 | 2027-03-13 – 2027-03-14 | [North American Conference on Video Game Music 2027](https://societymusictheory.org/events/north-american-conference-video-game-music-2027-2027) | University of Central Florida; Orlando, Florida |  |
 | 2027-03-19 | [Joint Conference of the South Central Society for Music Theory and Music Theory Southeast 2027](https://societymusictheory.org/events/joint-conference-south-central-society-music-theory-and-music-theory-southeast-2027-2027) | Georgia State University (Atlanta, GA) | 2026-12-04 (deadline) |
-| 2027-03-31 | [16th International Conference on Artificial Intelligence in Music, Sound, Art and Design (EvoMUSART 2027)](https://societymusictheory.org/events/16th-international-conference-artificial-intelligence-music-sound-art-and-design-evomusart) |  |  |
-| 2027-04-03 | [MTSNYS Call for Presentations 2027 (Music Theory Society of New York State annual meeting)](https://societymusictheory.org/events/mtsnys-call-presentations-2027) | Hofstra University, Hempstead, NY |  |
-| 2027-04-07 – 2027-04-08 | [Workshop in preparation for a special issue (Journal of Musicological Research)](https://societymusictheory.org/events/workshop-preparation-special-issue-journal-musicological-research-2027) | University of Music and Performing Arts Vienna (Austria) |  |
+| 2027-03-31 | [16th International Conference on Artificial Intelligence in Music, Sound, Art and Design (EvoMUSART 2027)](https://societymusictheory.org/events/16th-international-conference-artificial-intelligence-music-sound-art-and-design-evomusart) | Mainz, Germany |  |
+| 2027-04-03 | [Music Theory Society of New York State annual meeting 2027 (Call for Presentations)](https://societymusictheory.org/events/music-theory-society-new-york-state-annual-meeting-2027) | Hofstra University, Hempstead, NY |  |
+| 2027-04-07 – 2027-04-08 | [Workshop in preparation for a special issue (Journal of Musicological Research): International Music Competitions: Intersections of Art, Society, and Politics](https://societymusictheory.org/events/workshop-preparation-special-issue-journal-musicological-research-2027) | University of Music and Performing Arts Vienna (Austria) |  |
 | 2027-04-10 – 2027-04-11 | [AAWM Special Topics Symposium: Colouring Global Voices - Vocal Timbre in World Music Traditions](https://conferences.iftawm.org/) ⚠️ |  | 2026-12-15 (abstract) |
-| 2027-04-15 – 2027-04-16 | SEMPRE Spring Conference 2027 ⚠️ | King's College London + online |  |
+| 2027-04-15 – 2027-04-16 | [SEMPRE Spring Conference 2027](https://sempre.org.uk/conferences) ⚠️ | King's College London + online |  |
 | 2027-05-05 – 2027-05-06 | [Music and the Extended Mind: A Conference on Musical Intelligence in the 21st Century](https://music.fsu.edu/c21mp/) | Florida State University |  |
 | 2027-06-09 – 2027-06-11 | [Musical Care International Conference (inaugural)](https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference) ⚠️ | Edinburgh + online | 2027-02-26 (early registration) |
 | 2027-06-21 – 2027-06-25 | [Acoustics '27 (joint ASA / EAA meeting)](https://acoustics27.com/) ⚠️ | Brussels, Belgium (SQUARE, Bozar) | 2026-11-16 (call opens) |
@@ -59,13 +59,13 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 
 | Deadline | Type | Meeting |
 |---|---|---|
-| 2026-11-11 | deadline — Deadline: Wednesday, November 11, 2026 | [14th Annual GAMuT Student Conference](https://societymusictheory.org/events/call-papers-14th-annual-gamut-student-conference-2027) |
+| 2026-11-11 | deadline — Deadline: Wednesday, November 11, 2026 | [Call for Papers - 14th Annual GAMuT Student Conference](https://societymusictheory.org/events/call-papers-14th-annual-gamut-student-conference-2027) |
 | 2026-11-13 | deadline — Deadline for the final revised paper: November 13, 2026 | [CHR 2027 (7th Computational Humanities Research Conference)](https://2027.computational-humanities-research.org/) |
 | 2026-11-15 | abstract | [ICMPC-ESCOM 2027 (19th ICMPC / 13th ESCOM)](https://www.jyu.fi/en/events/icmpc-escom-2027-conference) |
 | 2026-11-16 | call opens | [Acoustics '27 (joint ASA / EAA meeting)](https://acoustics27.com/) ⚠️ |
 | 2026-11-22 | deadline — Deadline: Sunday, November 22, 2026 | [2027 Indiana University 33rd Annual Symposium of Research in Music](https://societymusictheory.org/events/2027-indiana-university-33rd-annual-symposium-research-music-2027) |
 | 2026-11-30 | registration | [CHR 2027 (7th Computational Humanities Research Conference)](https://2027.computational-humanities-research.org/) |
-| 2026-12-01 | deadline — Deadline: Tuesday, December 1, 2026 | [FSU MTS Forum 2027 (44th annual Music Theory Forum)](https://societymusictheory.org/events/fsu-mts-forum-2027) |
+| 2026-12-01 | deadline — Deadline: Tuesday, December 1, 2026 | [FSU MTS Forum (44th annual Music Theory Forum)](https://societymusictheory.org/events/fsu-mts-forum-2027) |
 | 2026-12-01 | abstract | [IASPM 2027 (24th) "Pop! Goes the World!!!"](https://www.iaspm.net/iaspm-international-conference/) ⚠️ |
 | 2026-12-04 | deadline — Deadline: Friday, December 4, 2026 | [Joint Conference of the South Central Society for Music Theory and Music Theory Southeast 2027](https://societymusictheory.org/events/joint-conference-south-central-society-music-theory-and-music-theory-southeast-2027-2027) |
 | 2026-12-14 | call opens | [SMT 2027 Annual Meeting (50th)](https://societymusictheory.org/meetings/smt-2027/cfp) |
@@ -86,39 +86,39 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 ## Announced, dates not yet published
 
 - [ISPS 2027](https://performancescience.org/conference/isps-2027/) ⚠️ — Rio de Janeiro, Brazil (Dates not yet published.)
-- Music Encoding Conference 2027 ⚠️ (CFP posted on MEI-L; details not extracted.)
-- NIME 2027 ⚠️ — Paris, France (De Vinci Higher Education) (Dates and CFP not yet published.)
-- RPPW 21 ⚠️ — Hamilton, Canada (McMaster University) (Year unclear on site (2027 or 2028).)
+- [Music Encoding Conference 2027](https://lists.uni-paderborn.de/pipermail/mei-l/2026/date.html) ⚠️ (CFP posted on MEI-L; details not extracted.)
+- [NIME 2027](https://forum.nime.org/t/announcing-nime-2027/1099) ⚠️ — Paris, France (De Vinci Higher Education) (Dates and CFP not yet published.)
+- [RPPW 21](https://www.rppw.org/) ⚠️ — Hamilton, Canada (McMaster University) (Year unclear on site (2027 or 2028).)
 
 ## Past editions
 
 <details><summary>Show</summary>
 
-- 2026-11-05 – 2026-11-08 — SEM 71st Annual Meeting ⚠️, Bloomington, IN (Indiana University)
+- 2026-11-05 – 2026-11-08 — [SEM 71st Annual Meeting](https://cdn.ymaws.com/www.ethnomusicology.org/resource/resmgr/2026_annual_meeting/sem_2026_program_final_20261.pdf) ⚠️, Bloomington, IN (Indiana University)
 - 2026-11-05 – 2026-11-07 — [SMC 2026 (23rd Sound and Music Computing Conference)](https://smc26.mbz.hr/) ⚠️, Zagreb, Croatia (with Music Biennale Zagreb)
 - 2026-11-05 – 2026-11-08 — [SMT 2026 Annual Meeting (49th)](https://societymusictheory.org/meetings/smt-2026), Milwaukee, WI (Hyatt Regency)
-- 2026-10-23 – 2026-10-25 — 29th International Pedagogical Forum of Performing Arts, Belgrade
+- 2026-10-23 – 2026-10-25 — [29th International Pedagogical Forum of Performing Arts](https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/), Belgrade
 - 2026-10-14 – 2026-10-17 — [PAM-IE Ljubljana 2026](https://www.pam-ie2026.com/), Ljubljana, Slovenia
-- 2026-10-13 – 2026-10-16 — CIM 2026 (XXV Colloquium on Music Informatics) ⚠️, L'Aquila, Italy
+- 2026-10-13 – 2026-10-16 — [CIM 2026 (XXV Colloquium on Music Informatics)](https://musel.consaq.it/en/cim-2026-xxv-colloquium-on-music-informatics/) ⚠️, L'Aquila, Italy
 - 2026-10-02 – 2026-10-04 — [16th Music Theory and Analysis conference: The Polyphony of Music Theory](https://polyphonyofmusictheory2026.weebly.com/), Belgrade
 - 2026-09-21 – 2026-09-23 — [ICCCM 2026 (4th)](https://digital.musicology.org/icccm-2026/), Würzburg, Germany (JMU, Centre for Philology and Digitality)
-- 2026-09-16 – 2026-09-18 — AIMC'26 ⚠️, Berlin
+- 2026-09-16 – 2026-09-18 — [AIMC'26](https://groups.google.com/g/musicalmetacreation) ⚠️, Berlin
 - 2026-09-07 – 2026-09-10 — [EuroMAC 11](https://euromac11.sciencesconf.org/) ⚠️, ESMUC Barcelona
 - 2026-09-01 – 2026-09-04 — [DAFx26](https://dafx26.mit.edu/) ⚠️, MIT, Cambridge MA
-- 2026-08-29 – 2026-09-01 — RMA-SMI-EADH 2026 joint conference ⚠️, Belfast
-- 2026-07-28 – 2026-07-31 — ICAD 2026 ⚠️, Bielefeld / Barcelona / Troy NY (distributed)
+- 2026-08-29 – 2026-09-01 — [RMA-SMI-EADH 2026 joint conference](https://www.rma.ac.uk/) ⚠️, Belfast
+- 2026-07-28 – 2026-07-31 — [ICAD 2026](https://icad.org/) ⚠️, Bielefeld / Barcelona / Troy NY (distributed)
 - 2026-07-22 – 2026-07-24 — [SysMus26](https://musicscience.net/events/sysmus26/), Durham University, UK
-- 2026-07-13 – 2026-07-16 — SMA 2026 ⚠️, Dublin (TCD and RIAM)
-- 2026-07-02 — 13th DLfM ⚠️, Thessaloniki (IAML satellite)
-- 2026-07-02 – 2026-07-04 — 4th International Conference on Timbre ⚠️, Montréal
-- 2026-06-29 – 2026-07-03 — ICCC'26 ⚠️, Coimbra
+- 2026-07-13 – 2026-07-16 — [SMA 2026](https://www.sma.ac.uk/) ⚠️, Dublin (TCD and RIAM)
+- 2026-07-02 — [13th DLfM](https://dlfm.web.ox.ac.uk/2026-cfp) ⚠️, Thessaloniki (IAML satellite)
+- 2026-07-02 – 2026-07-04 — [4th International Conference on Timbre](https://www.cirmmt.org/en/events/special/2-jul-2026-timbre-conference) ⚠️, Montréal
+- 2026-06-29 – 2026-07-03 — [ICCC'26](https://www.computationalcreativity.net/) ⚠️, Coimbra
 - 2026-06-23 – 2026-06-26 — [MCM 2026](https://sites.google.com/bard.edu/mcm2026) ⚠️, Bard College, NY
-- 2026-05-27 – 2026-05-30 — ENCAM 5 ⚠️, Sergipe, Brazil
-- 2026-05-26 – 2026-05-29 — Music Encoding Conference 2026 ⚠️, Tokyo University of Science
-- 2026-05-21 – 2026-05-24 — TENOR 2026 ⚠️, mdw Vienna
-- 2026-05-05 – 2026-05-08 — IAEA 2026 XXIX Congress "Future Follows Past" ⚠️, Jena, Germany (Volkshaus)
+- 2026-05-27 – 2026-05-30 — [ENCAM 5](https://www.musicperception.org/events) ⚠️, Sergipe, Brazil
+- 2026-05-26 – 2026-05-29 — [Music Encoding Conference 2026](https://music-encoding.org/conference/2026/call/) ⚠️, Tokyo University of Science
+- 2026-05-21 – 2026-05-24 — [TENOR 2026](https://www.tenor-conference.org/) ⚠️, mdw Vienna
+- 2026-05-05 – 2026-05-08 — [IAEA 2026 XXIX Congress "Future Follows Past"](https://web.archive.org/web/20260616143541/https://iaea-aesthetics.org/) ⚠️, Jena, Germany (Volkshaus)
 - 2026-04-07 – 2026-04-10 — [EVOLANG XVI](https://evolang2026.org/) ⚠️, Plovdiv, Bulgaria
-- TBA — ICMC 2026 ⚠️, Hamburg
+- TBA — [ICMC 2026](https://www.computermusic.org/) ⚠️, Hamburg
 - TBA — [SMPC 2026](https://www.musicperception.org/s/SMPC_2026_Program_Abstract_Book_5_v5.pdf), Evanston, IL
 
 </details>

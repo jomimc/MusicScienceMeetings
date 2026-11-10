@@ -344,6 +344,8 @@
   type: conference
   start: '2026-11-09'
   end: '2026-11-11'
+  location: Brno, Czech Republic
+  url: https://janacek-brno.cz/en/aktualita-kolokvium/
   status: ongoing
   verified: false
   source: https://janacek-brno.cz/en/aktualita-kolokvium/
@@ -355,7 +357,8 @@
   type: conference
   start: '2026-11-11'
   end: '2026-11-11'
-  location: King's College London (livestreamed)
+  location: King's College London
+  format: hybrid
   url: https://societymusictheory.org/events/celebrating-legacy-late-arnold-whittall-1935-2026-2026
   deadlines:
   - type: deadline
@@ -403,6 +406,9 @@
   name: '26th International Conference "Principles of Music Composing: Interaction between Technologies and Conventions"'
   type: conference
   start: '2026-11-18'
+  end: '2026-11-20'
+  location: Vilnius, Lithuania
+  url: https://societymusictheory.org/events/26th-international-conference-principles-music-composing-interaction-between-technologies
   deadlines:
   - type: deadline
     date: '2026-09-12'
@@ -431,7 +437,7 @@
 - id: jam-2026-articulating-orality-and-notati
   series:
   - smt-events
-  name: JAM 2026 - Articulating Orality and Notation in Music
+  name: JAM 2026 – Articulating Orality and Notation in Music (Journées d'Analyse Musicale)
   type: conference
   start: '2026-11-20'
   location: Bordeaux, France
@@ -440,8 +446,9 @@
   - type: deadline
     date: '2026-06-01'
     note: 'Deadline: Monday, June 1, 2026'
-  - type: paper
+  - type: other
     date: '2026-06-15'
+    note: Call for papers extended until June 15, 2026
   status: upcoming
   verified: true
   source: https://societymusictheory.org/events
@@ -513,7 +520,7 @@
 - id: sws-vienna-art-2026-when-science-meets-a
   series:
   - smt-events
-  name: SWS Vienna ART 2026 - When Science Meets Art
+  name: SWS Vienna ART 2026 – When Science Meets Art
   type: conference
   start: '2026-12-02'
   location: Schönbrunn Palace, Vienna, Austria
@@ -708,7 +715,7 @@
 - id: music-theory-society-of-the-mid-atlantic-2027
   series:
   - smt-events
-  name: Music Theory Society of the Mid-Atlantic 25th annual meeting
+  name: Music Theory Society of the Mid-Atlantic (25th annual meeting)
   type: conference
   start: '2027-02-19'
   end: '2027-02-20'
@@ -724,10 +731,10 @@
   checked: '2026-11-10'
   tags:
   - theory
-- id: 14th-annual-gamut-student-conference-2027
+- id: call-for-papers-14th-annual-gamut-studen-2027
   series:
   - smt-events
-  name: 14th Annual GAMuT Student Conference
+  name: Call for Papers - 14th Annual GAMuT Student Conference
   type: conference
   start: '2027-02-20'
   location: University of North Texas - University Union Building
@@ -765,7 +772,7 @@
 - id: society-for-christian-scholarship-in-mus-2027
   series:
   - smt-events
-  name: Society for Christian Scholarship in Music 2027 annual meeting
+  name: Society for Christian Scholarship in Music (2027 annual meeting)
   type: conference
   start: '2027-03-04'
   end: '2027-03-06'
@@ -815,10 +822,10 @@
   source: https://www.musicology.org/events/?ical=1
   checked: '2026-11-10'
   notes: Dates from IMS iCal; full name and location from IMS events page (survey agent).
-- id: fsu-mts-forum-2027-44th-annual-music-the
+- id: fsu-mts-forum-44th-annual-music-theory-f-2027
   series:
   - smt-events
-  name: FSU MTS Forum 2027 (44th annual Music Theory Forum)
+  name: FSU MTS Forum (44th annual Music Theory Forum)
   type: conference
   start: '2027-03-06'
   location: Florida State University College of Music, Tallahassee, Florida
@@ -880,6 +887,7 @@
   name: 16th International Conference on Artificial Intelligence in Music, Sound, Art and Design (EvoMUSART 2027)
   type: conference
   start: '2027-03-31'
+  location: Mainz, Germany
   url: https://societymusictheory.org/events/16th-international-conference-artificial-intelligence-music-sound-art-and-design-evomusart
   deadlines:
   - type: deadline
@@ -892,14 +900,14 @@
   tags:
   - computational
   - technology
-- id: mtsnys-call-for-presentations-2027-music
+- id: music-theory-society-of-new-york-state-a-2027
   series:
   - smt-events
-  name: MTSNYS Call for Presentations 2027 (Music Theory Society of New York State annual meeting)
+  name: Music Theory Society of New York State annual meeting 2027 (Call for Presentations)
   type: conference
   start: '2027-04-03'
   location: Hofstra University, Hempstead, NY
-  url: https://societymusictheory.org/events/mtsnys-call-presentations-2027
+  url: https://societymusictheory.org/events/music-theory-society-new-york-state-annual-meeting-2027
   deadlines:
   - type: deadline
     date: '2026-10-15'
@@ -913,7 +921,8 @@
 - id: workshop-in-preparation-for-a-special-is-2027
   series:
   - smt-events
-  name: Workshop in preparation for a special issue (Journal of Musicological Research)
+  name: 'Workshop in preparation for a special issue (Journal of Musicological Research): International Music Competitions:
+    Intersections of Art, Society, and Politics'
   type: conference
   start: '2027-04-07'
   end: '2027-04-08'

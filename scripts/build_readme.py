@@ -2,6 +2,7 @@
 
 Usage: python3 scripts/build_readme.py [TODAY as YYYY-MM-DD]
 """
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -24,6 +25,13 @@ def fmt_dates(e):
 def link(text, url):
     text = text.replace("|", "/")
     return f"[{text}]({url})" if url else text
+
+
+for e in events:  # same link rule as the site: event url, else first URL in source
+    if not e.get("url"):
+        m = re.search(r"https?://\S+", e.get("source") or "")
+        if m:
+            e["url"] = m.group(0)
 
 
 def next_deadline(e):

@@ -9,7 +9,10 @@ window.EVENTS = [
   "start": "2026-04-07",
   "end": "2026-04-10",
   "location": "Plovdiv, Bulgaria",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://evolang2026.org/",
   "deadlines": [],
   "status": "past",
@@ -27,8 +30,11 @@ window.EVENTS = [
   "start": "2026-05-05",
   "end": "2026-05-08",
   "location": "Jena, Germany (Volkshaus)",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://web.archive.org/web/20260616143541/https://iaea-aesthetics.org/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -46,8 +52,11 @@ window.EVENTS = [
   "start": "2026-05-21",
   "end": "2026-05-24",
   "location": "mdw Vienna",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.tenor-conference.org/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -65,8 +74,11 @@ window.EVENTS = [
   "start": "2026-05-26",
   "end": "2026-05-29",
   "location": "Tokyo University of Science",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Asia"
+  ],
+  "url": "https://music-encoding.org/conference/2026/call/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -85,13 +97,15 @@ window.EVENTS = [
   "end": "2026-05-30",
   "location": "Sergipe, Brazil",
   "format": "hybrid",
-  "url": null,
+  "regions": [
+   "Latin America"
+  ],
+  "url": "https://www.musicperception.org/events",
   "deadlines": [],
   "status": "past",
   "verified": false,
   "tags": [
-   "cognition",
-   "hybrid"
+   "cognition"
   ]
  },
  {
@@ -103,7 +117,10 @@ window.EVENTS = [
   "start": "2026-06-23",
   "end": "2026-06-26",
   "location": "Bard College, NY",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://sites.google.com/bard.edu/mcm2026",
   "deadlines": [],
   "status": "past",
@@ -122,8 +139,11 @@ window.EVENTS = [
   "start": "2026-06-29",
   "end": "2026-07-03",
   "location": "Coimbra",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.computationalcreativity.net/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -140,8 +160,11 @@ window.EVENTS = [
   "start": "2026-07-02",
   "end": "2026-07-02",
   "location": "Thessaloniki (IAML satellite)",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://dlfm.web.ox.ac.uk/2026-cfp",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -160,8 +183,11 @@ window.EVENTS = [
   "start": "2026-07-02",
   "end": "2026-07-04",
   "location": "Montréal",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
+  "url": "https://www.cirmmt.org/en/events/special/2-jul-2026-timbre-conference",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -179,8 +205,11 @@ window.EVENTS = [
   "start": "2026-07-13",
   "end": "2026-07-16",
   "location": "Dublin (TCD and RIAM)",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.sma.ac.uk/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -197,7 +226,10 @@ window.EVENTS = [
   "start": "2026-07-22",
   "end": "2026-07-24",
   "location": "Durham University, UK",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://musicscience.net/events/sysmus26/",
   "deadlines": [
    {
@@ -225,8 +257,12 @@ window.EVENTS = [
   "start": "2026-07-28",
   "end": "2026-07-31",
   "location": "Bielefeld / Barcelona / Troy NY (distributed)",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "North America",
+   "Europe"
+  ],
+  "url": "https://icad.org/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -244,8 +280,11 @@ window.EVENTS = [
   "start": "2026-08-29",
   "end": "2026-09-01",
   "location": "Belfast",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.rma.ac.uk/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -262,7 +301,10 @@ window.EVENTS = [
   "start": "2026-09-01",
   "end": "2026-09-04",
   "location": "MIT, Cambridge MA",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://dafx26.mit.edu/",
   "deadlines": [],
   "status": "past",
@@ -280,7 +322,10 @@ window.EVENTS = [
   "start": "2026-09-07",
   "end": "2026-09-10",
   "location": "ESMUC Barcelona",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://euromac11.sciencesconf.org/",
   "deadlines": [],
   "status": "past",
@@ -298,8 +343,11 @@ window.EVENTS = [
   "start": "2026-09-16",
   "end": "2026-09-18",
   "location": "Berlin",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://groups.google.com/g/musicalmetacreation",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -317,7 +365,10 @@ window.EVENTS = [
   "start": "2026-09-21",
   "end": "2026-09-23",
   "location": "Würzburg, Germany (JMU, Centre for Philology and Digitality)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://digital.musicology.org/icccm-2026/",
   "deadlines": [],
   "status": "past",
@@ -336,7 +387,10 @@ window.EVENTS = [
   "start": "2026-10-02",
   "end": "2026-10-04",
   "location": "Belgrade",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://polyphonyofmusictheory2026.weebly.com/",
   "deadlines": [],
   "status": "past",
@@ -356,8 +410,11 @@ window.EVENTS = [
   "start": "2026-10-13",
   "end": "2026-10-16",
   "location": "L'Aquila, Italy",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://musel.consaq.it/en/cim-2026-xxv-colloquium-on-music-informatics/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -376,13 +433,15 @@ window.EVENTS = [
   "end": "2026-10-17",
   "location": "Ljubljana, Slovenia",
   "format": "hybrid",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://www.pam-ie2026.com/",
   "deadlines": [],
   "status": "past",
   "verified": true,
   "tags": [
-   "cognition",
-   "hybrid"
+   "cognition"
   ]
  },
  {
@@ -394,8 +453,11 @@ window.EVENTS = [
   "start": "2026-10-23",
   "end": "2026-10-25",
   "location": "Belgrade",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/",
   "deadlines": [],
   "status": "past",
   "verified": true,
@@ -415,13 +477,15 @@ window.EVENTS = [
   "end": "2026-11-08",
   "location": "Bloomington, IN (Indiana University)",
   "format": "hybrid",
-  "url": null,
+  "regions": [
+   "North America"
+  ],
+  "url": "https://cdn.ymaws.com/www.ethnomusicology.org/resource/resmgr/2026_annual_meeting/sem_2026_program_final_20261.pdf",
   "deadlines": [],
   "status": "past",
   "verified": false,
   "tags": [
-   "ethnomusicology",
-   "hybrid"
+   "ethnomusicology"
   ]
  },
  {
@@ -433,7 +497,10 @@ window.EVENTS = [
   "start": "2026-11-05",
   "end": "2026-11-07",
   "location": "Zagreb, Croatia (with Music Biennale Zagreb)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://smc26.mbz.hr/",
   "deadlines": [],
   "status": "past",
@@ -453,7 +520,10 @@ window.EVENTS = [
   "start": "2026-11-05",
   "end": "2026-11-08",
   "location": "Milwaukee, WI (Hyatt Regency)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/meetings/smt-2026",
   "deadlines": [],
   "status": "past",
@@ -471,7 +541,10 @@ window.EVENTS = [
   "start": "2026-11-08",
   "end": "2026-11-12",
   "location": "NYU Abu Dhabi, UAE",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Middle East & Africa"
+  ],
   "url": "https://ismir2026.ismir.net",
   "deadlines": [],
   "status": "ongoing",
@@ -489,9 +562,12 @@ window.EVENTS = [
   ],
   "start": "2026-11-09",
   "end": "2026-11-11",
-  "location": null,
-  "format": null,
-  "url": null,
+  "location": "Brno, Czech Republic",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://janacek-brno.cz/en/aktualita-kolokvium/",
   "deadlines": [],
   "status": "ongoing",
   "verified": false,
@@ -508,8 +584,11 @@ window.EVENTS = [
   ],
   "start": "2026-11-11",
   "end": "2026-11-11",
-  "location": "King's College London (livestreamed)",
-  "format": null,
+  "location": "King's College London",
+  "format": "hybrid",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://societymusictheory.org/events/celebrating-legacy-late-arnold-whittall-1935-2026-2026",
   "deadlines": [
    {
@@ -535,13 +614,15 @@ window.EVENTS = [
   "end": "2026-11-20",
   "location": "Online",
   "format": "online",
+  "regions": [
+   "Online only"
+  ],
   "url": "https://www.amsmusicology.org/calendar/2026-ams-annual-meeting-online/",
   "deadlines": [],
   "status": "upcoming",
   "verified": true,
   "tags": [
-   "musicology",
-   "online"
+   "musicology"
   ]
  },
  {
@@ -553,7 +634,10 @@ window.EVENTS = [
   "start": "2026-11-16",
   "end": "2026-11-18",
   "location": "Rome (DHI Rome)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://www.musicology.org/events/comparative-perspectives-on-genetic-criticism-in-music/",
   "deadlines": [],
   "status": "upcoming",
@@ -569,10 +653,13 @@ window.EVENTS = [
    "SMT events listing (community-submitted)"
   ],
   "start": "2026-11-18",
-  "end": null,
-  "location": null,
-  "format": null,
-  "url": null,
+  "end": "2026-11-20",
+  "location": "Vilnius, Lithuania",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://societymusictheory.org/events/26th-international-conference-principles-music-composing-interaction-between-technologies",
   "deadlines": [
    {
     "type": "deadline",
@@ -597,7 +684,10 @@ window.EVENTS = [
   "start": "2026-11-19",
   "end": "2026-11-19",
   "location": "San Diego, CA",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://apcsociety.org/",
   "deadlines": [],
   "status": "upcoming",
@@ -609,14 +699,17 @@ window.EVENTS = [
  },
  {
   "id": "jam-2026-articulating-orality-and-notati",
-  "name": "JAM 2026 - Articulating Orality and Notation in Music",
+  "name": "JAM 2026 – Articulating Orality and Notation in Music (Journées d'Analyse Musicale)",
   "series": [
    "SMT events listing (community-submitted)"
   ],
   "start": "2026-11-20",
   "end": null,
   "location": "Bordeaux, France",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://societymusictheory.org/events/jam-2026-articulating-orality-and-notation-music-2026",
   "deadlines": [
    {
@@ -625,8 +718,9 @@ window.EVENTS = [
     "note": "Deadline: Monday, June 1, 2026"
    },
    {
-    "type": "paper",
-    "date": "2026-06-15"
+    "type": "other",
+    "date": "2026-06-15",
+    "note": "Call for papers extended until June 15, 2026"
    }
   ],
   "status": "upcoming",
@@ -646,6 +740,9 @@ window.EVENTS = [
   "end": null,
   "location": null,
   "format": "online",
+  "regions": [
+   "Online only"
+  ],
   "url": "https://societymusictheory.org/events/ams-smt-sem-after-dark-xi-2026",
   "deadlines": [
    {
@@ -659,7 +756,6 @@ window.EVENTS = [
   "tags": [
    "ethnomusicology",
    "musicology",
-   "online",
    "theory"
   ]
  },
@@ -673,13 +769,15 @@ window.EVENTS = [
   "end": "2026-11-28",
   "location": "Online (via Zoom)",
   "format": "online",
+  "regions": [
+   "Online only"
+  ],
   "url": "http://ictmd.org/ictmd-dialogues-2026-programme-and-registration",
   "deadlines": [],
   "status": "upcoming",
   "verified": true,
   "tags": [
-   "ethnomusicology",
-   "online"
+   "ethnomusicology"
   ]
  },
  {
@@ -691,7 +789,10 @@ window.EVENTS = [
   "start": "2026-12-01",
   "end": "2026-12-01",
   "location": "Library of Congress, Washington, DC",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://www.amsmusicology.org/calendar/john-adamss-on-the-transmigration-of-souls-and-9-11-memorialization/",
   "deadlines": [],
   "status": "upcoming",
@@ -709,7 +810,10 @@ window.EVENTS = [
   "start": "2026-12-02",
   "end": "2026-12-04",
   "location": "Vienna",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://www.musicology.org/events/musikgeschichte-in-bildern-2-0-2/",
   "deadlines": [],
   "status": "upcoming",
@@ -720,7 +824,7 @@ window.EVENTS = [
  },
  {
   "id": "sws-vienna-art-2026-when-science-meets-a",
-  "name": "SWS Vienna ART 2026 - When Science Meets Art",
+  "name": "SWS Vienna ART 2026 – When Science Meets Art",
   "series": [
    "SMT events listing (community-submitted)"
   ],
@@ -728,6 +832,9 @@ window.EVENTS = [
   "end": null,
   "location": "Schönbrunn Palace, Vienna, Austria",
   "format": "hybrid",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://societymusictheory.org/events/sws-vienna-art-2026-when-science-meets-art-2026",
   "deadlines": [
    {
@@ -739,8 +846,7 @@ window.EVENTS = [
   "status": "upcoming",
   "verified": true,
   "tags": [
-   "aesthetics",
-   "hybrid"
+   "aesthetics"
   ]
  },
  {
@@ -752,8 +858,11 @@ window.EVENTS = [
   "start": "2026-12-08",
   "end": "2026-12-11",
   "location": "Surfers Paradise, Australia (Crowne Plaza)",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Oceania"
+  ],
+  "url": "https://sempre.org.uk/conferences",
   "deadlines": [],
   "status": "upcoming",
   "verified": false,
@@ -770,7 +879,10 @@ window.EVENTS = [
   "start": "2026-12-10",
   "end": "2026-12-10",
   "location": "NY",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://www.amsmusicology.org/calendar/filling-up-toolkit/",
   "deadlines": [],
   "status": "upcoming",
@@ -789,6 +901,9 @@ window.EVENTS = [
   "end": "2026-12-11",
   "location": "London, King's College London (Strand)",
   "format": "in-person",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://www.qmul.ac.uk/dmrn/dmrn21/",
   "deadlines": [],
   "status": "upcoming",
@@ -807,7 +922,10 @@ window.EVENTS = [
   "start": "2026-12-12",
   "end": "2026-12-12",
   "location": "New York University, 20 Cooper Square, Floor 3, New York, NY, 10003, United States",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://www.amsmusicology.org/calendar/2026-music-leadership-forum/",
   "deadlines": [],
   "status": "upcoming",
@@ -825,7 +943,10 @@ window.EVENTS = [
   "start": "2026-12-15",
   "end": "2026-12-17",
   "location": "Baltimore, MD",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": null,
   "deadlines": [],
   "status": "upcoming",
@@ -845,6 +966,9 @@ window.EVENTS = [
   "end": "2027-01-08",
   "location": "Manchester, UK (University of Manchester)",
   "format": "in-person",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://2027.computational-humanities-research.org/",
   "deadlines": [
    {
@@ -886,7 +1010,10 @@ window.EVENTS = [
   "start": "2027-01-06",
   "end": "2027-01-08",
   "location": "Oxford",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": null,
   "deadlines": [],
   "status": "upcoming",
@@ -904,7 +1031,10 @@ window.EVENTS = [
   "start": "2027-01-14",
   "end": "2027-01-20",
   "location": "Universidad Alberto Hurtado, Santiago, Chile",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Latin America"
+  ],
   "url": "https://ictmd.org/ictmd2027",
   "deadlines": [
    {
@@ -947,13 +1077,15 @@ window.EVENTS = [
   "end": "2027-01-21",
   "location": "online",
   "format": "online",
+  "regions": [
+   "Online only"
+  ],
   "url": "https://www.musicology.org/events/technology-and-agency/",
   "deadlines": [],
   "status": "upcoming",
   "verified": true,
   "tags": [
-   "musicology",
-   "online"
+   "musicology"
   ]
  },
  {
@@ -965,7 +1097,10 @@ window.EVENTS = [
   "start": "2027-02-19",
   "end": null,
   "location": "Bloomington, IN",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/events/2027-indiana-university-33rd-annual-symposium-research-music-2027",
   "deadlines": [
    {
@@ -983,14 +1118,17 @@ window.EVENTS = [
  },
  {
   "id": "music-theory-society-of-the-mid-atlantic-2027",
-  "name": "Music Theory Society of the Mid-Atlantic 25th annual meeting",
+  "name": "Music Theory Society of the Mid-Atlantic (25th annual meeting)",
   "series": [
    "SMT events listing (community-submitted)"
   ],
   "start": "2027-02-19",
   "end": "2027-02-20",
   "location": "Virginia Tech, Blacksburg, VA",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/events/music-theory-society-mid-atlantic-2027",
   "deadlines": [
    {
@@ -1006,15 +1144,18 @@ window.EVENTS = [
   ]
  },
  {
-  "id": "14th-annual-gamut-student-conference-2027",
-  "name": "14th Annual GAMuT Student Conference",
+  "id": "call-for-papers-14th-annual-gamut-studen-2027",
+  "name": "Call for Papers - 14th Annual GAMuT Student Conference",
   "series": [
    "SMT events listing (community-submitted)"
   ],
   "start": "2027-02-20",
   "end": null,
   "location": "University of North Texas - University Union Building",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/events/call-papers-14th-annual-gamut-student-conference-2027",
   "deadlines": [
    {
@@ -1039,7 +1180,10 @@ window.EVENTS = [
   "start": "2027-02-25",
   "end": "2027-02-25",
   "location": "Denver, Colorado",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://www.depts.ttu.edu/pragmaticism/about/docs/2026-02-13_CFP-Music-APA-2027.pdf",
   "deadlines": [
    {
@@ -1056,14 +1200,17 @@ window.EVENTS = [
  },
  {
   "id": "society-for-christian-scholarship-in-mus-2027",
-  "name": "Society for Christian Scholarship in Music 2027 annual meeting",
+  "name": "Society for Christian Scholarship in Music (2027 annual meeting)",
   "series": [
    "SMT events listing (community-submitted)"
   ],
   "start": "2027-03-04",
   "end": "2027-03-06",
   "location": "Yale Institute of Sacred Music in New Haven, CT",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/events/society-christian-scholarship-music-2027",
   "deadlines": [
    {
@@ -1088,7 +1235,10 @@ window.EVENTS = [
   "start": "2027-03-05",
   "end": "2027-03-07",
   "location": "University of Colorado Boulder",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://www.colorado.edu/music/At-play",
   "deadlines": [
    {
@@ -1112,7 +1262,10 @@ window.EVENTS = [
   "start": "2027-03-05",
   "end": "2027-03-07",
   "location": "Fukuoka, Kyushu University",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Asia"
+  ],
   "url": "https://www.musicology.org/events/imsea2027/",
   "deadlines": [],
   "status": "upcoming",
@@ -1122,8 +1275,8 @@ window.EVENTS = [
   ]
  },
  {
-  "id": "fsu-mts-forum-2027-44th-annual-music-the",
-  "name": "FSU MTS Forum 2027 (44th annual Music Theory Forum)",
+  "id": "fsu-mts-forum-44th-annual-music-theory-f-2027",
+  "name": "FSU MTS Forum (44th annual Music Theory Forum)",
   "series": [
    "SMT events listing (community-submitted)"
   ],
@@ -1131,6 +1284,9 @@ window.EVENTS = [
   "end": null,
   "location": "Florida State University College of Music, Tallahassee, Florida",
   "format": "in-person",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/events/fsu-mts-forum-2027",
   "deadlines": [
    {
@@ -1155,6 +1311,9 @@ window.EVENTS = [
   "end": "2027-03-14",
   "location": "University of Central Florida; Orlando, Florida",
   "format": "hybrid",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/events/north-american-conference-video-game-music-2027-2027",
   "deadlines": [
    {
@@ -1166,7 +1325,6 @@ window.EVENTS = [
   "status": "upcoming",
   "verified": true,
   "tags": [
-   "hybrid",
    "musicology",
    "popular",
    "theory"
@@ -1181,7 +1339,10 @@ window.EVENTS = [
   "start": "2027-03-19",
   "end": null,
   "location": "Georgia State University (Atlanta, GA)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/events/joint-conference-south-central-society-music-theory-and-music-theory-southeast-2027-2027",
   "deadlines": [
    {
@@ -1204,8 +1365,11 @@ window.EVENTS = [
   ],
   "start": "2027-03-31",
   "end": null,
-  "location": null,
-  "format": null,
+  "location": "Mainz, Germany",
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://societymusictheory.org/events/16th-international-conference-artificial-intelligence-music-sound-art-and-design-evomusart",
   "deadlines": [
    {
@@ -1222,16 +1386,19 @@ window.EVENTS = [
   ]
  },
  {
-  "id": "mtsnys-call-for-presentations-2027-music",
-  "name": "MTSNYS Call for Presentations 2027 (Music Theory Society of New York State annual meeting)",
+  "id": "music-theory-society-of-new-york-state-a-2027",
+  "name": "Music Theory Society of New York State annual meeting 2027 (Call for Presentations)",
   "series": [
    "SMT events listing (community-submitted)"
   ],
   "start": "2027-04-03",
   "end": null,
   "location": "Hofstra University, Hempstead, NY",
-  "format": null,
-  "url": "https://societymusictheory.org/events/mtsnys-call-presentations-2027",
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
+  "url": "https://societymusictheory.org/events/music-theory-society-new-york-state-annual-meeting-2027",
   "deadlines": [
    {
     "type": "deadline",
@@ -1247,14 +1414,17 @@ window.EVENTS = [
  },
  {
   "id": "workshop-in-preparation-for-a-special-is-2027",
-  "name": "Workshop in preparation for a special issue (Journal of Musicological Research)",
+  "name": "Workshop in preparation for a special issue (Journal of Musicological Research): International Music Competitions: Intersections of Art, Society, and Politics",
   "series": [
    "SMT events listing (community-submitted)"
   ],
   "start": "2027-04-07",
   "end": "2027-04-08",
   "location": "University of Music and Performing Arts Vienna (Austria)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://societymusictheory.org/events/workshop-preparation-special-issue-journal-musicological-research-2027",
   "deadlines": [
    {
@@ -1279,6 +1449,9 @@ window.EVENTS = [
   "end": "2027-04-11",
   "location": null,
   "format": "online",
+  "regions": [
+   "Online only"
+  ],
   "url": "https://conferences.iftawm.org/",
   "deadlines": [
    {
@@ -1294,7 +1467,6 @@ window.EVENTS = [
   "verified": false,
   "tags": [
    "ethnomusicology",
-   "online",
    "theory"
   ]
  },
@@ -1308,14 +1480,16 @@ window.EVENTS = [
   "end": "2027-04-16",
   "location": "King's College London + online",
   "format": "hybrid",
-  "url": null,
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://sempre.org.uk/conferences",
   "deadlines": [],
   "status": "upcoming",
   "verified": false,
   "tags": [
    "cognition",
-   "education",
-   "hybrid"
+   "education"
   ]
  },
  {
@@ -1327,7 +1501,10 @@ window.EVENTS = [
   "start": "2027-05-05",
   "end": "2027-05-06",
   "location": "Florida State University",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://music.fsu.edu/c21mp/",
   "deadlines": [
    {
@@ -1353,6 +1530,9 @@ window.EVENTS = [
   "end": "2027-06-11",
   "location": "Edinburgh + online",
   "format": "hybrid",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference",
   "deadlines": [
    {
@@ -1363,8 +1543,7 @@ window.EVENTS = [
   "status": "upcoming",
   "verified": false,
   "tags": [
-   "health",
-   "hybrid"
+   "health"
   ]
  },
  {
@@ -1377,7 +1556,10 @@ window.EVENTS = [
   "start": "2027-06-21",
   "end": "2027-06-25",
   "location": "Brussels, Belgium (SQUARE, Bozar)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://acoustics27.com/",
   "deadlines": [
    {
@@ -1406,7 +1588,10 @@ window.EVENTS = [
   "start": "2027-08-02",
   "end": "2027-08-06",
   "location": "Stavanger, Norway",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://ims2027.musicology.org",
   "deadlines": [
    {
@@ -1431,6 +1616,9 @@ window.EVENTS = [
   "end": "2027-08-20",
   "location": "Helsinki, Finland",
   "format": "hybrid",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://www.jyu.fi/en/events/icmpc-escom-2027-conference",
   "deadlines": [
    {
@@ -1457,8 +1645,7 @@ window.EVENTS = [
   "status": "upcoming",
   "verified": true,
   "tags": [
-   "cognition",
-   "hybrid"
+   "cognition"
   ]
  },
  {
@@ -1470,7 +1657,10 @@ window.EVENTS = [
   "start": "2027-08-24",
   "end": "2027-08-27",
   "location": "Cremona, Italy",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://dafx27.deib.polimi.it/",
   "deadlines": [],
   "status": "upcoming",
@@ -1488,7 +1678,10 @@ window.EVENTS = [
   "start": "2027-09-12",
   "end": "2027-09-16",
   "location": "London, UK (Queen Mary University of London)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
   "url": "https://ismir2027.ismir.net",
   "deadlines": [
    {
@@ -1528,7 +1721,10 @@ window.EVENTS = [
   "start": "2027-11-04",
   "end": "2027-11-07",
   "location": "Baltimore, MD",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://societymusictheory.org/meetings/smt-2027/cfp",
   "deadlines": [
    {
@@ -1555,7 +1751,10 @@ window.EVENTS = [
   "start": "2027-11-29",
   "end": "2027-12-03",
   "location": "Wellington, NZ (Victoria University of Wellington)",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Oceania"
+  ],
   "url": "https://www.iaspm.net/iaspm-international-conference/",
   "deadlines": [
    {
@@ -1583,8 +1782,11 @@ window.EVENTS = [
   "start": null,
   "end": null,
   "location": "Hamburg",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://www.computermusic.org/",
   "deadlines": [],
   "status": "past",
   "verified": false,
@@ -1601,7 +1803,10 @@ window.EVENTS = [
   "start": null,
   "end": null,
   "location": "Rio de Janeiro, Brazil",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "Latin America"
+  ],
   "url": "https://performancescience.org/conference/isps-2027/",
   "deadlines": [],
   "status": "announced",
@@ -1620,8 +1825,11 @@ window.EVENTS = [
   "start": null,
   "end": null,
   "location": null,
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Not stated"
+  ],
+  "url": "https://lists.uni-paderborn.de/pipermail/mei-l/2026/date.html",
   "deadlines": [],
   "status": "announced",
   "verified": false,
@@ -1639,8 +1847,11 @@ window.EVENTS = [
   "start": null,
   "end": null,
   "location": "Paris, France (De Vinci Higher Education)",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "Europe"
+  ],
+  "url": "https://forum.nime.org/t/announcing-nime-2027/1099",
   "deadlines": [],
   "status": "announced",
   "verified": false,
@@ -1657,8 +1868,11 @@ window.EVENTS = [
   "start": null,
   "end": null,
   "location": "Hamilton, Canada (McMaster University)",
-  "format": null,
-  "url": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
+  "url": "https://www.rppw.org/",
   "deadlines": [],
   "status": "announced",
   "verified": false,
@@ -1676,7 +1890,10 @@ window.EVENTS = [
   "start": null,
   "end": null,
   "location": "Evanston, IL",
-  "format": null,
+  "format": "not stated",
+  "regions": [
+   "North America"
+  ],
   "url": "https://www.musicperception.org/s/SMPC_2026_Program_Abstract_Book_5_v5.pdf",
   "deadlines": [],
   "status": "past",

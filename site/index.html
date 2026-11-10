@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Science Meetings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Music Science Meetings</h1>
+    <p class="sub">Conferences and meetings in music science. <span id="generated"></span></p>
+  </header>
+
+  <section class="controls" aria-label="Sort and filter">
+    <div class="row">
+      <span class="label">Sort</span>
+      <div class="seg" role="group" aria-label="Sort order">
+        <button type="button" data-sort="date" class="on">Event date</button>
+        <button type="button" data-sort="deadline">Next deadline</button>
+      </div>
+      <label class="check"><input type="checkbox" id="show-past"> Show past</label>
+    </div>
+    <div class="row">
+      <span class="label">Tags</span>
+      <div id="tags" class="tags"></div>
+      <button type="button" id="clear-tags" class="link" hidden>clear</button>
+    </div>
+  </section>
+
+  <p id="count" class="count"></p>
+  <main id="cards" class="cards"></main>
+
+  <footer>
+    <p>⚠ = found by web search, not yet checked against the official page.
+      Source: <a href="https://github.com/jomimc/MusicScienceMeetings">github.com/jomimc/MusicScienceMeetings</a></p>
+  </footer>
+
+  <script src="events.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

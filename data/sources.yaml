@@ -1,0 +1,633 @@
+# Sources: where to look for meetings, and how to read each one.
+#
+# Fields
+#   id        short unique slug (events refer to it as `series`)
+#   name      full name
+#   kind      conference_series | aggregator | mailing_list | social
+#   topics    any of: cognition, auditory, neuroscience, performance, education,
+#             health, aesthetics, mir, computational, technology, audio,
+#             encoding, dh, theory, musicology, ethnomusicology, popular,
+#             acoustics, language
+#   url       human entry point
+#   method    how the pipeline reads it:
+#               ical             parse iCal feed at `feed` (no LLM)
+#               rss              parse RSS/Atom at `feed` (LLM only on item text)
+#               squarespace_json `url`?format=json (+ LLM on excerpts)
+#               page             fetch `url` -> trimmed text -> LLM extract
+#               page_follow      as page, then follow each event's own link (LLM)
+#               url_pattern      try `url_pattern` for this year and next
+#               list_archive     scrape mailing-list archive index, LLM on CFP posts
+#               bluesky          `feed` (profile RSS) -> LLM on posts
+#               manual           no automation possible; human checks
+#   feed      feed URL (ical / rss / bluesky / list_archive index)
+#   url_pattern  {year} placeholder (url_pattern method)
+#   text      preprocessing variant for page methods: v4 (default) | v6 (list
+#             pages with repeated records; adds '---' separators)
+#   cadence   annual | biennial | triennial | irregular | unknown
+#   status    ok | blocked (bot protection) | dead | stale | unknown
+#   notes     free text
+#   surveyed  date the entry was last checked by hand/agent
+#
+# See docs/source_survey.md, docs/easy_sources.md, docs/discovery.md.
+
+# ---------------------------------------------------------------- original list
+- id: smc
+  name: Sound and Music Computing Conference
+  kind: conference_series
+  topics: [technology, computational, mir]
+  url: https://smcnetwork.org/
+  method: page_follow
+  cadence: annual
+  status: dead
+  notes: smcnetwork.org unreachable since ~Nov 2026 (Wayback copy live 2026-10-19). Use the current edition site (smc26.mbz.hr) until it returns.
+  surveyed: 2026-11-10
+
+- id: smpc
+  name: Society for Music Perception and Cognition (biennial meeting)
+  kind: conference_series
+  topics: [cognition]
+  url: https://www.musicperception.org/pastmeetings
+  method: page
+  cadence: biennial
+  status: ok
+  notes: Even years (2022 Portland, 2024 Banff, 2026 Evanston); next expected 2028. Past-meetings page links programme PDFs.
+  surveyed: 2026-11-10
+
+- id: smpc-events
+  name: SMPC Upcoming Related Events
+  kind: aggregator
+  topics: [cognition]
+  url: https://www.musicperception.org/events
+  method: squarespace_json
+  status: ok
+  notes: JSON gives upcoming/past split and dates (convert with website.timeZone); location/deadlines only in excerpt text.
+  surveyed: 2026-11-10
+
+- id: escom
+  name: European Society for the Cognitive Sciences of Music
+  kind: conference_series
+  topics: [cognition]
+  url: https://www.escomsociety.org/conferences
+  method: page_follow
+  text: v4
+  cadence: triennial
+  status: ok
+  notes: Wix, 1 MB HTML -> ~5k tokens. Upcoming entries may sit after past ones.
+  surveyed: 2026-11-10
+
+- id: icmpc
+  name: International Conference on Music Perception and Cognition
+  kind: conference_series
+  topics: [cognition]
+  url: https://www.escomsociety.org/icmpc
+  method: page_follow
+  cadence: biennial
+  status: ok
+  notes: icmpc.org dead. 2027 edition is joint with ESCOM (jyu.fi page).
+  surveyed: 2026-11-10
+
+- id: ictm
+  name: International Council for Traditions of Music and Dance (ICTMD)
+  kind: conference_series
+  topics: [ethnomusicology]
+  url: https://ictmusic.org/events
+  method: page_follow
+  cadence: biennial
+  status: ok
+  notes: Edition pages on ictmd.org. Also lists Dialogues (online) events.
+  surveyed: 2026-11-10
+
+- id: sysmus
+  name: International Conference of Students of Systematic Musicology
+  kind: conference_series
+  topics: [cognition, computational]
+  url: https://sites.google.com/view/sysmus/sysmus/the-upcoming-sysmus
+  method: page
+  cadence: annual
+  status: ok
+  notes: Google Sites; single "upcoming" page overwritten per edition.
+  surveyed: 2026-11-10
+
+- id: sem
+  name: Society for Ethnomusicology Annual Meeting
+  kind: conference_series
+  topics: [ethnomusicology]
+  url: https://www.ethnomusicology.org/page/Conferences_Home
+  method: manual
+  cadence: annual
+  status: blocked
+  notes: Cloudflare challenge for scripts (fine in a browser). Program PDFs on cdn.ymaws.com are fetchable but edition-specific.
+  surveyed: 2026-11-10
+
+- id: ismir
+  name: International Society for Music Information Retrieval Conference
+  kind: conference_series
+  topics: [mir, computational]
+  url: https://www.ismir.net/conferences/
+  method: url_pattern
+  url_pattern: https://ismir{year}.ismir.net
+  cadence: annual
+  status: ok
+  notes: www.ismir.net returns 406 to scripts; yearly subdomains return 200.
+  surveyed: 2026-11-10
+
+- id: fmu
+  name: Faculty of Music, University of Arts in Belgrade - scientific conferences
+  kind: conference_series
+  topics: [musicology, theory, education]
+  url: https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/
+  method: page
+  cadence: annual
+  status: ok
+  surveyed: 2026-11-10
+
+- id: smt
+  name: Society for Music Theory Annual Meeting
+  kind: conference_series
+  topics: [theory]
+  url: https://societymusictheory.org/
+  method: rss
+  feed: https://societymusictheory.org/rss.xml
+  cadence: annual
+  status: ok
+  notes: Site news feed; items "SMT 20xx Annual Meeting" / "SMT 20xx Call for Proposals" link to meeting pages (then page extract).
+  surveyed: 2026-11-10
+
+- id: smt-events
+  name: SMT events listing (community-submitted)
+  kind: aggregator
+  topics: [theory, musicology]
+  url: https://societymusictheory.org/events
+  method: page
+  text: v6
+  status: ok
+  notes: Mostly third-party CFPs. v4 text gave off-by-one dates; v6 required.
+  surveyed: 2026-11-10
+
+- id: ams
+  name: American Musicological Society
+  kind: conference_series
+  topics: [musicology]
+  url: https://www.amsmusicology.org/events/
+  method: ical
+  feed: https://www.amsmusicology.org/events-calendar/?ical=1
+  cadence: annual
+  status: ok
+  notes: Also events RSS at /events/feed. Feed has no deadlines.
+  surveyed: 2026-11-10
+
+- id: ims
+  name: International Musicological Society
+  kind: conference_series
+  topics: [musicology]
+  url: https://www.musicology.org/events/
+  method: ical
+  feed: https://www.musicology.org/events/?ical=1
+  cadence: irregular
+  status: ok
+  notes: Feed includes past events back to 2024 (filter); titles truncated, LOCATION empty -> LLM on DESCRIPTION. Also lists study-group and affiliated events. RSS alt /events/feed.
+  surveyed: 2026-11-10
+
+- id: asa
+  name: Acoustical Society of America Meetings
+  kind: conference_series
+  topics: [acoustics, auditory]
+  url: https://acousticalsociety.org/asa-meetings/
+  method: manual
+  cadence: biennial
+  status: blocked
+  notes: Cloudflare for scripts. Two meetings/year. 2027 joint meeting has own site acoustics27.com (fetchable).
+  surveyed: 2026-11-10
+
+- id: iaea
+  name: International Association of Empirical Aesthetics Congress
+  kind: conference_series
+  topics: [aesthetics, cognition]
+  url: https://iaea-aesthetics.org/
+  method: manual
+  cadence: biennial
+  status: dead
+  notes: Both iaea-aesthetics.org and science-of-aesthetics.org unreachable (2026-11). See source iaea-bsky.
+  surveyed: 2026-11-10
+
+- id: chr
+  name: Computational Humanities Research Conference
+  kind: conference_series
+  topics: [dh, computational]
+  url: https://computational-humanities-research.org/conference/
+  method: page_follow
+  cadence: annual
+  status: ok
+  notes: Edition site {year}.computational-humanities-research.org; key dates on its /cfp/ page (2 hops).
+  surveyed: 2026-11-10
+
+- id: icccm
+  name: International Conference on Computational and Cognitive Musicology
+  kind: conference_series
+  topics: [computational, cognition]
+  url: https://digital.musicology.org/
+  method: page_follow
+  cadence: annual
+  status: ok
+  notes: IMS Study Group "Digital Musicology". Edition URLs inconsistent (icccm2025, icccm-2026). WP /feed/ useless.
+  surveyed: 2026-11-10
+
+# ---------------------------------------------------------- added 2026-11-10
+- id: pam-ie
+  name: Psychology and Music - Interdisciplinary Encounters
+  kind: conference_series
+  topics: [cognition]
+  url: https://www.escomsociety.org/conferences
+  method: manual
+  cadence: biennial
+  status: ok
+  notes: Found via ESCOM page (covered by escom source).
+  surveyed: 2026-11-10
+
+- id: acoustics27
+  name: Acoustics '27 (joint ASA / European Acoustics Association)
+  kind: conference_series
+  topics: [acoustics, auditory]
+  url: https://acoustics27.com/
+  method: page
+  cadence: irregular
+  status: ok
+  notes: One-off edition site standing in for blocked ASA.
+  surveyed: 2026-11-10
+
+- id: sempre
+  name: SEMPRE conferences (Society for Education, Music and Psychology Research)
+  kind: conference_series
+  topics: [cognition, education]
+  url: https://sempre.org.uk/conferences
+  method: page
+  cadence: annual
+  status: ok
+  notes: Also announces other societies' meetings (e.g. AMPS/APSCOM, Musical Care).
+  surveyed: 2026-11-10
+
+- id: apscom
+  name: Asia-Pacific Society for the Cognitive Sciences of Music (incl. AMPS/APSCOM)
+  kind: conference_series
+  topics: [cognition]
+  url: https://sempre.org.uk/conferences
+  method: manual
+  cadence: unknown
+  status: unknown
+  notes: No own site found; seen via SEMPRE.
+  surveyed: 2026-11-10
+
+- id: rppw
+  name: Rhythm Perception and Production Workshop
+  kind: conference_series
+  topics: [cognition, performance]
+  url: https://www.rppw.org/
+  method: page
+  cadence: biennial
+  status: ok
+  surveyed: 2026-11-10
+
+- id: neuromusic
+  name: The Neurosciences and Music (Fondazione Mariani)
+  kind: conference_series
+  topics: [neuroscience, cognition]
+  url: https://neuromusic.fondazione-mariani.org/
+  method: page
+  cadence: irregular
+  status: ok
+  notes: ~every 2-3 years.
+  surveyed: 2026-11-10
+
+- id: mcm
+  name: Mathematics and Computation in Music
+  kind: conference_series
+  topics: [computational, theory]
+  url: https://sites.google.com/bard.edu/mcm2026
+  method: manual
+  cadence: biennial
+  status: ok
+  notes: Per-edition sites, no stable series URL found. Indico event .ics exists per edition.
+  surveyed: 2026-11-10
+
+- id: aawm
+  name: Analytical Approaches to World Music
+  kind: conference_series
+  topics: [ethnomusicology, theory]
+  url: https://conferences.iftawm.org/
+  method: manual
+  cadence: biennial
+  status: blocked
+  notes: 406 to scripts (readable via WebFetch). Main conference + special-topic symposia.
+  surveyed: 2026-11-10
+
+- id: icmc
+  name: International Computer Music Conference
+  kind: conference_series
+  topics: [technology]
+  url: https://www.computermusic.org/
+  method: page
+  cadence: annual
+  status: ok
+  notes: Site being overhauled (2026).
+  surveyed: 2026-11-10
+
+- id: nime
+  name: New Interfaces for Musical Expression
+  kind: conference_series
+  topics: [technology]
+  url: https://nime.org/
+  method: page
+  cadence: annual
+  status: ok
+  notes: Announcements on forum.nime.org (Discourse). Archives nime.org/web_archive/{year}.
+  surveyed: 2026-11-10
+
+- id: dlfm
+  name: Digital Libraries for Musicology
+  kind: conference_series
+  topics: [dh, mir, encoding]
+  url: https://dlfm.web.ox.ac.uk/
+  method: page
+  cadence: annual
+  status: ok
+  notes: CFP pages /{year}-cfp. See dlfm-bsky.
+  surveyed: 2026-11-10
+
+- id: mec
+  name: Music Encoding Conference
+  kind: conference_series
+  topics: [encoding, dh]
+  url: https://music-encoding.org/
+  method: url_pattern
+  url_pattern: https://music-encoding.org/conference/{year}/call/
+  cadence: annual
+  status: ok
+  notes: Calls also on MEI-L.
+  surveyed: 2026-11-10
+
+- id: isps
+  name: International Symposium on Performance Science
+  kind: conference_series
+  topics: [performance, cognition]
+  url: https://performancescience.org/
+  method: url_pattern
+  url_pattern: https://performancescience.org/conference/isps-{year}/
+  cadence: biennial
+  status: ok
+  surveyed: 2026-11-10
+
+- id: euromac
+  name: European Music Analysis Conference
+  kind: conference_series
+  topics: [theory]
+  url: https://europeanmusictheory.eu/
+  method: page
+  cadence: triennial
+  status: ok
+  notes: Edition sites like euromac11.sciencesconf.org.
+  surveyed: 2026-11-10
+
+- id: timbre
+  name: International Conference on Timbre
+  kind: conference_series
+  topics: [cognition, acoustics]
+  url: https://www.cirmmt.org/
+  method: manual
+  cadence: irregular
+  status: ok
+  surveyed: 2026-11-10
+
+- id: dmrn
+  name: DMRN+ Workshop (Digital Music Research Network)
+  kind: conference_series
+  topics: [mir, technology]
+  url: https://www.qmul.ac.uk/dmrn/
+  method: page_follow
+  cadence: annual
+  status: ok
+  notes: Edition pages /dmrn/dmrn{NN}/ (ordinal, not year).
+  surveyed: 2026-11-10
+
+- id: cmmr
+  name: Computer Music Multidisciplinary Research
+  kind: conference_series
+  topics: [technology, mir]
+  url: https://cmmr2025.prism.cnrs.fr/
+  method: url_pattern
+  url_pattern: https://cmmr{year}.prism.cnrs.fr/
+  cadence: unknown
+  status: ok
+  surveyed: 2026-11-10
+
+- id: sma
+  name: Society for Music Analysis (conference and TAGS)
+  kind: conference_series
+  topics: [theory]
+  url: https://www.sma.ac.uk/events/forthcoming/
+  method: page
+  cadence: annual
+  status: ok
+  surveyed: 2026-11-10
+
+- id: rma
+  name: Royal Musical Association Annual Conference
+  kind: conference_series
+  topics: [musicology]
+  url: https://www.rma.ac.uk/events
+  method: rss
+  feed: https://www.rma.ac.uk/feed
+  cadence: annual
+  status: ok
+  notes: News feed also carries study-group CFPs (aggregator role).
+  surveyed: 2026-11-10
+
+- id: musical-care
+  name: Musical Care International Conference
+  kind: conference_series
+  topics: [health]
+  url: https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference
+  method: page
+  cadence: unknown
+  status: ok
+  surveyed: 2026-11-10
+
+- id: icad
+  name: International Conference on Auditory Display
+  kind: conference_series
+  topics: [auditory, technology]
+  url: https://icad.org/
+  method: page
+  cadence: annual
+  status: ok
+  surveyed: 2026-11-10
+
+- id: dafx
+  name: Digital Audio Effects Conference
+  kind: conference_series
+  topics: [audio]
+  url: https://dafx.de/
+  method: page
+  cadence: annual
+  status: ok
+  surveyed: 2026-11-10
+
+- id: audio-mostly
+  name: Audio Mostly
+  kind: conference_series
+  topics: [audio, technology]
+  url: https://www.audiomostly.com/
+  method: page
+  cadence: annual
+  status: ok
+  surveyed: 2026-11-10
+
+- id: tenor
+  name: TENOR (Technologies for Music Notation and Representation)
+  kind: conference_series
+  topics: [encoding, technology]
+  url: https://www.tenor-conference.org/
+  method: page
+  cadence: annual
+  status: ok
+  surveyed: 2026-11-10
+
+- id: iccc
+  name: International Conference on Computational Creativity
+  kind: conference_series
+  topics: [computational]
+  url: https://www.computationalcreativity.net/
+  method: manual
+  cadence: annual
+  status: blocked
+  notes: 406 to scripts.
+  surveyed: 2026-11-10
+
+- id: evolang
+  name: Evolution of Language (EvoLang)
+  kind: conference_series
+  topics: [language]
+  url: https://www.evolang.org/
+  method: page
+  cadence: biennial
+  status: ok
+  surveyed: 2026-11-10
+
+- id: apcam
+  name: Auditory Perception, Cognition and Action Meeting
+  kind: conference_series
+  topics: [auditory, cognition]
+  url: https://apcsociety.org/
+  method: page
+  cadence: annual
+  status: ok
+  notes: One-day Psychonomics satellite (November).
+  surveyed: 2026-11-10
+
+- id: iaspm
+  name: IASPM International Conference (popular music studies)
+  kind: conference_series
+  topics: [popular, musicology]
+  url: https://www.iaspm.net/iaspm-international-conference/
+  method: page
+  cadence: biennial
+  status: ok
+  surveyed: 2026-11-10
+
+- id: brno
+  name: International Musicological Colloquium Brno
+  kind: conference_series
+  topics: [musicology, ethnomusicology]
+  url: https://music.phil.muni.cz/mmk
+  method: page
+  cadence: annual
+  status: unknown
+  notes: Not curl-checked.
+  surveyed: 2026-11-10
+
+- id: encam
+  name: ENCAM / SIMCAM (Brazilian Association for Cognition and Musical Arts)
+  kind: conference_series
+  topics: [cognition]
+  url: https://www.abcogmus.com/
+  method: manual
+  cadence: unknown
+  status: blocked
+  notes: 406 to scripts.
+  surveyed: 2026-11-10
+
+- id: cim-italy
+  name: Colloquium on Music Informatics (CIM, Italy)
+  kind: conference_series
+  topics: [technology, computational]
+  url: https://musel.consaq.it/
+  method: page
+  cadence: unknown
+  status: unknown
+  notes: Not curl-checked.
+  surveyed: 2026-11-10
+
+- id: aimc
+  name: AI Music Creativity Conference
+  kind: conference_series
+  topics: [computational, technology]
+  url: https://groups.google.com/g/musicalmetacreation
+  method: manual
+  cadence: annual
+  status: unknown
+  notes: Seen via musicalmetacreation Google Group (JS-only). Own site not identified.
+  surveyed: 2026-11-10
+
+# ------------------------------------------------- aggregators / discovery inputs
+- id: auditory-list
+  name: AUDITORY mailing list archive
+  kind: mailing_list
+  topics: [auditory, cognition, mir]
+  url: http://www.auditory.org/
+  method: list_archive
+  feed: https://auditory.org/mhonarc/{year}/
+  status: ok
+  notes: ~1.3 posts/day; many CFPs; cross-posts ISMIR-Community. Filter jobs/surveys.
+  surveyed: 2026-11-10
+
+- id: mei-l
+  name: MEI-L mailing list archive
+  kind: mailing_list
+  topics: [encoding, dh, computational]
+  url: https://lists.uni-paderborn.de/pipermail/mei-l/
+  method: list_archive
+  feed: https://lists.uni-paderborn.de/pipermail/mei-l/{year}/date.html
+  status: ok
+  notes: ~6 posts/month; carried ICCCM, MEC, ISMIR 2027 announcements.
+  surveyed: 2026-11-10
+
+- id: iaea-bsky
+  name: IAEA on Bluesky
+  kind: social
+  topics: [aesthetics]
+  url: https://bsky.app/profile/iaea-aesthetics.bsky.social
+  method: bluesky
+  feed: https://bsky.app/profile/iaea-aesthetics.bsky.social/rss
+  status: ok
+  notes: Noisy (reposts); only live IAEA presence found.
+  surveyed: 2026-11-10
+
+- id: dlfm-bsky
+  name: DLfM on Bluesky
+  kind: social
+  topics: [dh, mir]
+  url: https://bsky.app/profile/dlfm-conf.bsky.social
+  method: bluesky
+  feed: https://bsky.app/profile/dlfm-conf.bsky.social/rss
+  status: ok
+  notes: Carried deadline extensions.
+  surveyed: 2026-11-10
+
+# Mailing lists / groups from README (survey 2026-11-10): not readable without
+# membership or JS; kept for completeness.
+- {id: sysmus-list, name: SysMus conference series Google Group, kind: mailing_list, topics: [cognition], url: "https://groups.google.com/group/sysmus-conferences", method: manual, status: blocked, notes: "Restricted group; would need a bot inbox.", surveyed: 2026-11-10}
+- {id: sem-lists, name: SEM email discussion lists, kind: mailing_list, topics: [ethnomusicology], url: "https://www.ethnomusicology.org/page/Links_ELists/Email-Discussion-Lists.htm", method: manual, status: blocked, notes: Cloudflare., surveyed: 2026-11-10}
+- {id: ictm-list, name: ICTMD listserv, kind: mailing_list, topics: [ethnomusicology], url: "http://ictmusic.org/ictm-mailing-list-listserv", method: manual, status: blocked, notes: "Members only, no archive.", surveyed: 2026-11-10}
+- {id: locomus, name: Low Countries Music Research Network, kind: mailing_list, topics: [musicology, cognition], url: "https://groups.google.com/g/locomus", method: manual, status: blocked, notes: "Restricted group; site sites.google.com/view/locomus has Events pages (unread).", surveyed: 2026-11-10}
+- {id: singing-voice-ai, name: Singing Voice and Artificial Intelligence group, kind: mailing_list, topics: [mir], url: "https://groups.google.com/g/singing-voice-group", method: manual, status: blocked, surveyed: 2026-11-10}
+- {id: comp-musicology-group, name: Computational Musicology group, kind: mailing_list, topics: [computational], url: "https://groups.google.com/g/computational-musicology", method: manual, status: blocked, surveyed: 2026-11-10}
+- {id: new-auditory, name: New-Auditory group, kind: mailing_list, topics: [auditory], url: "https://groups.google.com/g/new-auditory/about", method: manual, status: unknown, notes: "Public, open join; JS-only archive.", surveyed: 2026-11-10}

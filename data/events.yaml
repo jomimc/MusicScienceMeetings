@@ -1,0 +1,1210 @@
+# Events: one entry per edition of a meeting. Generated 2026-11-10 by
+# sandbox/build_events/build_events.py from this session's extraction outputs.
+#
+# Fields
+#   id         unique slug, usually <series>-<year>
+#   series     list of source ids in data/sources.yaml
+#   name, type (conference | symposium | workshop | study_group | study_day | other)
+#   start, end ISO dates (end inclusive); absent = not yet announced
+#   location, format (in-person | online | hybrid), url (edition's own page)
+#   deadlines  list of {type, date, note}; type: call_opens | abstract | paper |
+#              deadline (unspecified) | notification | early_registration |
+#              registration | late_registration | other. date absent = only
+#              approximate (wording in note).
+#   status     upcoming | ongoing | past | announced (no dates yet), as of `checked`
+#   verified   true = read from the official page/feed by the pipeline/session;
+#              false = reported by a web-search agent, needs confirming
+#   source     where the facts came from;  checked = date of that check
+#   notes      free text
+
+- id: evolang-2026
+  series:
+  - evolang
+  name: EVOLANG XVI
+  type: conference
+  start: '2026-04-07'
+  end: '2026-04-10'
+  location: Plovdiv, Bulgaria
+  url: https://evolang2026.org/
+  status: past
+  verified: false
+  source: https://www.evolang.org/
+  checked: '2026-11-10'
+- id: iaea-2026
+  series:
+  - iaea
+  name: IAEA 2026 XXIX Congress "Future Follows Past"
+  type: conference
+  start: '2026-05-05'
+  end: '2026-05-08'
+  location: Jena, Germany (Volkshaus)
+  status: past
+  verified: false
+  source: https://web.archive.org/web/20260616143541/https://iaea-aesthetics.org/
+  checked: '2026-11-10'
+- id: tenor-2026
+  series:
+  - tenor
+  name: TENOR 2026
+  type: conference
+  start: '2026-05-21'
+  end: '2026-05-24'
+  location: mdw Vienna
+  status: past
+  verified: false
+  source: https://www.tenor-conference.org/
+  checked: '2026-11-10'
+- id: mec-2026
+  series:
+  - mec
+  name: Music Encoding Conference 2026
+  type: conference
+  start: '2026-05-26'
+  end: '2026-05-29'
+  location: Tokyo University of Science
+  status: past
+  verified: false
+  source: https://music-encoding.org/conference/2026/call/
+  checked: '2026-11-10'
+- id: encam-5
+  series:
+  - encam
+  name: ENCAM 5
+  type: conference
+  start: '2026-05-27'
+  end: '2026-05-30'
+  location: Sergipe, Brazil
+  format: hybrid
+  status: past
+  verified: false
+  source: https://www.musicperception.org/events
+  checked: '2026-11-10'
+- id: mcm-2026
+  series:
+  - mcm
+  name: MCM 2026
+  type: conference
+  start: '2026-06-23'
+  end: '2026-06-26'
+  location: Bard College, NY
+  url: https://sites.google.com/bard.edu/mcm2026
+  status: past
+  verified: false
+  source: https://indico.global/event/17844/
+  checked: '2026-11-10'
+- id: iccc-2026
+  series:
+  - iccc
+  name: ICCC'26
+  type: conference
+  start: '2026-06-29'
+  end: '2026-07-03'
+  location: Coimbra
+  status: past
+  verified: false
+  source: https://www.computationalcreativity.net/
+  checked: '2026-11-10'
+- id: dlfm-2026
+  series:
+  - dlfm
+  name: 13th DLfM
+  type: workshop
+  start: '2026-07-02'
+  end: '2026-07-02'
+  location: Thessaloniki (IAML satellite)
+  status: past
+  verified: false
+  source: https://dlfm.web.ox.ac.uk/2026-cfp
+  checked: '2026-11-10'
+- id: timbre-2026
+  series:
+  - timbre
+  name: 4th International Conference on Timbre
+  type: conference
+  start: '2026-07-02'
+  end: '2026-07-04'
+  location: Montréal
+  status: past
+  verified: false
+  source: https://www.cirmmt.org/en/events/special/2-jul-2026-timbre-conference
+  checked: '2026-11-10'
+- id: sma-2026
+  series:
+  - sma
+  name: SMA 2026
+  type: conference
+  start: '2026-07-13'
+  end: '2026-07-16'
+  location: Dublin (TCD and RIAM)
+  status: past
+  verified: false
+  source: https://www.sma.ac.uk/
+  checked: '2026-11-10'
+- id: sysmus-2026
+  series:
+  - sysmus
+  name: SysMus26
+  type: conference
+  start: '2026-07-22'
+  end: '2026-07-24'
+  location: Durham University, UK
+  url: https://musicscience.net/events/sysmus26/
+  deadlines:
+  - type: abstract
+    date: '2026-01-30'
+  - type: notification
+    date: '2026-03-13'
+  status: past
+  verified: true
+  source: https://sites.google.com/view/sysmus/sysmus/the-upcoming-sysmus
+  checked: '2026-11-10'
+- id: icad-2026
+  series:
+  - icad
+  name: ICAD 2026
+  type: conference
+  start: '2026-07-28'
+  end: '2026-07-31'
+  location: Bielefeld / Barcelona / Troy NY (distributed)
+  status: past
+  verified: false
+  source: https://icad.org/
+  checked: '2026-11-10'
+- id: rma-2026
+  series:
+  - rma
+  name: RMA-SMI-EADH 2026 joint conference
+  type: conference
+  start: '2026-08-29'
+  end: '2026-09-01'
+  location: Belfast
+  status: past
+  verified: false
+  source: https://www.rma.ac.uk/
+  checked: '2026-11-10'
+- id: dafx-2026
+  series:
+  - dafx
+  name: DAFx26
+  type: conference
+  start: '2026-09-01'
+  end: '2026-09-04'
+  location: MIT, Cambridge MA
+  url: https://dafx26.mit.edu/
+  status: past
+  verified: false
+  source: https://dafx26.mit.edu/
+  checked: '2026-11-10'
+- id: euromac-11
+  series:
+  - euromac
+  name: EuroMAC 11
+  type: conference
+  start: '2026-09-07'
+  end: '2026-09-10'
+  location: ESMUC Barcelona
+  url: https://euromac11.sciencesconf.org/
+  status: past
+  verified: false
+  source: https://euromac11.sciencesconf.org/
+  checked: '2026-11-10'
+- id: aimc-2026
+  series:
+  - aimc
+  name: AIMC'26
+  type: conference
+  start: '2026-09-16'
+  end: '2026-09-18'
+  location: Berlin
+  status: past
+  verified: false
+  source: https://groups.google.com/g/musicalmetacreation
+  checked: '2026-11-10'
+- id: icccm-2026
+  series:
+  - icccm
+  name: ICCCM 2026 (4th)
+  type: conference
+  start: '2026-09-21'
+  end: '2026-09-23'
+  location: Würzburg, Germany (JMU, Centre for Philology and Digitality)
+  url: https://digital.musicology.org/icccm-2026/
+  status: past
+  verified: true
+  source: https://digital.musicology.org/icccm-2026/
+  checked: '2026-11-10'
+- id: 16th-music-theory-and-analysis-conferenc-2026
+  series:
+  - fmu
+  name: '16th Music Theory and Analysis conference: The Polyphony of Music Theory'
+  type: conference
+  start: '2026-10-02'
+  end: '2026-10-04'
+  location: Belgrade
+  url: https://polyphonyofmusictheory2026.weebly.com/
+  status: past
+  verified: true
+  source: https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/
+  checked: '2026-11-10'
+- id: cim-italy-2026
+  series:
+  - cim-italy
+  name: CIM 2026 (XXV Colloquium on Music Informatics)
+  type: conference
+  start: '2026-10-13'
+  end: '2026-10-16'
+  location: L'Aquila, Italy
+  status: past
+  verified: false
+  source: https://musel.consaq.it/en/cim-2026-xxv-colloquium-on-music-informatics/
+  checked: '2026-11-10'
+- id: pam-ie-2026
+  series:
+  - pam-ie
+  name: PAM-IE Ljubljana 2026
+  type: conference
+  start: '2026-10-14'
+  end: '2026-10-17'
+  location: Ljubljana, Slovenia
+  format: hybrid
+  url: https://www.pam-ie2026.com/
+  status: past
+  verified: true
+  source: https://www.escomsociety.org/conferences
+  checked: '2026-11-10'
+- id: 29th-international-pedagogical-forum-of-2026
+  series:
+  - fmu
+  name: 29th International Pedagogical Forum of Performing Arts
+  type: conference
+  start: '2026-10-23'
+  end: '2026-10-25'
+  location: Belgrade
+  status: past
+  verified: true
+  source: https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/
+  checked: '2026-11-10'
+- id: sem-2026
+  series:
+  - sem
+  name: SEM 71st Annual Meeting
+  type: conference
+  start: '2026-11-05'
+  end: '2026-11-08'
+  location: Bloomington, IN (Indiana University)
+  format: hybrid
+  status: past
+  verified: false
+  source: https://cdn.ymaws.com/www.ethnomusicology.org/resource/resmgr/2026_annual_meeting/sem_2026_program_final_20261.pdf
+  checked: '2026-11-10'
+- id: smc-2026
+  series:
+  - smc
+  name: SMC 2026 (23rd Sound and Music Computing Conference)
+  type: conference
+  start: '2026-11-05'
+  end: '2026-11-07'
+  location: Zagreb, Croatia (with Music Biennale Zagreb)
+  url: https://smc26.mbz.hr/
+  status: past
+  verified: false
+  source: https://smc26.mbz.hr/en/about/smc26
+  checked: '2026-11-10'
+  notes: Winter school 2-4 Nov 2026.
+- id: smt-2026
+  series:
+  - smt
+  name: SMT 2026 Annual Meeting (49th)
+  type: conference
+  start: '2026-11-05'
+  end: '2026-11-08'
+  location: Milwaukee, WI (Hyatt Regency)
+  url: https://societymusictheory.org/meetings/smt-2026
+  status: past
+  verified: true
+  source: https://societymusictheory.org/meetings/smt-2026
+  checked: '2026-11-10'
+- id: ismir-2026
+  series:
+  - ismir
+  name: ISMIR 2026
+  type: conference
+  start: '2026-11-08'
+  end: '2026-11-12'
+  location: NYU Abu Dhabi, UAE
+  url: https://ismir2026.ismir.net
+  status: ongoing
+  verified: false
+  source: https://ismir2026.ismir.net
+  checked: '2026-11-10'
+- id: brno-2026
+  series:
+  - brno
+  name: 60th International Musicological Colloquium Brno
+  type: conference
+  start: '2026-11-09'
+  end: '2026-11-11'
+  status: ongoing
+  verified: false
+  source: https://janacek-brno.cz/en/aktualita-kolokvium/
+  checked: '2026-11-10'
+- id: celebrating-the-legacy-of-the-late-arnol-2026
+  series:
+  - smt-events
+  name: Celebrating the legacy of the late Arnold Whittall (1935-2026)
+  type: conference
+  start: '2026-11-11'
+  end: '2026-11-11'
+  location: King's College London (livestreamed)
+  url: https://societymusictheory.org/events/celebrating-legacy-late-arnold-whittall-1935-2026-2026
+  deadlines:
+  - type: deadline
+    date: '2026-10-16'
+    note: 'Deadline: Friday, October 16, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+  - musicology
+- id: ams-2026
+  series:
+  - ams
+  name: 2026 AMS Annual Meeting - Online
+  type: conference
+  start: '2026-11-14'
+  end: '2026-11-20'
+  location: Online
+  format: online
+  url: https://www.amsmusicology.org/calendar/2026-ams-annual-meeting-online/
+  status: upcoming
+  verified: true
+  source: https://www.amsmusicology.org/events-calendar/?ical=1
+  checked: '2026-11-10'
+  notes: Online, 14-15 and 19-20 Nov 2026.
+- id: ims-study-group-comparative-perspectives-2026
+  series:
+  - ims
+  name: 'IMS Study Group: Comparative Perspectives on Genetic Criticism in Music'
+  type: study_group
+  start: '2026-11-16'
+  end: '2026-11-18'
+  location: Rome (DHI Rome)
+  url: https://www.musicology.org/events/comparative-perspectives-on-genetic-criticism-in-music/
+  status: upcoming
+  verified: true
+  source: https://www.musicology.org/events/?ical=1
+  checked: '2026-11-10'
+  notes: Dates from IMS iCal; full name and location from IMS events page (survey agent).
+- id: 26th-international-conference-principles-2026
+  series:
+  - smt-events
+  name: '26th International Conference "Principles of Music Composing: Interaction between Technologies and Conventions"'
+  type: conference
+  start: '2026-11-18'
+  deadlines:
+  - type: deadline
+    date: '2026-09-12'
+    note: 'Deadline: Saturday, September 12, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+  - technology
+- id: auditory-perception-cognition-and-action-2026
+  series:
+  - smpc-events
+  - apcam
+  name: Auditory Perception, Cognition and Action Meeting
+  type: conference
+  start: '2026-11-19'
+  end: '2026-11-19'
+  location: San Diego, CA
+  url: https://apcsociety.org/
+  status: upcoming
+  verified: true
+  source: https://www.musicperception.org/events
+  checked: '2026-11-10'
+- id: jam-2026-articulating-orality-and-notati
+  series:
+  - smt-events
+  name: JAM 2026 - Articulating Orality and Notation in Music
+  type: conference
+  start: '2026-11-20'
+  location: Bordeaux, France
+  url: https://societymusictheory.org/events/jam-2026-articulating-orality-and-notation-music-2026
+  deadlines:
+  - type: deadline
+    date: '2026-06-01'
+    note: 'Deadline: Monday, June 1, 2026'
+  - type: paper
+    date: '2026-06-15'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+  - ethnomusicology
+- id: ams-smt-sem-after-dark-xi-2026
+  series:
+  - smt-events
+  name: AMS/SMT/SEM After Dark XI
+  type: conference
+  start: '2026-11-21'
+  format: online
+  url: https://societymusictheory.org/events/ams-smt-sem-after-dark-xi-2026
+  deadlines:
+  - type: deadline
+    date: '2026-10-23'
+    note: 'Deadline: Friday, October 23, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - musicology
+  - theory
+  - ethnomusicology
+- id: ictmd-dialogues-2026
+  series:
+  - ictm
+  name: 'ICTMD Dialogues 2026: Ethics of Care in Times of Crises'
+  type: symposium
+  start: '2026-11-28'
+  end: '2026-11-28'
+  location: Online (via Zoom)
+  format: online
+  url: http://ictmd.org/ictmd-dialogues-2026-programme-and-registration
+  status: upcoming
+  verified: true
+  source: https://ictmusic.org/events
+  checked: '2026-11-10'
+- id: john-adams-s-on-the-transmigration-of-so-2026
+  series:
+  - ams
+  name: John Adams’s On the Transmigration of Souls and 9/11 Memorialization
+  type: other
+  start: '2026-12-01'
+  end: '2026-12-01'
+  location: Library of Congress, Washington, DC
+  url: https://www.amsmusicology.org/calendar/john-adamss-on-the-transmigration-of-souls-and-9-11-memorialization/
+  status: upcoming
+  verified: true
+  source: https://www.amsmusicology.org/events-calendar/?ical=1
+  checked: '2026-11-10'
+- id: musikgeschichte-in-bildern-2-0-ims-music-2026
+  series:
+  - ims
+  name: Musikgeschichte in Bildern 2.0 (IMS Musical Iconography SG)
+  type: study_group
+  start: '2026-12-02'
+  end: '2026-12-04'
+  location: Vienna
+  url: https://www.musicology.org/events/musikgeschichte-in-bildern-2-0-2/
+  status: upcoming
+  verified: true
+  source: https://www.musicology.org/events/?ical=1
+  checked: '2026-11-10'
+  notes: Dates from IMS iCal; full name and location from IMS events page (survey agent).
+- id: sws-vienna-art-2026-when-science-meets-a
+  series:
+  - smt-events
+  name: SWS Vienna ART 2026 - When Science Meets Art
+  type: conference
+  start: '2026-12-02'
+  location: Schönbrunn Palace, Vienna, Austria
+  format: hybrid
+  url: https://societymusictheory.org/events/sws-vienna-art-2026-when-science-meets-art-2026
+  deadlines:
+  - type: deadline
+    date: '2026-10-26'
+    note: 'Deadline: Monday, October 26, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - aesthetics
+- id: amps-apscom-2026
+  series:
+  - apscom
+  name: AMPS/APSCOM 2026
+  type: conference
+  start: '2026-12-08'
+  end: '2026-12-11'
+  location: Surfers Paradise, Australia (Crowne Plaza)
+  status: upcoming
+  verified: false
+  source: https://sempre.org.uk/conferences
+  checked: '2026-11-10'
+- id: early-music-101-filling-up-your-toolkit-2026
+  series:
+  - ams
+  name: 'Early Music 101: Filling Up Your Toolkit'
+  type: other
+  start: '2026-12-10'
+  end: '2026-12-10'
+  location: NY
+  url: https://www.amsmusicology.org/calendar/filling-up-toolkit/
+  status: upcoming
+  verified: true
+  source: https://www.amsmusicology.org/events-calendar/?ical=1
+  checked: '2026-11-10'
+- id: dmrn-21
+  series:
+  - dmrn
+  name: DMRN+21
+  type: workshop
+  start: '2026-12-11'
+  end: '2026-12-11'
+  location: London, King's College London (Strand)
+  format: in-person
+  url: https://www.qmul.ac.uk/dmrn/dmrn21/
+  status: upcoming
+  verified: false
+  source: https://www.qmul.ac.uk/dmrn/dmrn21/
+  checked: '2026-11-10'
+  notes: Page gives conflicting submission dates (6 Nov / 14 Nov 2026).
+- id: 2026-music-leadership-forum
+  series:
+  - ams
+  name: 2026 Music Leadership Forum
+  type: other
+  start: '2026-12-12'
+  end: '2026-12-12'
+  location: New York University, 20 Cooper Square, Floor 3, New York, NY, 10003, United States
+  url: https://www.amsmusicology.org/calendar/2026-music-leadership-forum/
+  status: upcoming
+  verified: true
+  source: https://www.amsmusicology.org/events-calendar/?ical=1
+  checked: '2026-11-10'
+- id: asa-2026-dec
+  series:
+  - asa
+  name: ASA meeting, Baltimore (December 2026)
+  type: conference
+  start: '2026-12-15'
+  end: '2026-12-17'
+  location: Baltimore, MD
+  status: upcoming
+  verified: false
+  source: third-party listing only (showsbee.com)
+  checked: '2026-11-10'
+  notes: 'UNVERIFIED: not confirmed on an ASA page.'
+- id: chr-2027
+  series:
+  - chr
+  name: CHR 2027 (7th Computational Humanities Research Conference)
+  type: conference
+  start: '2027-01-05'
+  end: '2027-01-08'
+  location: Manchester, UK (University of Manchester)
+  format: in-person
+  url: https://2027.computational-humanities-research.org/
+  deadlines:
+  - type: paper
+    date: '2026-08-14'
+  - type: notification
+    date: '2026-10-23'
+  - type: deadline
+    date: '2026-11-06'
+    note: 'Bursary application deadline: November 6, 2026 (Digital Scholar bursaries for early-career researchers)'
+  - type: deadline
+    date: '2026-11-13'
+    note: 'Deadline for the final revised paper: November 13, 2026'
+  - type: registration
+    date: '2026-11-30'
+  - type: other
+    date: null
+    note: 'Final programme published: December 2026'
+  status: upcoming
+  verified: true
+  source: https://2027.computational-humanities-research.org/cfp/
+  checked: '2026-11-10'
+- id: bfe-rma-students-2027
+  series:
+  - rma
+  name: BFE-RMA Research Students' Conference 2027
+  type: conference
+  start: '2027-01-06'
+  end: '2027-01-08'
+  location: Oxford
+  status: upcoming
+  verified: false
+  source: discovery agent (unverified)
+  checked: '2026-11-10'
+  notes: UNVERIFIED.
+- id: ictm-2027
+  series:
+  - ictm
+  name: 49th ICTMD World Conference
+  type: conference
+  start: '2027-01-14'
+  end: '2027-01-20'
+  location: Universidad Alberto Hurtado, Santiago, Chile
+  url: https://ictmd.org/ictmd2027
+  deadlines:
+  - type: other
+    date: '2025-04-01'
+    note: 'First notice: April 2025'
+  - type: other
+    date: '2025-07-01'
+    note: 'Second notice (themes): July 2025'
+  - type: call_opens
+    date: null
+    note: 'First call for proposals: October 2025'
+  - type: call_opens
+    date: null
+    note: 'Second call for proposals: November 2025'
+  - type: abstract
+    date: '2025-12-31'
+  - type: notification
+    date: '2026-03-31'
+  - type: other
+    date: '2026-06-18'
+    note: 'Pre-Conference Symposium: Thursday, June 18, 2026, 13:00-19:00 (GMT-4)'
+  status: upcoming
+  verified: true
+  source: https://ictmusic.org/events
+  checked: '2026-11-10'
+- id: technology-and-agency-in-global-music-hi-2027
+  series:
+  - ims
+  name: Technology and Agency in Global Music History (IMS Global History of Music SG study day)
+  type: study_day
+  start: '2027-01-21'
+  end: '2027-01-21'
+  location: online
+  format: online
+  url: https://www.musicology.org/events/technology-and-agency/
+  status: upcoming
+  verified: true
+  source: https://www.musicology.org/events/?ical=1
+  checked: '2026-11-10'
+  notes: Dates from IMS iCal; full name and location from IMS events page (survey agent).
+- id: 2027-indiana-university-33rd-annual-symp
+  series:
+  - smt-events
+  name: 2027 Indiana University 33rd Annual Symposium of Research in Music
+  type: conference
+  start: '2027-02-19'
+  location: Bloomington, IN
+  url: https://societymusictheory.org/events/2027-indiana-university-33rd-annual-symposium-research-music-2027
+  deadlines:
+  - type: deadline
+    date: '2026-11-22'
+    note: 'Deadline: Sunday, November 22, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+  - musicology
+- id: music-theory-society-of-the-mid-atlantic-2027
+  series:
+  - smt-events
+  name: Music Theory Society of the Mid-Atlantic 25th annual meeting
+  type: conference
+  start: '2027-02-19'
+  end: '2027-02-20'
+  location: Virginia Tech, Blacksburg, VA
+  url: https://societymusictheory.org/events/music-theory-society-mid-atlantic-2027
+  deadlines:
+  - type: deadline
+    date: '2026-10-31'
+    note: 'Deadline: Saturday, October 31, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+- id: 14th-annual-gamut-student-conference-2027
+  series:
+  - smt-events
+  name: 14th Annual GAMuT Student Conference
+  type: conference
+  start: '2027-02-20'
+  location: University of North Texas - University Union Building
+  url: https://societymusictheory.org/events/call-papers-14th-annual-gamut-student-conference-2027
+  deadlines:
+  - type: deadline
+    date: '2026-11-11'
+    note: 'Deadline: Wednesday, November 11, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+  - musicology
+- id: mind-music-and-body-a-cross-disciplinary-2027
+  series:
+  - smpc-events
+  name: Mind, Music, and Body. A cross-disciplinary approach to the musical mind.
+  type: conference
+  start: '2027-02-25'
+  end: '2027-02-25'
+  location: Denver, Colorado
+  url: https://www.depts.ttu.edu/pragmaticism/about/docs/2026-02-13_CFP-Music-APA-2027.pdf
+  deadlines:
+  - type: abstract
+    date: '2026-09-10'
+  status: upcoming
+  verified: true
+  source: https://www.musicperception.org/events
+  checked: '2026-11-10'
+  tags:
+  - cognition
+  - neuroscience
+- id: society-for-christian-scholarship-in-mus-2027
+  series:
+  - smt-events
+  name: Society for Christian Scholarship in Music 2027 annual meeting
+  type: conference
+  start: '2027-03-04'
+  end: '2027-03-06'
+  location: Yale Institute of Sacred Music in New Haven, CT
+  url: https://societymusictheory.org/events/society-christian-scholarship-music-2027
+  deadlines:
+  - type: deadline
+    date: '2026-10-01'
+    note: 'Deadline: Thursday, October 1, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - musicology
+- id: at-play-performance-analysis-and-artisti-2027
+  series:
+  - smpc-events
+  - smt-events
+  name: 'At Play: Performance, Analysis, and Artistic Research'
+  type: conference
+  start: '2027-03-05'
+  end: '2027-03-07'
+  location: University of Colorado Boulder
+  url: https://www.colorado.edu/music/At-play
+  deadlines:
+  - type: abstract
+    date: '2026-09-01'
+  status: upcoming
+  verified: true
+  source: https://www.musicperception.org/events ; https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - performance
+  - theory
+- id: imsea2027-9th-ims-east-asia-regional-mee
+  series:
+  - ims
+  name: IMSEA2027 (9th IMS East Asia regional meeting)
+  type: conference
+  start: '2027-03-05'
+  end: '2027-03-07'
+  location: Fukuoka, Kyushu University
+  url: https://www.musicology.org/events/imsea2027/
+  status: upcoming
+  verified: true
+  source: https://www.musicology.org/events/?ical=1
+  checked: '2026-11-10'
+  notes: Dates from IMS iCal; full name and location from IMS events page (survey agent).
+- id: fsu-mts-forum-2027-44th-annual-music-the
+  series:
+  - smt-events
+  name: FSU MTS Forum 2027 (44th annual Music Theory Forum)
+  type: conference
+  start: '2027-03-06'
+  location: Florida State University College of Music, Tallahassee, Florida
+  format: in-person
+  url: https://societymusictheory.org/events/fsu-mts-forum-2027
+  deadlines:
+  - type: deadline
+    date: '2026-12-01'
+    note: 'Deadline: Tuesday, December 1, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+- id: north-american-conference-on-video-game-2027
+  series:
+  - smt-events
+  name: North American Conference on Video Game Music 2027
+  type: conference
+  start: '2027-03-13'
+  end: '2027-03-14'
+  location: University of Central Florida; Orlando, Florida
+  format: hybrid
+  url: https://societymusictheory.org/events/north-american-conference-video-game-music-2027-2027
+  deadlines:
+  - type: deadline
+    date: '2026-11-02'
+    note: 'Deadline: Monday, November 2, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - popular
+  - musicology
+  - theory
+- id: joint-conference-of-the-south-central-so-2027
+  series:
+  - smt-events
+  name: Joint Conference of the South Central Society for Music Theory and Music Theory Southeast 2027
+  type: conference
+  start: '2027-03-19'
+  location: Georgia State University (Atlanta, GA)
+  url: https://societymusictheory.org/events/joint-conference-south-central-society-music-theory-and-music-theory-southeast-2027-2027
+  deadlines:
+  - type: deadline
+    date: '2026-12-04'
+    note: 'Deadline: Friday, December 4, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+- id: 16th-international-conference-on-artific-2027
+  series:
+  - smt-events
+  name: 16th International Conference on Artificial Intelligence in Music, Sound, Art and Design (EvoMUSART 2027)
+  type: conference
+  start: '2027-03-31'
+  url: https://societymusictheory.org/events/16th-international-conference-artificial-intelligence-music-sound-art-and-design-evomusart
+  deadlines:
+  - type: deadline
+    date: '2026-11-01'
+    note: 'Deadline: Sunday, November 1, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - computational
+  - technology
+- id: mtsnys-call-for-presentations-2027-music
+  series:
+  - smt-events
+  name: MTSNYS Call for Presentations 2027 (Music Theory Society of New York State annual meeting)
+  type: conference
+  start: '2027-04-03'
+  location: Hofstra University, Hempstead, NY
+  url: https://societymusictheory.org/events/mtsnys-call-presentations-2027
+  deadlines:
+  - type: deadline
+    date: '2026-10-15'
+    note: 'Deadline: Thursday, October 15, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - theory
+- id: workshop-in-preparation-for-a-special-is-2027
+  series:
+  - smt-events
+  name: Workshop in preparation for a special issue (Journal of Musicological Research)
+  type: conference
+  start: '2027-04-07'
+  end: '2027-04-08'
+  location: University of Music and Performing Arts Vienna (Austria)
+  url: https://societymusictheory.org/events/workshop-preparation-special-issue-journal-musicological-research-2027
+  deadlines:
+  - type: deadline
+    date: '2026-10-15'
+    note: 'Deadline: Thursday, October 15, 2026'
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-10'
+  tags:
+  - musicology
+- id: aawm-2027-symposium
+  series:
+  - aawm
+  name: 'AAWM Special Topics Symposium: Colouring Global Voices - Vocal Timbre in World Music Traditions'
+  type: symposium
+  start: '2027-04-10'
+  end: '2027-04-11'
+  format: online
+  url: https://conferences.iftawm.org/
+  deadlines:
+  - type: abstract
+    date: '2026-12-15'
+  - type: notification
+    date: '2027-01-15'
+  status: upcoming
+  verified: false
+  source: https://conferences.iftawm.org/
+  checked: '2026-11-10'
+- id: sempre-2027
+  series:
+  - sempre
+  name: SEMPRE Spring Conference 2027
+  type: conference
+  start: '2027-04-15'
+  end: '2027-04-16'
+  location: King's College London + online
+  format: hybrid
+  status: upcoming
+  verified: false
+  source: https://sempre.org.uk/conferences
+  checked: '2026-11-10'
+- id: music-and-the-extended-mind-a-conference-2027
+  series:
+  - smpc-events
+  name: 'Music and the Extended Mind: A Conference on Musical Intelligence in the 21st Century'
+  type: conference
+  start: '2027-05-05'
+  end: '2027-05-06'
+  location: Florida State University
+  url: https://music.fsu.edu/c21mp/
+  deadlines:
+  - type: abstract
+    date: '2026-07-21'
+  status: upcoming
+  verified: true
+  source: https://www.musicperception.org/events
+  checked: '2026-11-10'
+  tags:
+  - cognition
+  - performance
+  - technology
+- id: musical-care-2027
+  series:
+  - musical-care
+  name: Musical Care International Conference (inaugural)
+  type: conference
+  start: '2027-06-09'
+  end: '2027-06-11'
+  location: Edinburgh + online
+  format: hybrid
+  url: https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference
+  deadlines:
+  - type: early_registration
+    date: '2027-02-26'
+  status: upcoming
+  verified: false
+  source: https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference
+  checked: '2026-11-10'
+- id: acoustics27
+  series:
+  - acoustics27
+  - asa
+  name: Acoustics '27 (joint ASA / EAA meeting)
+  type: conference
+  start: '2027-06-21'
+  end: '2027-06-25'
+  location: Brussels, Belgium (SQUARE, Bozar)
+  url: https://acoustics27.com/
+  deadlines:
+  - type: call_opens
+    date: '2026-11-16'
+  - type: abstract
+    date: '2027-01-25'
+  status: upcoming
+  verified: false
+  source: https://acoustics27.com/
+  checked: '2026-11-10'
+- id: ims-2027
+  series:
+  - ims
+  - smpc-events
+  name: IMS2027 "Musical Ecosystems" (22nd IMS Congress)
+  type: conference
+  start: '2027-08-02'
+  end: '2027-08-06'
+  location: Stavanger, Norway
+  url: https://ims2027.musicology.org
+  deadlines:
+  - type: abstract
+    date: '2026-06-15'
+  status: upcoming
+  verified: true
+  source: https://www.musicperception.org/events ; https://www.musicology.org/events/?ical=1
+  checked: '2026-11-10'
+- id: icmpc-escom-2027
+  series:
+  - icmpc
+  - escom
+  name: ICMPC-ESCOM 2027 (19th ICMPC / 13th ESCOM)
+  type: conference
+  start: '2027-08-16'
+  end: '2027-08-20'
+  location: Helsinki, Finland
+  format: hybrid
+  url: https://www.jyu.fi/en/events/icmpc-escom-2027-conference
+  deadlines:
+  - type: call_opens
+    date: '2026-08-24'
+  - type: abstract
+    date: '2026-11-15'
+  - type: notification
+    date: null
+    note: 'Notification of abstract decisions: mid January 2027'
+  - type: early_registration
+    date: '2027-04-18'
+  - type: registration
+    date: '2027-07-31'
+  - type: late_registration
+    date: '2027-08-15'
+  status: upcoming
+  verified: true
+  source: https://www.jyu.fi/en/events/icmpc-escom-2027-conference
+  checked: '2026-11-10'
+  notes: Abstract deadline 15 Nov 2026 confirmed by maintainer (a SEMPRE page said 31 Oct; outdated).
+- id: dafx-2027
+  series:
+  - dafx
+  name: DAFx27
+  type: conference
+  start: '2027-08-24'
+  end: '2027-08-27'
+  location: Cremona, Italy
+  url: https://dafx27.deib.polimi.it/
+  status: upcoming
+  verified: false
+  source: https://dafx27.deib.polimi.it/
+  checked: '2026-11-10'
+- id: ismir-2027
+  series:
+  - ismir
+  name: ISMIR 2027
+  type: conference
+  start: '2027-09-12'
+  end: '2027-09-16'
+  location: London, UK (Queen Mary University of London)
+  url: https://ismir2027.ismir.net
+  deadlines:
+  - type: abstract
+    date: '2027-03-09'
+    note: tentative
+  - type: paper
+    date: '2027-03-16'
+    note: tentative
+  - type: notification
+    date: '2027-06-02'
+    note: tentative
+  - type: other
+    date: '2027-06-23'
+    note: camera-ready (tentative)
+  status: upcoming
+  verified: false
+  source: https://ismir2027.ismir.net
+  checked: '2026-11-10'
+- id: smt-2027
+  series:
+  - smt
+  name: SMT 2027 Annual Meeting (50th)
+  type: conference
+  start: '2027-11-04'
+  end: '2027-11-07'
+  location: Baltimore, MD
+  url: https://societymusictheory.org/meetings/smt-2027/cfp
+  deadlines:
+  - type: call_opens
+    date: '2026-12-14'
+  - type: paper
+    date: '2027-02-15'
+  - type: notification
+    date: null
+    note: Notifications of the Program Committee's decisions will be sent in early June.
+  status: upcoming
+  verified: true
+  source: https://societymusictheory.org/meetings/smt-2027/cfp
+  checked: '2026-11-10'
+- id: iaspm-2027
+  series:
+  - iaspm
+  name: IASPM 2027 (24th) "Pop! Goes the World!!!"
+  type: conference
+  start: '2027-11-29'
+  end: '2027-12-03'
+  location: Wellington, NZ (Victoria University of Wellington)
+  url: https://www.iaspm.net/iaspm-international-conference/
+  deadlines:
+  - type: abstract
+    date: '2026-12-01'
+  - type: notification
+    date: '2027-04-01'
+  status: upcoming
+  verified: false
+  source: https://www.iaspm.net/iaspm-international-conference/
+  checked: '2026-11-10'
+- id: icmc-2026
+  series:
+  - icmc
+  name: ICMC 2026
+  type: conference
+  location: Hamburg
+  status: past
+  verified: false
+  source: https://www.computermusic.org/
+  checked: '2026-11-10'
+  notes: May 2026; sources differ on exact dates (~10-17 May).
+- id: isps-2027
+  series:
+  - isps
+  name: ISPS 2027
+  type: conference
+  location: Rio de Janeiro, Brazil
+  url: https://performancescience.org/conference/isps-2027/
+  status: announced
+  verified: false
+  source: https://performancescience.org/conference/isps-2027/
+  checked: '2026-11-10'
+  notes: Dates not yet published.
+- id: mec-2027
+  series:
+  - mec
+  name: Music Encoding Conference 2027
+  type: conference
+  status: announced
+  verified: false
+  source: https://lists.uni-paderborn.de/pipermail/mei-l/2026/date.html
+  checked: '2026-11-10'
+  notes: CFP posted on MEI-L; details not extracted.
+- id: nime-2027
+  series:
+  - nime
+  name: NIME 2027
+  type: conference
+  location: Paris, France (De Vinci Higher Education)
+  status: announced
+  verified: false
+  source: https://forum.nime.org/t/announcing-nime-2027/1099
+  checked: '2026-11-10'
+  notes: Dates and CFP not yet published.
+- id: rppw-21
+  series:
+  - rppw
+  name: RPPW 21
+  type: conference
+  location: Hamilton, Canada (McMaster University)
+  status: announced
+  verified: false
+  source: https://www.rppw.org/
+  checked: '2026-11-10'
+  notes: Year unclear on site (2027 or 2028).
+- id: smpc-2026
+  series:
+  - smpc
+  name: SMPC 2026
+  type: conference
+  location: Evanston, IL
+  url: https://www.musicperception.org/s/SMPC_2026_Program_Abstract_Book_5_v5.pdf
+  status: past
+  verified: true
+  source: https://www.musicperception.org/pastmeetings
+  checked: '2026-11-10'
+  notes: Exact dates not on past-meetings page; programme/abstract book PDF linked.

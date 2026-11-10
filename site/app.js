@@ -29,7 +29,22 @@
   }
   const isPast = (ev) => (ev.start ? (ev.end || ev.start) < today : ev.status === "past");
   const nextDeadline = (ev) =>
-    ev.deadlines.filter((d) => d.date >= today).sort((a, b) => a.date.localeCompare(b.date))[0] || null;
+    ev.deadlines.filter((d) => d.date && d.date >= today).sort((a, b) => a.date.localeCompare(b.date))[0] || null;
+
+  // Correction link: opens the GitHub "Correct a meeting" form pre-filled with this card's data.
+  const REPO = "https://github.com/jomimc/MusicScienceMeetings";
+  function correctionURL(ev) {
+    const dates = ev.start ? (ev.end && ev.end !== ev.start ? `${ev.start} – ${ev.end}` : ev.start) : "";
+    const deadlines = ev.deadlines.map((d) =>
+      `${d.type.replace(/_/g, " ")}: ${d.date || "?"}${d.note ? ` (${d.note})` : ""}`).join("\n");
+    const q = new URLSearchParams({
+      template: "correction.yml", title: `[Fix] ${ev.name}`, event_id: ev.id, name: ev.name, dates,
+      location: ev.location || "", format: ev.format === "not stated" ? "" : ev.format, url: ev.url || "", deadlines,
+    });
+    return `${REPO}/issues/new?${q}`;
+  }
+  const PENCIL = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" ' +
+    'd="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm17.71-10.21a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>';
 
   function el(tag, attrs = {}, ...kids) {
     const n = document.createElement(tag);
@@ -47,7 +62,10 @@
     const badges = el("div", { class: "badges" });
     if (isPast(ev)) badges.append(el("span", { class: "badge" }, "past"));
     if (!ev.verified) badges.append(el("span", { class: "badge warn", title: "Found by web search; not yet checked against the official page" }, "⚠ unverified"));
-    return el("article", { class: "card" + (isPast(ev) ? " is-past" : "") },
+    const fix = el("a", { class: "fix", href: correctionURL(ev), target: "_blank", rel: "noopener",
+      title: "Suggest a correction", "aria-label": `Suggest a correction for ${ev.name}` });
+    fix.innerHTML = PENCIL;
+    return el("article", { class: "card" + (isPast(ev) ? " is-past" : "") }, fix,
       el("h2", {}, title), el("p", { class: "meta" }, meta),
       series ? el("p", { class: "series" }, series) : null,
       nd ? el("p", { class: "deadline" }, nd.type === "deadline" ? `Next deadline: ${fmt(nd.date)}`
@@ -132,5 +150,6 @@
     b.addEventListener("click", () => { state.sort = b.dataset.sort; render(); });
   document.getElementById("show-past").addEventListener("change", (e) => { state.past = e.target.checked; render(); });
   if (window.GENERATED) document.getElementById("generated").textContent = `Data updated ${fmt(window.GENERATED)}.`;
+  for (const n of document.querySelectorAll(".pencil-inline")) n.innerHTML = PENCIL;
   render();
 })();

@@ -84,7 +84,7 @@ for e in events:
         "format": e.get("format") or "not stated",
         "regions": regions,
         "url": link_of(e),
-        "deadlines": [d for d in e.get("deadlines", []) if d.get("date")],
+        "deadlines": e.get("deadlines", []),  # undated ones too (shown in the correction form)
         "status": e.get("status"),
         "verified": bool(e.get("verified")),
         "tags": sorted(set(tags)),

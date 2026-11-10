@@ -221,7 +221,12 @@ window.EVENTS = [
    "North America"
   ],
   "url": "https://sites.google.com/bard.edu/mcm2026",
-  "deadlines": [],
+  "deadlines": [
+   {
+    "type": "early_registration",
+    "note": "'Early registration closes Monday May 25th' (year not printed on page; presumably 2026)"
+   }
+  ],
   "status": "past",
   "verified": true,
   "tags": [
@@ -246,9 +251,21 @@ window.EVENTS = [
   "url": "http://computationalcreativity.net/iccc26/",
   "deadlines": [
    {
+    "type": "abstract",
+    "note": "Page shows two dates: Feb 27 / Mar 1, 2026 (likely original/extended; unclear which)"
+   },
+   {
+    "type": "paper",
+    "note": "Full papers: Mar 6 / Mar 8, 2026 (two dates shown)"
+   },
+   {
     "type": "notification",
     "date": "2026-04-20",
     "note": "Full paper acceptance"
+   },
+   {
+    "type": "paper",
+    "note": "Short papers: Apr 24 / Apr 27, 2026 (two dates shown)"
    },
    {
     "type": "early_registration",
@@ -282,6 +299,10 @@ window.EVENTS = [
   ],
   "url": "https://dlfm.web.ox.ac.uk/2026-cfp",
   "deadlines": [
+   {
+    "type": "call_opens",
+    "note": "submissions open via CMT in December 2025"
+   },
    {
     "type": "abstract",
     "date": "2026-01-23"
@@ -521,6 +542,10 @@ window.EVENTS = [
     "type": "paper",
     "date": "2026-01-18",
     "note": "extended submission deadline (original 5 Jan 2026)"
+   },
+   {
+    "type": "notification",
+    "note": "April 2026"
    },
    {
     "type": "early_registration",
@@ -1356,6 +1381,11 @@ window.EVENTS = [
    {
     "type": "registration",
     "date": "2026-11-30"
+   },
+   {
+    "type": "other",
+    "date": null,
+    "note": "Final programme published: December 2026"
    }
   ],
   "status": "upcoming",
@@ -1417,6 +1447,16 @@ window.EVENTS = [
     "type": "other",
     "date": "2025-07-01",
     "note": "Second notice (themes): July 2025"
+   },
+   {
+    "type": "call_opens",
+    "date": null,
+    "note": "First call for proposals: October 2025"
+   },
+   {
+    "type": "call_opens",
+    "date": null,
+    "note": "Second call for proposals: November 2025"
    },
    {
     "type": "abstract",
@@ -2030,6 +2070,10 @@ window.EVENTS = [
   "url": "https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference",
   "deadlines": [
    {
+    "type": "call_opens",
+    "note": "page says call for contributions 23 Oct 2026, described as already passed; ambiguous whether this is opening or closing date"
+   },
+   {
     "type": "early_registration",
     "date": "2027-02-26",
     "note": "early bird; booking link not yet live"
@@ -2129,7 +2173,12 @@ window.EVENTS = [
    "Europe"
   ],
   "url": "https://forum.nime.org/t/announcing-nime-2027/1099",
-  "deadlines": [],
+  "deadlines": [
+   {
+    "type": "call_opens",
+    "note": "call for participation said to be circulated in October 2026"
+   }
+  ],
   "status": "upcoming",
   "verified": true,
   "tags": [
@@ -2152,7 +2201,12 @@ window.EVENTS = [
    "Asia"
   ],
   "url": "https://www.computermusic.org/",
-  "deadlines": [],
+  "deadlines": [
+   {
+    "type": "other",
+    "note": "REGISTRATION WILL BE OPEN SOON!"
+   }
+  ],
   "status": "upcoming",
   "verified": true,
   "tags": [
@@ -2213,6 +2267,11 @@ window.EVENTS = [
    {
     "type": "abstract",
     "date": "2026-11-15"
+   },
+   {
+    "type": "notification",
+    "date": null,
+    "note": "Notification of abstract decisions: mid January 2027"
    },
    {
     "type": "early_registration",
@@ -2323,6 +2382,11 @@ window.EVENTS = [
    {
     "type": "paper",
     "date": "2027-02-15"
+   },
+   {
+    "type": "notification",
+    "date": null,
+    "note": "Notifications of the Program Committee's decisions will be sent in early June."
    }
   ],
   "status": "upcoming",
@@ -2447,7 +2511,12 @@ window.EVENTS = [
    "Latin America"
   ],
   "url": "https://performancescience.org/conference/isps-2027/",
-  "deadlines": [],
+  "deadlines": [
+   {
+    "type": "call_opens",
+    "note": "page says call for papers and registration details will be posted in September 2026 (not yet visible as of fetch)"
+   }
+  ],
   "status": "announced",
   "verified": true,
   "tags": [

@@ -1,20 +1,52 @@
 name: Correct a meeting
-description: Report a wrong date, deadline, link or location, or a meeting that should be removed.
+description: Fix a date, deadline, link or location — or report a meeting that should be removed.
 title: "[Fix] "
 labels: ["correction"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        The fields below show what the site currently lists. **Edit only what is wrong**, leave the rest as it is,
+        and add a link to the official page if you can. Opened from a card on the site, everything is filled in.
+  - type: input
+    id: event_id
+    attributes:
+      label: Event ID (please don't change)
+      description: Identifies the entry in data/events.yaml. Leave empty if you came here without using a card.
   - type: input
     id: name
     attributes:
-      label: Meeting name (as shown on the site)
+      label: Meeting name
     validations:
       required: true
-  - type: textarea
-    id: problem
+  - type: input
+    id: dates
     attributes:
-      label: What is wrong, and what should it be?
-    validations:
-      required: true
+      label: Dates
+      placeholder: YYYY-MM-DD – YYYY-MM-DD
+  - type: input
+    id: location
+    attributes:
+      label: Location
+  - type: input
+    id: format
+    attributes:
+      label: Format
+      description: in-person, online or hybrid
+  - type: input
+    id: url
+    attributes:
+      label: Official website
+  - type: textarea
+    id: deadlines
+    attributes:
+      label: Deadlines
+      description: One per line, "type: YYYY-MM-DD". Types include abstract, paper, notification, registration.
+  - type: textarea
+    id: comment
+    attributes:
+      label: What did you change, or anything else?
+      description: e.g. "abstract deadline extended", "this meeting was cancelled", "duplicate of …"
   - type: input
     id: evidence
     attributes:

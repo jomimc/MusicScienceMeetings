@@ -59,6 +59,7 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 | 2027-08-16 – 2027-08-20 | [ICMPC-ESCOM 2027 (19th ICMPC / 13th ESCOM)](https://www.jyu.fi/en/events/icmpc-escom-2027-conference) | Helsinki, Finland | 2026-11-15 (abstract) |
 | 2027-08-24 – 2027-08-27 | [DAFx27](https://dafx27.deib.polimi.it/) | Cremona Campus of Politecnico di Milano, Cremona, Italy |  |
 | 2027-09-12 – 2027-09-16 | [ISMIR 2027](https://ismir2027.ismir.net) | Mile End Campus, Queen Mary University of London, UK | 2027-03-09 (abstract) |
+| 2027-10-20 – 2027-10-24 | [SEM Annual Meeting 2027](https://www.ethnomusicology.org/page/Conf_Future) ⚠️ | Omaha, Nebraska, USA |  |
 | 2027-11-04 – 2027-11-07 | [SMT 2027 Annual Meeting (50th)](https://societymusictheory.org/meetings/smt-2027/cfp) | Baltimore, MD | 2026-12-14 (call opens) |
 | 2027-11-29 – 2027-12-03 | [IASPM 2027 (24th) "Pop! Goes the World!!!"](https://www.iaspm.net/iaspm-international-conference/) | Wellington, New Zealand (Te Herenga Waka / Victoria University of Wellington) | 2026-12-01 (abstract) |
 | 2028-06-26 – 2028-06-29 | [NIME2028](https://nime2028.org) | Auckland University, Auckland, New Zealand |  |
@@ -150,6 +151,7 @@ Generated from `events.yaml` and `sources.yaml` on 2026-11-10 by `scripts/build_
 |---|---|---|---|---|
 | [SMPC Upcoming Related Events](https://www.musicperception.org/events) | aggregator | cognition | squarespace_json | ok |
 | [SMT events listing (community-submitted)](https://societymusictheory.org/events) | aggregator | theory | page | ok |
+| [Submitted via the "Add a meeting" form](https://github.com/jomimc/MusicScienceMeetings/issues?q=label%3A%22new+event%22) | aggregator |  | manual | ok |
 | [Acoustical Society of America Meetings](https://acousticalsociety.org/asa-meetings/) | conference series | auditory | manual | blocked |
 | [Acoustics '27 (joint ASA / European Acoustics Association)](https://acoustics27.com/) | conference series | auditory | page | ok |
 | [AI Music Creativity Conference](https://groups.google.com/g/musicalmetacreation) | conference series | computational, technology | manual | unknown |

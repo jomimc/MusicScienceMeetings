@@ -1568,6 +1568,20 @@
   source: https://ismir2027.ismir.net
   checked: '2026-11-10'
   notes: Registration opening date not announced.
+- id: sem-2027
+  series:
+  - sem
+  name: SEM Annual Meeting 2027
+  type: conference
+  start: '2027-10-20'
+  end: '2027-10-24'
+  location: Omaha, Nebraska, USA
+  url: https://www.ethnomusicology.org/page/Conf_Future
+  verified: false
+  source: https://github.com/jomimc/MusicScienceMeetings/issues/2
+  checked: '2026-11-10'
+  notes: 'Submitted via issue #2 by @jomimc. Official page not readable by script; details as submitted. Suggested
+    topics: ethnomusicology'
 - id: smt-2027
   series:
   - smt

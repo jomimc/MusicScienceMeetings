@@ -870,7 +870,7 @@ window.EVENTS = [
   "start": "2026-11-09",
   "end": "2026-11-11",
   "location": "Brno, Czech Republic (Masaryk University, Institute of Musicology; part of Janáček Brno 2026 festival)",
-  "format": "not stated",
+  "format": "in-person",
   "regions": [
    "Europe"
   ],

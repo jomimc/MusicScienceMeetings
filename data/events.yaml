@@ -602,7 +602,11 @@
   verified: true
   source: https://janacek-brno.cz/en/aktualita-kolokvium/
   checked: '2026-11-10'
-  notes: 'Venue not named on page; no registration fee. Changes: theme/title added; deadlines added'
+  notes: 'Venue not named on page; no registration fee. Changes: theme/title added; deadlines added Correction via
+    issue #4 by @jomimc.'
+  format: in-person
+  locked:
+  - format
 - id: celebrating-the-legacy-of-the-late-arnol-2026
   series:
   - smt-events

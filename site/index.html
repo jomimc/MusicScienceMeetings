@@ -4,49 +4,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Music Science Meetings</title>
+  <meta name="description" content="Upcoming conferences, workshops and deadlines in music science: cognition, MIR, ethnomusicology, theory, computational musicology and more. Filter by topic, region and format.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <!-- Link previews (Bluesky, Mastodon, Slack, ...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Music Science Meetings">
+  <meta property="og:title" content="Music Science Meetings">
+  <meta property="og:description" content="Upcoming conferences, workshops and deadlines in music science. Filter by topic, region and format.">
+  <meta property="og:url" content="https://jomimc.github.io/MusicScienceMeetings/">
+  <meta property="og:image" content="https://jomimc.github.io/MusicScienceMeetings/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cards listing upcoming music science conferences with dates, locations and deadlines">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Music Science Meetings</h1>
-    <p class="sub">Conferences and meetings in music science. <span id="generated"></span></p>
+    <p class="sub">Conferences, workshops and deadlines in music science. <span id="generated"></span></p>
+    <p class="actions">
+      <a href="https://github.com/jomimc/MusicScienceMeetings/issues/new?template=new-event.yml">+ Add a meeting</a>
+      <a href="https://github.com/jomimc/MusicScienceMeetings/issues/new?template=correction.yml">Report a correction</a>
+    </p>
   </header>
 
   <section class="controls" aria-label="Sort and filter">
-    <div class="row">
-      <span class="label">Sort</span>
-      <div class="seg" role="group" aria-label="Sort order">
-        <button type="button" data-sort="date" class="on">Event date</button>
-        <button type="button" data-sort="deadline">Next deadline</button>
-      </div>
-      <label class="check"><input type="checkbox" id="show-past"> Show past</label>
+    <div class="seg" role="group" aria-label="Sort order">
+      <button type="button" data-sort="date" aria-pressed="true">Event date</button>
+      <button type="button" data-sort="deadline" aria-pressed="false">Next deadline</button>
     </div>
-    <div class="row">
-      <span class="label">Format</span>
-      <div id="f-format" class="tags"></div>
-    </div>
-    <div class="row">
-      <span class="label">Region</span>
-      <div id="f-region" class="tags"></div>
-    </div>
-    <div class="row">
-      <span class="label">Tags</span>
-      <div id="f-tags" class="tags"></div>
-    </div>
-    <div class="row">
-      <span class="label"></span>
-      <button type="button" id="clear-filters" class="link" hidden>clear all filters</button>
-    </div>
+    <details class="dd" data-group="format"><summary>Format <span class="n"></span></summary><div class="panel"></div></details>
+    <details class="dd" data-group="region"><summary>Region <span class="n"></span></summary><div class="panel"></div></details>
+    <details class="dd" data-group="tags"><summary>Topics <span class="n"></span></summary><div class="panel"></div></details>
+    <label class="check"><input type="checkbox" id="show-past"> Show past</label>
+    <button type="button" id="clear-filters" class="link" hidden>clear filters</button>
   </section>
 
-  <p id="count" class="count"></p>
+  <p id="count" class="count" aria-live="polite"></p>
   <main id="cards" class="cards"></main>
 
   <footer>
-    <p>⚠ = found by web search, not yet checked against the official page.
-      Filters: any selected value within a row matches; rows combine (format AND region AND tags).
-      Region is inferred from the location text.
-      Source: <a href="https://github.com/jomimc/MusicScienceMeetings">github.com/jomimc/MusicScienceMeetings</a></p>
+    <p>⚠ unverified = found by web search, not yet checked against the official page.
+      Within a filter any selected value matches; filters combine (format and region and topic).
+      Region is inferred from the location. The page address keeps your filters, so you can share a filtered view.</p>
+    <p>Data and code: <a href="https://github.com/jomimc/MusicScienceMeetings">github.com/jomimc/MusicScienceMeetings</a></p>
   </footer>
 
   <script src="events.js"></script>

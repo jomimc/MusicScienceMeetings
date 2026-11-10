@@ -25,11 +25,23 @@
   start: '2026-04-07'
   end: '2026-04-10'
   location: Plovdiv, Bulgaria
-  url: https://evolang2026.org/
+  url: https://sites.google.com/york.ac.uk/evolang2026/home
+  deadlines:
+  - type: paper
+    date: '2025-11-03'
+    note: Main conference paper submission (extended), AoE
+  - type: notification
+    date: '2025-12-18'
+    note: Page shows '10 Dec 18 Dec 2025' (apparent edit); 18 Dec likely but unclear
+  - type: early_registration
+    date: '2026-01-31'
   status: past
-  verified: false
-  source: https://www.evolang.org/
+  verified: true
+  source: https://sites.google.com/york.ac.uk/evolang2026/home
   checked: '2026-11-10'
+  notes: 'Home page lists oral and poster presentations but no explicit in-person/online statement, so format left
+    null. Important-dates page read via WebFetch. Changes: none (url evolang2026.org 301-redirects to the Google
+    Sites page; deadlines added)'
 - id: iaea-2026
   series:
   - iaea
@@ -37,11 +49,40 @@
   type: conference
   start: '2026-05-05'
   end: '2026-05-08'
-  location: Jena, Germany (Volkshaus)
+  location: Jena, Germany (Volkshaus Jena)
+  url: https://easychair.org/cfp/IAEA2026
+  deadlines:
+  - type: abstract
+    date: '2026-01-16'
+    note: individual talk/poster submissions
+  - type: other
+    date: '2025-12-05'
+    note: symposium submissions (listed; page says later extended to 16 Jan and closed)
   status: past
-  verified: false
-  source: https://web.archive.org/web/20260616143541/https://iaea-aesthetics.org/
+  verified: true
+  source: https://easychair.org/cfp/IAEA2026
   checked: '2026-11-10'
+  notes: 'Dates read on the organisers'' EasyChair CFP page (not the society site). iaea-aesthetics.org and iaea-jena2026.org
+    gave no connection with curl/WebFetch (TLS error). The source (web.archive.org snapshot) returns 200 via curl
+    but its content did not show congress dates in my check. Society homepage reportedly still describes the event
+    as upcoming. Changes: none (dates/location match; deadlines adde'
+- id: icmc-2026
+  series:
+  - icmc
+  name: ICMC 2026
+  type: conference
+  start: '2026-05-10'
+  end: '2026-05-16'
+  location: Hamburg, Germany (ligeti center, Harburg, with HfMT, HAW, TUHH, UKE; opening concert Elbphilharmonie)
+  url: https://icmc2026.ligeti-zentrum.de
+  status: past
+  verified: true
+  source: https://icmc2026.ligeti-zentrum.de
+  checked: '2026-11-10'
+  notes: 'Conference site and computermusic.org/icmc page say 10-16 May; the ICMA homepage says 10-17 May (discrepancy).
+    I used 10-16 from the conference''s own site. Page mentions hybrid elements (in-person expected for performative
+    works) but overall format not clearly stated. Deadlines were on sub-pages (CFP/registration) not read. Changes:
+    dates filled in: 10-16 May 2026'
 - id: tenor-2026
   series:
   - tenor
@@ -49,11 +90,14 @@
   type: conference
   start: '2026-05-21'
   end: '2026-05-24'
-  location: mdw Vienna
+  location: Vienna, Austria (mdw, with Austrian Academy of Sciences)
+  url: https://soundscore.org/TENOR26
   status: past
-  verified: false
-  source: https://www.tenor-conference.org/
+  verified: true
+  source: https://soundscore.org/TENOR26
   checked: '2026-11-10'
+  notes: 'Format and deadlines not stated on the pages read. tenor-conference.org links to the edition site soundscore.org/TENOR26.
+    Past event. Changes: location refined to Vienna, Austria; dates unchanged'
 - id: mec-2026
   series:
   - mec
@@ -61,11 +105,26 @@
   type: conference
   start: '2026-05-26'
   end: '2026-05-29'
-  location: Tokyo University of Science
+  location: Tokyo University of Science (Morito Memorial Hall), Tokyo, Japan
+  url: https://music-encoding.org/conference/2026/call/
+  deadlines:
+  - type: paper
+    date: '2025-12-05'
+    note: Proposal deadline, AoE, extended from 2025-11-28
+  - type: notification
+    date: '2026-01-26'
+  - type: registration
+    date: '2026-04-02'
+    note: Registration deadline for authors
+  - type: other
+    date: '2026-04-24'
+    note: Last changes to abstracts for publication
   status: past
-  verified: false
+  verified: true
   source: https://music-encoding.org/conference/2026/call/
   checked: '2026-11-10'
+  notes: 'Unconference sessions on 29 May. No explicit format statement. Changes: location refined to include city/country
+    (Tokyo, Japan)'
 - id: encam-5
   series:
   - encam
@@ -73,12 +132,31 @@
   type: conference
   start: '2026-05-27'
   end: '2026-05-30'
-  location: Sergipe, Brazil
+  location: Universidade Federal de Sergipe, São Cristóvão (Sergipe), Brazil
   format: hybrid
+  url: https://abcogmus.com/encam-v/
+  deadlines:
+  - type: paper
+    date: '2026-03-16'
+    note: submission period 9 Feb-9 Mar, extended to 16 Mar
+  - type: notification
+    date: '2026-04-06'
+    note: results released
+  - type: early_registration
+    date: '2026-04-13'
+    note: 1st fee block 19 Mar-13 Apr
+  - type: registration
+    date: '2026-05-26'
+    note: listener registration 19 Mar-26 May; 3rd fee block ends 26 May
+  - type: other
+    date: '2026-06-30'
+    note: full texts due
   status: past
-  verified: false
-  source: https://www.musicperception.org/events
+  verified: true
+  source: https://abcogmus.com/encam-v/
   checked: '2026-11-10'
+  notes: 'curl got 406 from abcogmus.com (rejects plain script UA) though WebFetch read it. Source musicperception.org/events
+    is fetchable (200). Changes: location refined: São Cristóvão (UFS campus), not just ''Sergipe'''
 - id: mcm-2026
   series:
   - mcm
@@ -86,12 +164,17 @@
   type: conference
   start: '2026-06-23'
   end: '2026-06-26'
-  location: Bard College, NY
+  location: Bard College, Annandale-on-Hudson, New York, USA
   url: https://sites.google.com/bard.edu/mcm2026
+  deadlines:
+  - type: early_registration
+    note: '''Early registration closes Monday May 25th'' (year not printed on page; presumably 2026)'
   status: past
-  verified: false
-  source: https://indico.global/event/17844/
+  verified: true
+  source: https://sites.google.com/bard.edu/mcm2026
   checked: '2026-11-10'
+  notes: 'No paper submission deadline listed on the page. Past event. Changes: location detailed (Annandale-on-Hudson,
+    NY, USA); dates unchanged'
 - id: iccc-2026
   series:
   - iccc
@@ -99,11 +182,29 @@
   type: conference
   start: '2026-06-29'
   end: '2026-07-03'
-  location: Coimbra
+  location: Coimbra, Portugal
+  url: http://computationalcreativity.net/iccc26/
+  deadlines:
+  - type: abstract
+    note: 'Page shows two dates: Feb 27 / Mar 1, 2026 (likely original/extended; unclear which)'
+  - type: paper
+    note: 'Full papers: Mar 6 / Mar 8, 2026 (two dates shown)'
+  - type: notification
+    date: '2026-04-20'
+    note: Full paper acceptance
+  - type: paper
+    note: 'Short papers: Apr 24 / Apr 27, 2026 (two dates shown)'
+  - type: early_registration
+    date: '2026-05-25'
+  - type: other
+    date: '2026-05-27'
+    note: Full paper camera-ready
   status: past
-  verified: false
-  source: https://www.computationalcreativity.net/
+  verified: true
+  source: http://computationalcreativity.net/iccc26/
   checked: '2026-11-10'
+  notes: 'Curl gets 406 (not bypassed); WebFetch read it fine. Source homepage links to iccc26 edition site and
+    shows no 2026 details itself. Changes: location country added (Coimbra, Portugal); official edition URL found'
 - id: dlfm-2026
   series:
   - dlfm
@@ -111,11 +212,30 @@
   type: workshop
   start: '2026-07-02'
   end: '2026-07-02'
-  location: Thessaloniki (IAML satellite)
+  location: Thessaloniki Concert Hall, Thessaloniki, Greece (satellite of IAML 2026)
+  format: in-person
+  url: https://dlfm.web.ox.ac.uk/2026-cfp
+  deadlines:
+  - type: call_opens
+    note: submissions open via CMT in December 2025
+  - type: abstract
+    date: '2026-01-23'
+  - type: paper
+    date: '2026-01-27'
+    note: full and short papers
+  - type: notification
+    date: '2026-03-15'
+  - type: other
+    date: '2026-04-15'
+    note: camera-ready; challenge and poster submissions
+  - type: registration
+    date: '2026-06-25'
   status: past
-  verified: false
+  verified: true
   source: https://dlfm.web.ox.ac.uk/2026-cfp
   checked: '2026-11-10'
+  notes: 'All times 23:59 AoE. Changes: location: Thessaloniki, Greece (Concert Hall); format in-person; deadlines
+    added'
 - id: timbre-2026
   series:
   - timbre
@@ -123,23 +243,46 @@
   type: conference
   start: '2026-07-02'
   end: '2026-07-04'
-  location: Montréal
+  location: Université de Montréal (Faculté de musique), Montréal, Canada
+  url: https://www.cirmmt.org/en/events/special/2-jul-2026-timbre-conference
+  deadlines:
+  - type: early_registration
+    date: '2026-05-15'
+    note: early bird 16 Apr-15 May 2026
+  - type: other
+    date: '2026-05-15'
+    note: camera-ready paper submission
+  - type: registration
+    date: '2026-06-30'
+    note: full registration 16 May-30 Jun 2026
   status: past
-  verified: false
+  verified: true
   source: https://www.cirmmt.org/en/events/special/2-jul-2026-timbre-conference
   checked: '2026-11-10'
+  notes: 'Dates read on CIRMMT page (host org); deadlines from timbreconference.org registration page. Registration
+    was at capacity. Past event. Changes: location detailed; deadlines added'
 - id: sma-2026
   series:
   - sma
   name: SMA 2026
   type: conference
   start: '2026-07-13'
-  end: '2026-07-16'
-  location: Dublin (TCD and RIAM)
+  end: '2026-07-15'
+  location: Dublin, Ireland (Trinity College Dublin and Royal Irish Academy of Music)
+  format: in-person
+  url: https://www.sma.ac.uk/dublin-music-analysis-conference-2026/
+  deadlines:
+  - type: abstract
+    date: '2026-02-13'
+    note: Call for papers closed 13 Feb 2026
   status: past
-  verified: false
-  source: https://www.sma.ac.uk/
+  verified: true
+  source: https://www.sma.ac.uk/dublin-music-analysis-conference-2026/
   checked: '2026-11-10'
+  notes: 'Curl gets 403 on the whole sma.ac.uk site (not bypassed). Format: in-person per SMA page (search summary
+    also said remote presentations not offered). Page''s study-day line has a ''2025'' typo. Changes: Name is DubMAC
+    2026 (not ''SMA 2026''); end date corrected from 07-16 to 07-15: conference runs 13-15 July, and 16 July is
+    a separate Formal Theory Study Group study day (Trinity''s listing says 13-16); '
 - id: sysmus-2026
   series:
   - sysmus
@@ -165,11 +308,25 @@
   type: conference
   start: '2026-07-28'
   end: '2026-07-31'
-  location: Bielefeld / Barcelona / Troy NY (distributed)
+  location: 'Distributed across three hubs: Bielefeld (Germany), Barcelona (Spain, ESMUC), Troy NY (USA, RPI)'
+  url: https://interactive-sonification.org/icad2026/
+  deadlines:
+  - type: paper
+    date: '2026-03-20'
+    note: full papers (extended)
+  - type: deadline
+    date: '2026-03-27'
+    note: all other submission categories (extended)
+  - type: early_registration
+    date: '2026-06-22'
+    note: early-bird before this date
   status: past
-  verified: false
-  source: https://icad.org/
+  verified: true
+  source: https://interactive-sonification.org/icad2026/
   checked: '2026-11-10'
+  notes: '''hybrid'' is my label for the multi-hub distributed format; page says ''distributed conference across
+    three hubs'', not literally hybrid. Consider format=null or ''multi-hub''. icad.org says dates only, no hubs.
+    Changes: locations named; deadlines added'
 - id: rma-2026
   series:
   - rma
@@ -177,11 +334,15 @@
   type: conference
   start: '2026-08-29'
   end: '2026-09-01'
-  location: Belfast
+  location: Belfast (Queen's University, SARC), UK
+  url: https://www.qub.ac.uk/research-centres/sarc/research/rma-smi-eadh-conference-2026/
   status: past
   verified: false
   source: https://www.rma.ac.uk/
   checked: '2026-11-10'
+  notes: 'Could not read the official QUB page (403 to both WebFetch and curl; RMA''s own listing redirects to it).
+    Dates 29 Aug-1 Sep 2026 and Belfast/SARC only seen in search-result snippets of RMA/SMI listings. rma.ac.uk
+    homepage does not mention the event. Past event. Changes: none (dates consistent with search snippets)'
 - id: dafx-2026
   series:
   - dafx
@@ -189,12 +350,13 @@
   type: conference
   start: '2026-09-01'
   end: '2026-09-04'
-  location: MIT, Cambridge MA
+  location: Cambridge, MA, USA (MIT)
   url: https://dafx26.mit.edu/
   status: past
-  verified: false
+  verified: true
   source: https://dafx26.mit.edu/
   checked: '2026-11-10'
+  notes: Home page lists no submission deadlines; says registration is open.
 - id: euromac-11
   series:
   - euromac
@@ -202,12 +364,33 @@
   type: conference
   start: '2026-09-07'
   end: '2026-09-10'
-  location: ESMUC Barcelona
+  location: ESMUC (Escola Superior de Música de Catalunya), Barcelona, Spain
   url: https://euromac11.sciencesconf.org/
+  deadlines:
+  - type: call_opens
+    date: '2025-11-03'
+    note: submission opening
+  - type: paper
+    date: '2026-01-18'
+    note: extended submission deadline (original 5 Jan 2026)
+  - type: notification
+    note: April 2026
+  - type: early_registration
+    date: '2026-07-10'
+    note: early registration 14 Jun-10 Jul
+  - type: registration
+    date: '2026-07-31'
+    note: regular 11-31 Jul
+  - type: late_registration
+    date: '2026-08-31'
+    note: late 24-31 Aug
   status: past
-  verified: false
-  source: https://euromac11.sciencesconf.org/
+  verified: true
+  source: https://euromac11.sciencesconf.org/page/dates?lang=en
   checked: '2026-11-10'
+  notes: 'Satellite events include a summer school and an online decolonial event, but main format not stated. Name
+    expansion ''European Music Analysis Conference'' is from my knowledge, not read on the page. Changes: location
+    refined to Barcelona, Spain; deadlines added'
 - id: aimc-2026
   series:
   - aimc
@@ -215,11 +398,25 @@
   type: conference
   start: '2026-09-16'
   end: '2026-09-18'
-  location: Berlin
+  location: Berlin, Germany (Musikinstrumenten-Museum / SIM; hosted by TU Berlin Audio Communication Group and SIM)
+  url: https://groups.google.com/g/musicalmetacreation/c/g0iy4zduoJY
+  deadlines:
+  - type: abstract
+    date: '2026-04-04'
+    note: 'original CFP; later extended (search snippet: abstracts 18 Apr)'
+  - type: paper
+    date: '2026-04-18'
+    note: original CFP; later extended to 2 May 2026 (snippet only)
+  - type: notification
+    date: '2026-05-30'
+    note: original CFP; later snippet says 13 Jun 2026
   status: past
-  verified: false
-  source: https://groups.google.com/g/musicalmetacreation
+  verified: true
+  source: https://groups.google.com/g/musicalmetacreation/c/g0iy4zduoJY
   checked: '2026-11-10'
+  notes: 'Evidence is the organisers'' CFP posted to the musicalmetacreation list, not a dedicated edition site
+    (search surfaced simpk.de/aimc-2026.html, which now 404s). Deadlines were extended, so values are original CFP;
+    past event. Changes: location detailed; deadlines added'
 - id: icccm-2026
   series:
   - icccm
@@ -254,10 +451,33 @@
   start: '2026-10-13'
   end: '2026-10-16'
   location: L'Aquila, Italy
+  url: https://musel.consaq.it/en/cim-2026-xxv-colloquium-on-music-informatics/
+  deadlines:
+  - type: call_opens
+    date: '2026-02-28'
+    note: EasyChair platform opens
+  - type: other
+    date: '2026-05-29'
+    note: Artistic proposal submission deadline
+  - type: paper
+    date: '2026-06-21'
+    note: Scientific proposal submission deadline
+  - type: notification
+    date: '2026-07-31'
+    note: Important-dates page says 31 Jul; call-for-papers page says by 15 Jul 2026
+  - type: other
+    date: '2026-08-31'
+    note: Camera-ready
+  - type: registration
+    date: '2026-08-31'
+    note: Important-dates page says 31 Aug; call-for-papers page says authors must register by 6 Sept
   status: past
-  verified: false
-  source: https://musel.consaq.it/en/cim-2026-xxv-colloquium-on-music-informatics/
+  verified: true
+  source: https://musel.consaq.it/en/authors/call-for-papers/
   checked: '2026-11-10'
+  notes: 'Dates 13-16 Oct read on call-for-papers page (the main page has no dates). Official pages conflict on
+    notification and registration dates. Country not stated on the page but L''Aquila is in Italy. Changes: none
+    to name/dates/location; deadlines added'
 - id: pam-ie-2026
   series:
   - pam-ie
@@ -284,6 +504,8 @@
   verified: true
   source: https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/
   checked: '2026-11-10'
+  tags:
+  - education
 - id: sem-2026
   series:
   - sem
@@ -291,12 +513,17 @@
   type: conference
   start: '2026-11-05'
   end: '2026-11-08'
-  location: Bloomington, IN (Indiana University)
+  location: Bloomington, Indiana, USA (Indiana University; Indiana Memorial Union)
   format: hybrid
+  url: https://www.ethnomusicology.org/page/Conf_2026
   status: past
-  verified: false
+  verified: true
   source: https://cdn.ymaws.com/www.ethnomusicology.org/resource/resmgr/2026_annual_meeting/sem_2026_program_final_20261.pdf
   checked: '2026-11-10'
+  notes: 'Dates/location read in the official program PDF (title page: ''SEM 71 Annual Meeting, Bloomington, Indiana,
+    November 5-8, 2026''). Program lists ''Virtual/Hybrid Presentation'' sessions; ''hybrid'' for the whole meeting
+    comes from SEM site search snippet (page itself 403 to WebFetch and curl). Pre-conference symposium 4 Nov (snippet).
+    Meeting is already over.'
 - id: smc-2026
   series:
   - smc
@@ -307,10 +534,11 @@
   location: Zagreb, Croatia (with Music Biennale Zagreb)
   url: https://smc26.mbz.hr/
   status: past
-  verified: false
-  source: https://smc26.mbz.hr/en/about/smc26
+  verified: true
+  source: https://smc26.mbz.hr/
   checked: '2026-11-10'
-  notes: Winter school 2-4 Nov 2026.
+  notes: Winter school 2-4 Nov 2026 confirmed. Site names Zagreb; country inferred (Croatian Composers' Society
+    host). Theme INTERPLAY. No deadlines on pages read. Past event.
 - id: smt-2026
   series:
   - smt
@@ -331,12 +559,25 @@
   type: conference
   start: '2026-11-08'
   end: '2026-11-12'
-  location: NYU Abu Dhabi, UAE
+  location: NYU Abu Dhabi, Abu Dhabi, UAE
+  format: hybrid
   url: https://ismir2026.ismir.net
+  deadlines:
+  - type: registration
+    date: '2026-08-10'
+    note: Author registration deadline
+  - type: early_registration
+    date: '2026-09-13'
+    note: 'End of non-author early bird (page: Sep 10, extended to Sep 13)'
+  - type: other
+    date: '2026-10-10'
+    note: Deadline to upgrade virtual to in-person; UAE speaker permit documents
   status: ongoing
-  verified: false
-  source: https://ismir2026.ismir.net
+  verified: true
+  source: https://ismir2026.ismir.net/registration
   checked: '2026-11-10'
+  notes: 'Pre-conference session on 2026-10-25 per main page. Main page itself did not state format; registration
+    page does. Changes: format hybrid added (registration page); city/venue clarified'
 - id: brno-2026
   series:
   - brno
@@ -344,12 +585,20 @@
   type: conference
   start: '2026-11-09'
   end: '2026-11-11'
-  location: Brno, Czech Republic
+  location: Brno, Czech Republic (Masaryk University, Institute of Musicology; part of Janáček Brno 2026 festival)
   url: https://janacek-brno.cz/en/aktualita-kolokvium/
+  deadlines:
+  - type: abstract
+    date: '2026-03-31'
+    note: paper proposals
+  - type: notification
+    date: '2026-05-24'
+    note: by
   status: ongoing
-  verified: false
+  verified: true
   source: https://janacek-brno.cz/en/aktualita-kolokvium/
   checked: '2026-11-10'
+  notes: 'Venue not named on page; no registration fee. Changes: theme/title added; deadlines added'
 - id: celebrating-the-legacy-of-the-late-arnol-2026
   series:
   - smt-events
@@ -535,7 +784,7 @@
   source: https://societymusictheory.org/events
   checked: '2026-11-10'
   tags:
-  - aesthetics
+  - musicology
 - id: amps-apscom-2026
   series:
   - apscom
@@ -543,11 +792,21 @@
   type: conference
   start: '2026-12-08'
   end: '2026-12-11'
-  location: Surfers Paradise, Australia (Crowne Plaza)
+  location: Crowne Plaza, Surfers Paradise (Gold Coast), QLD, Australia
+  url: https://sempre.org.uk/conference/amps-apscom-2026-conference/
+  deadlines:
+  - type: abstract
+    date: '2026-05-06'
+  - type: notification
+    date: '2026-05-29'
   status: upcoming
   verified: false
-  source: https://sempre.org.uk/conferences
+  source: https://sempre.org.uk/conference/amps-apscom-2026-conference/
   checked: '2026-11-10'
+  notes: 'Format: in-person with limited online presentation. Dates read on SEMPRE''s listing page (a partner society,
+    not the AMPS/APSCOM organiser''s own site); no AMPS or APSCOM site found via search, so marked unconfirmed.
+    Page consistent with input. Abstract deadline already passed. The specific event page was not curl-tested. Changes:
+    format and deadlines added'
 - id: early-music-101-filling-up-your-toolkit-2026
   series:
   - ams
@@ -568,14 +827,25 @@
   type: workshop
   start: '2026-12-11'
   end: '2026-12-11'
-  location: London, King's College London (Strand)
+  location: King's College London, Strand campus, London, UK
   format: in-person
   url: https://www.qmul.ac.uk/dmrn/dmrn21/
+  deadlines:
+  - type: call_opens
+    date: '2026-10-06'
+    note: Submission opens
+  - type: abstract
+    date: '2026-11-14'
+    note: Abstract submission deadline; page read this time shows 14 Nov consistently (news section too). Earlier
+      report of 6 Nov likely confused with the submission-opens date of 6 Oct
+  - type: notification
+    date: '2026-11-18'
   status: upcoming
-  verified: false
+  verified: true
   source: https://www.qmul.ac.uk/dmrn/dmrn21/
   checked: '2026-11-10'
-  notes: Page gives conflicting submission dates (6 Nov / 14 Nov 2026).
+  notes: 'Hours listed 10:00-19:00 vs 10:00-17:00 in registration note; evening panel at 18:00. The 6 Nov explanation
+    is my inference. Changes: deadlines added; conflicting-date note resolved to 14 Nov (as read by me)'
 - id: 2026-music-leadership-forum
   series:
   - ams
@@ -596,12 +866,17 @@
   type: conference
   start: '2026-12-15'
   end: '2026-12-17'
-  location: Baltimore, MD
+  location: Baltimore, Maryland, USA (Baltimore Marriott Waterfront, per search snippets)
+  format: in-person
+  url: https://acousticalsociety.org/asa-meetings/
   status: upcoming
   verified: false
   source: third-party listing only (showsbee.com)
   checked: '2026-11-10'
-  notes: 'UNVERIFIED: not confirmed on an ASA page.'
+  notes: 'Could not read any ASA page (403 to both WebFetch and curl). Search-result snippets attributed to ASA''s
+    own site say ''191st Meeting, Baltimore, Maryland 15-17 December 2026'', and wildlabs/afmg listings agree, but
+    I did not read it myself. In-person/no-remote and venue come from snippets only. Source is third-party showsbee
+    (fetchable but not evidence). Likely confirmable by a human. Changes: name:'
 - id: chr-2027
   series:
   - chr
@@ -639,12 +914,19 @@
   type: conference
   start: '2027-01-06'
   end: '2027-01-08'
-  location: Oxford
+  location: University of Oxford (Schwarzman Centre for the Humanities), UK
+  format: in-person
+  url: https://www.rma.ac.uk/?p=9887
+  deadlines:
+  - type: deadline
+    date: '2026-09-15'
+    note: call for proposals submission deadline
   status: upcoming
-  verified: false
-  source: discovery agent (unverified)
+  verified: true
+  source: https://www.rma.ac.uk/?p=9887
   checked: '2026-11-10'
-  notes: UNVERIFIED.
+  notes: 'RMA call-for-proposals page. A third-party listing gave 4 Sep deadline; RMA page says 15 Sep 2026. Enquiries
+    rmabfe27@music.ox.ac.uk. Changes: No longer unverified: dates and Oxford confirmed; format and deadline added'
 - id: ictm-2027
   series:
   - ictm
@@ -860,7 +1142,6 @@
   source: https://societymusictheory.org/events
   checked: '2026-11-10'
   tags:
-  - popular
   - musicology
   - theory
 - id: joint-conference-of-the-south-central-so-2027
@@ -945,17 +1226,26 @@
   type: symposium
   start: '2027-04-10'
   end: '2027-04-11'
+  location: Online (hosted by AAWM journal and Centre for Swedish Folk Music and Jazz Research, Sweden)
   format: online
   url: https://conferences.iftawm.org/
   deadlines:
   - type: abstract
     date: '2026-12-15'
+    note: 11:59pm Pacific Time; 350 words max
   - type: notification
     date: '2027-01-15'
   status: upcoming
-  verified: false
+  verified: true
   source: https://conferences.iftawm.org/
   checked: '2026-11-10'
+  notes: 'Curl gets 406 on conferences.iftawm.org (not bypassed). The announcement PDF on iftawm.org is fetchable
+    (200) but I could not read its text; location of organisers is Sweden per a search snippet. Changes: none to
+    dates/format/deadlines; location is online (no physical venue); keynote speakers Tomas Riad and Nori Jacoby'
+  tags:
+  - ethnomusicology
+  - theory
+  - timbre
 - id: sempre-2027
   series:
   - sempre
@@ -963,12 +1253,20 @@
   type: conference
   start: '2027-04-15'
   end: '2027-04-16'
-  location: King's College London + online
+  location: King's College London, UK
   format: hybrid
+  url: https://sempre.org.uk/conference/sempre-spring-conference-2027/
+  deadlines:
+  - type: deadline
+    date: '2026-12-04'
+    note: conference submissions (also Aubrey Hickman Award applications)
   status: upcoming
-  verified: false
+  verified: true
   source: https://sempre.org.uk/conferences
   checked: '2026-11-10'
+  notes: 'Theme: musical participation in education, cognition and knowledge. The dedicated edition page returned
+    the same content via WebFetch as the /conferences page. Changes: location: London, UK (King''s College); deadline
+    added'
 - id: music-and-the-extended-mind-a-conference-2027
   series:
   - smpc-events
@@ -989,6 +1287,34 @@
   - cognition
   - performance
   - technology
+- id: mec-2027
+  series:
+  - mec
+  name: Music Encoding Conference 2027
+  type: conference
+  start: '2027-06-07'
+  end: '2027-06-10'
+  location: German Historical Institute and Pontifical Institute of Sacred Music, Rome, Italy
+  url: https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html
+  deadlines:
+  - type: paper
+    date: '2026-12-18'
+    note: Proposal deadline, AoE, 'will not be extended'
+  - type: notification
+    date: '2027-02-08'
+  - type: registration
+    date: '2027-04-05'
+    note: Registration deadline for authors
+  - type: other
+    date: '2027-05-03'
+    note: Last changes to abstracts for publication
+  status: upcoming
+  verified: false
+  source: https://lists.uni-paderborn.de/pipermail/mei-l/2026/002901.html
+  checked: '2026-11-10'
+  notes: 'Read from the MEI-L mailing-list CFP post by Johannes Kepper (the organisers'' announcement), not a conference
+    page; music-encoding.org/conference/2027 not checked. Marked unconfirmed because no edition page was read; details
+    look consistent with the MEC 2026 CFP format. Changes: all fields filled: dates 7-10 June 2027, Rome, deadlines'
 - id: musical-care-2027
   series:
   - musical-care
@@ -996,16 +1322,22 @@
   type: conference
   start: '2027-06-09'
   end: '2027-06-11'
-  location: Edinburgh + online
+  location: Queen Margaret University, near Musselburgh / Edinburgh, UK (+ online)
   format: hybrid
   url: https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference
   deadlines:
+  - type: call_opens
+    note: page says call for contributions 23 Oct 2026, described as already passed; ambiguous whether this is opening
+      or closing date
   - type: early_registration
     date: '2027-02-26'
+    note: early bird; booking link not yet live
   status: upcoming
-  verified: false
+  verified: true
   source: https://www.qmu.ac.uk/news-and-events/events-listing/musical-care-international-conference
   checked: '2026-11-10'
+  notes: 'Dialogue-based sessions; in-person or online contributions. Changes: location detailed; 23 Oct 2026 call
+    date added as ambiguous note'
 - id: acoustics27
   series:
   - acoustics27
@@ -1014,17 +1346,29 @@
   type: conference
   start: '2027-06-21'
   end: '2027-06-25'
-  location: Brussels, Belgium (SQUARE, Bozar)
+  location: Brussels, Belgium (SQUARE and Bozar)
   url: https://acoustics27.com/
   deadlines:
   - type: call_opens
     date: '2026-11-16'
+    note: Abstract and paper submission opens
   - type: abstract
     date: '2027-01-25'
+    note: Also paper submission period for FA27 Proceedings ends
+  - type: early_registration
+    date: '2027-03-15'
+    note: Early bird deadline
+  - type: other
+    date: '2026-10-15'
+    note: Registration opens
+  - type: other
+    date: '2027-05-19'
+    note: Final program release
   status: upcoming
-  verified: false
+  verified: true
   source: https://acoustics27.com/
   checked: '2026-11-10'
+  notes: 'Summer school in Ghent 18-20 June. No explicit format statement. Changes: none (deadlines added)'
 - id: ims-2027
   series:
   - ims
@@ -1042,6 +1386,8 @@
   verified: true
   source: https://www.musicperception.org/events ; https://www.musicology.org/events/?ical=1
   checked: '2026-11-10'
+  tags:
+  - musicology
 - id: icmpc-escom-2027
   series:
   - icmpc
@@ -1079,12 +1425,13 @@
   type: conference
   start: '2027-08-24'
   end: '2027-08-27'
-  location: Cremona, Italy
+  location: Cremona Campus of Politecnico di Milano, Cremona, Italy
   url: https://dafx27.deib.polimi.it/
   status: upcoming
-  verified: false
+  verified: true
   source: https://dafx27.deib.polimi.it/
   checked: '2026-11-10'
+  notes: No deadlines listed on the page. Format description on page is generic.
 - id: ismir-2027
   series:
   - ismir
@@ -1092,7 +1439,7 @@
   type: conference
   start: '2027-09-12'
   end: '2027-09-16'
-  location: London, UK (Queen Mary University of London)
+  location: Mile End Campus, Queen Mary University of London, UK
   url: https://ismir2027.ismir.net
   deadlines:
   - type: abstract
@@ -1108,9 +1455,10 @@
     date: '2027-06-23'
     note: camera-ready (tentative)
   status: upcoming
-  verified: false
+  verified: true
   source: https://ismir2027.ismir.net
   checked: '2026-11-10'
+  notes: Registration opening date not announced.
 - id: smt-2027
   series:
   - smt
@@ -1139,28 +1487,19 @@
   type: conference
   start: '2027-11-29'
   end: '2027-12-03'
-  location: Wellington, NZ (Victoria University of Wellington)
+  location: Wellington, New Zealand (Te Herenga Waka / Victoria University of Wellington)
   url: https://www.iaspm.net/iaspm-international-conference/
   deadlines:
   - type: abstract
     date: '2026-12-01'
   - type: notification
     date: '2027-04-01'
+    note: No later than
   status: upcoming
-  verified: false
+  verified: true
   source: https://www.iaspm.net/iaspm-international-conference/
   checked: '2026-11-10'
-- id: icmc-2026
-  series:
-  - icmc
-  name: ICMC 2026
-  type: conference
-  location: Hamburg
-  status: past
-  verified: false
-  source: https://www.computermusic.org/
-  checked: '2026-11-10'
-  notes: May 2026; sources differ on exact dates (~10-17 May).
+  notes: Submissions by email to the address on the page. Format not stated.
 - id: isps-2027
   series:
   - isps
@@ -1168,43 +1507,47 @@
   type: conference
   location: Rio de Janeiro, Brazil
   url: https://performancescience.org/conference/isps-2027/
+  deadlines:
+  - type: call_opens
+    note: page says call for papers and registration details will be posted in September 2026 (not yet visible as
+      of fetch)
   status: announced
-  verified: false
+  verified: true
   source: https://performancescience.org/conference/isps-2027/
   checked: '2026-11-10'
-  notes: Dates not yet published.
-- id: mec-2027
-  series:
-  - mec
-  name: Music Encoding Conference 2027
-  type: conference
-  status: announced
-  verified: false
-  source: https://lists.uni-paderborn.de/pipermail/mei-l/2026/date.html
-  checked: '2026-11-10'
-  notes: CFP posted on MEI-L; details not extracted.
+  notes: Location confirmed; dates still unpublished. Page also contains stale ISPS 2025 Shanghai programme text
+    (29 Oct-1 Nov 2025); ignore.
 - id: nime-2027
   series:
   - nime
   name: NIME 2027
   type: conference
   location: Paris, France (De Vinci Higher Education)
+  url: https://forum.nime.org/t/announcing-nime-2027/1099
+  deadlines:
+  - type: call_opens
+    note: call for participation said to be circulated in October 2026
   status: announced
   verified: false
   source: https://forum.nime.org/t/announcing-nime-2027/1099
   checked: '2026-11-10'
-  notes: Dates and CFP not yet published.
+  notes: 'Official announcement (posted 8 Oct 2026) confirms Paris/De Vinci but gives no dates, so confirmed=false
+    (no dates read). Theme ''Sensorial Symbiosis: Bodies, Machines, and Time''; chairs Sofy Yuditskaya, Xiao Xiao,
+    Paul Strohmeier; contact generalchairs@nime2027.org suggests site nime2027.org (not checked). Changes: none
+    (dates still unpublished); theme and chairs found'
 - id: rppw-21
   series:
   - rppw
   name: RPPW 21
   type: conference
-  location: Hamilton, Canada (McMaster University)
+  location: McMaster University, Hamilton, Canada
+  url: https://www.rppw.org/
   status: announced
-  verified: false
+  verified: true
   source: https://www.rppw.org/
   checked: '2026-11-10'
-  notes: Year unclear on site (2027 or 2028).
+  notes: 'Dates not listed. The 2028 reading is from a single banner sentence summarised by WebFetch; worth a recheck.
+    Changes: year resolved: site banner says next meeting at McMaster in 2028 (not 2027)'
 - id: smpc-2026
   series:
   - smpc

@@ -1,0 +1,22 @@
+name: Correct a meeting
+description: Report a wrong date, deadline, link or location, or a meeting that should be removed.
+title: "[Fix] "
+labels: ["correction"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Meeting name (as shown on the site)
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong, and what should it be?
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Link to the official page showing the correct information
+      placeholder: https://

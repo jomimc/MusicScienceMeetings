@@ -74,7 +74,10 @@ for e in events:
     out.append({
         "id": e["id"],
         "name": e["name"],
-        "series": [sources[s]["name"] for s in e.get("series", []) if s in sources],
+        "series": [sources[s]["name"] for s in e.get("series", [])
+                   if s in sources and sources[s]["kind"] == "conference_series"],
+        "via": [sources[s].get("short", sources[s]["name"]) for s in e.get("series", [])
+                if s in sources and sources[s]["kind"] != "conference_series"],
         "start": e.get("start"), "end": e.get("end"),
         "location": e.get("location"),
         "format": e.get("format") or "not stated",

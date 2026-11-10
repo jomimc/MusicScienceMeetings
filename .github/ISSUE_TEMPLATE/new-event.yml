@@ -1,0 +1,57 @@
+name: Add a meeting
+description: Suggest a conference, workshop or meeting (or a recurring series) for the list.
+title: "[Add] "
+labels: ["new event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Only the name and a link are required — we check the official page before adding it.
+  - type: input
+    id: name
+    attributes:
+      label: Meeting name
+      placeholder: e.g. ICMPC-ESCOM 2027
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official website
+      description: The meeting's own page (not a third-party listing).
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: dates
+    attributes:
+      label: Dates
+      placeholder: e.g. 16–20 Aug 2027
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: City, country (or "online")
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options: [in-person, online, hybrid, not sure]
+  - type: textarea
+    id: deadlines
+    attributes:
+      label: Key deadlines
+      description: One per line, as stated on the official page.
+      placeholder: |
+        Abstract submission: 15 Nov 2026
+        Notification: mid January 2027
+  - type: dropdown
+    id: recurring
+    attributes:
+      label: Is this part of a recurring series?
+      options: ["yes - please track future editions too", "no - one-off", "not sure"]
+  - type: input
+    id: topics
+    attributes:
+      label: Topics (optional)
+      description: A few words, e.g. cognition, rhythm, MIR, ethnomusicology.

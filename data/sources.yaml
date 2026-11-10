@@ -4,10 +4,10 @@
 #   id        short unique slug (events refer to it as `series`)
 #   name      full name
 #   kind      conference_series | aggregator | mailing_list | social
-#   topics    any of: cognition, auditory, neuroscience, performance, education,
-#             health, aesthetics, mir, computational, technology, audio,
-#             encoding, dh, theory, musicology, ethnomusicology, popular,
-#             acoustics, language
+#   topics    1-3 of: cognition, neuroscience, auditory, timbre, mir,
+#             computational, technology, performance, education, health,
+#             language, theory, musicology, ethnomusicology
+#             (definitions and dropped candidates: sandbox/tags/proposal.yaml)
 #   url       human entry point
 #   method    how the pipeline reads it:
 #               ical             parse iCal feed at `feed` (no LLM)
@@ -34,7 +34,7 @@
 - id: smc
   name: Sound and Music Computing Conference
   kind: conference_series
-  topics: [technology, computational, mir]
+  topics: [technology, computational]
   url: https://smcnetwork.org/
   method: page_follow
   cadence: annual
@@ -134,7 +134,7 @@
 - id: fmu
   name: Faculty of Music, University of Arts in Belgrade - scientific conferences
   kind: conference_series
-  topics: [musicology, theory, education]
+  topics: [musicology, theory]
   url: https://www.fmu.bg.ac.rs/about-us/projects/scientific-conferences/
   method: page
   cadence: annual
@@ -156,7 +156,7 @@
 - id: smt-events
   name: SMT events listing (community-submitted)
   kind: aggregator
-  topics: [theory, musicology]
+  topics: [theory]
   url: https://societymusictheory.org/events
   method: page
   text: v6
@@ -191,7 +191,7 @@
 - id: asa
   name: Acoustical Society of America Meetings
   kind: conference_series
-  topics: [acoustics, auditory]
+  topics: [auditory]
   url: https://acousticalsociety.org/asa-meetings/
   method: manual
   cadence: biennial
@@ -202,7 +202,7 @@
 - id: iaea
   name: International Association of Empirical Aesthetics Congress
   kind: conference_series
-  topics: [aesthetics, cognition]
+  topics: [cognition]
   url: https://iaea-aesthetics.org/
   method: manual
   cadence: biennial
@@ -213,7 +213,7 @@
 - id: chr
   name: Computational Humanities Research Conference
   kind: conference_series
-  topics: [dh, computational]
+  topics: [computational]
   url: https://computational-humanities-research.org/conference/
   method: page_follow
   cadence: annual
@@ -247,7 +247,7 @@
 - id: acoustics27
   name: Acoustics '27 (joint ASA / European Acoustics Association)
   kind: conference_series
-  topics: [acoustics, auditory]
+  topics: [auditory]
   url: https://acoustics27.com/
   method: page
   cadence: irregular
@@ -280,7 +280,7 @@
 - id: rppw
   name: Rhythm Perception and Production Workshop
   kind: conference_series
-  topics: [cognition, performance]
+  topics: [cognition]
   url: https://www.rppw.org/
   method: page
   cadence: biennial
@@ -334,7 +334,7 @@
 - id: nime
   name: New Interfaces for Musical Expression
   kind: conference_series
-  topics: [technology]
+  topics: [technology, performance]
   url: https://nime.org/
   method: page
   cadence: annual
@@ -345,7 +345,7 @@
 - id: dlfm
   name: Digital Libraries for Musicology
   kind: conference_series
-  topics: [dh, mir, encoding]
+  topics: [mir, musicology]
   url: https://dlfm.web.ox.ac.uk/
   method: page
   cadence: annual
@@ -356,7 +356,7 @@
 - id: mec
   name: Music Encoding Conference
   kind: conference_series
-  topics: [encoding, dh]
+  topics: [technology, musicology]
   url: https://music-encoding.org/
   method: url_pattern
   url_pattern: https://music-encoding.org/conference/{year}/call/
@@ -390,7 +390,7 @@
 - id: timbre
   name: International Conference on Timbre
   kind: conference_series
-  topics: [cognition, acoustics]
+  topics: [timbre, auditory, cognition]
   url: https://www.cirmmt.org/
   method: manual
   cadence: irregular
@@ -464,7 +464,7 @@
 - id: dafx
   name: Digital Audio Effects Conference
   kind: conference_series
-  topics: [audio]
+  topics: [technology]
   url: https://dafx.de/
   method: page
   cadence: annual
@@ -474,7 +474,7 @@
 - id: audio-mostly
   name: Audio Mostly
   kind: conference_series
-  topics: [audio, technology]
+  topics: [technology]
   url: https://www.audiomostly.com/
   method: page
   cadence: annual
@@ -484,7 +484,7 @@
 - id: tenor
   name: TENOR (Technologies for Music Notation and Representation)
   kind: conference_series
-  topics: [encoding, technology]
+  topics: [technology]
   url: https://www.tenor-conference.org/
   method: page
   cadence: annual
@@ -505,7 +505,7 @@
 - id: evolang
   name: Evolution of Language (EvoLang)
   kind: conference_series
-  topics: [language]
+  topics: [language, cognition]
   url: https://www.evolang.org/
   method: page
   cadence: biennial
@@ -526,7 +526,7 @@
 - id: iaspm
   name: IASPM International Conference (popular music studies)
   kind: conference_series
-  topics: [popular, musicology]
+  topics: [musicology]
   url: https://www.iaspm.net/iaspm-international-conference/
   method: page
   cadence: biennial
@@ -581,7 +581,7 @@
 - id: auditory-list
   name: AUDITORY mailing list archive
   kind: mailing_list
-  topics: [auditory, cognition, mir]
+  topics: [auditory, cognition]
   url: http://www.auditory.org/
   method: list_archive
   feed: https://auditory.org/mhonarc/{year}/
@@ -592,7 +592,7 @@
 - id: mei-l
   name: MEI-L mailing list archive
   kind: mailing_list
-  topics: [encoding, dh, computational]
+  topics: [technology]
   url: https://lists.uni-paderborn.de/pipermail/mei-l/
   method: list_archive
   feed: https://lists.uni-paderborn.de/pipermail/mei-l/{year}/date.html
@@ -603,7 +603,7 @@
 - id: iaea-bsky
   name: IAEA on Bluesky
   kind: social
-  topics: [aesthetics]
+  topics: [cognition]
   url: https://bsky.app/profile/iaea-aesthetics.bsky.social
   method: bluesky
   feed: https://bsky.app/profile/iaea-aesthetics.bsky.social/rss
@@ -614,7 +614,7 @@
 - id: dlfm-bsky
   name: DLfM on Bluesky
   kind: social
-  topics: [dh, mir]
+  topics: [mir, musicology]
   url: https://bsky.app/profile/dlfm-conf.bsky.social
   method: bluesky
   feed: https://bsky.app/profile/dlfm-conf.bsky.social/rss
@@ -629,5 +629,5 @@
 - {id: ictm-list, name: ICTMD listserv, kind: mailing_list, topics: [ethnomusicology], url: "http://ictmusic.org/ictm-mailing-list-listserv", method: manual, status: blocked, notes: "Members only, no archive.", surveyed: 2026-11-10}
 - {id: locomus, name: Low Countries Music Research Network, kind: mailing_list, topics: [musicology, cognition], url: "https://groups.google.com/g/locomus", method: manual, status: blocked, notes: "Restricted group; site sites.google.com/view/locomus has Events pages (unread).", surveyed: 2026-11-10}
 - {id: singing-voice-ai, name: Singing Voice and Artificial Intelligence group, kind: mailing_list, topics: [mir], url: "https://groups.google.com/g/singing-voice-group", method: manual, status: blocked, surveyed: 2026-11-10}
-- {id: comp-musicology-group, name: Computational Musicology group, kind: mailing_list, topics: [computational], url: "https://groups.google.com/g/computational-musicology", method: manual, status: blocked, surveyed: 2026-11-10}
+- {id: comp-musicology-group, name: Computational Musicology group, kind: mailing_list, topics: [computational, musicology], url: "https://groups.google.com/g/computational-musicology", method: manual, status: blocked, surveyed: 2026-11-10}
 - {id: new-auditory, name: New-Auditory group, kind: mailing_list, topics: [auditory], url: "https://groups.google.com/g/new-auditory/about", method: manual, status: unknown, notes: "Public, open join; JS-only archive.", surveyed: 2026-11-10}

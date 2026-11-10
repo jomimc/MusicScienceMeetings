@@ -1,6 +1,16 @@
 # Music Science Meetings
 A repository for conferences / meetings, mailing lists, and discussion groups related to music science.
 
+**Browse upcoming meetings and deadlines: <https://jomimc.github.io/MusicScienceMeetings/>**
+— sortable by date or next deadline, filterable by topic, region and format.
+
+- **Add a meeting:** [open an "Add a meeting" issue](https://github.com/jomimc/MusicScienceMeetings/issues/new?template=new-event.yml) (name and link are enough).
+- **Fix something:** [open a correction issue](https://github.com/jomimc/MusicScienceMeetings/issues/new?template=correction.yml).
+- **Data:** [`data/README.md`](data/README.md) has every tracked meeting, all open deadlines and the full source list;
+  the underlying data is in [`data/events.yaml`](data/events.yaml) and [`data/sources.yaml`](data/sources.yaml).
+
+The lists below are the original hand-curated starting points; the tracked sources now live in `data/sources.yaml`.
+
 If you are interested in contributing, or suggesting additional resources, please post an [Issue](https://github.com/jomimc/MusicScienceMeetings/issues).
 
 ## Conference / Meeting Lists

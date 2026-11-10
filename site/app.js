@@ -1,22 +1,24 @@
-// Render event cards from window.EVENTS; sort by date / next deadline; filter by tags.
+// Render event cards from window.EVENTS; sort by date / next deadline; filter by
+// format, region and topic. Filter state is kept in the page URL (shareable).
 (function () {
   const EVENTS = window.EVENTS || [];
-  const today = new Date().toISOString().slice(0, 10);
   const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  // Reader's local calendar date (not UTC), used only to split past/upcoming.
+  const now = new Date();
+  const today = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, "0"),
+                 String(now.getDate()).padStart(2, "0")].join("-");
+
   const state = { sort: "date", past: false };
-  // Filter groups: values within a group are OR'd, groups are AND'd.
+  // Within a group values are OR'd; groups are AND'd.
   const GROUPS = {
-    format: { box: "f-format", get: (ev) => [ev.format],
-              order: ["in-person", "online", "hybrid", "not stated"], sel: new Set() },
-    region: { box: "f-region", get: (ev) => ev.regions,
-              order: ["Europe", "North America", "Latin America", "Asia", "Oceania",
-                      "Middle East & Africa", "Online only", "Not stated"], sel: new Set() },
-    tags:   { box: "f-tags", get: (ev) => ev.tags, order: null, sel: new Set() },
+    format: { get: (ev) => [ev.format], order: ["in-person", "online", "hybrid", "not stated"], sel: new Set() },
+    region: { get: (ev) => ev.regions, order: ["Europe", "North America", "Latin America", "Asia", "Oceania",
+              "Middle East & Africa", "Online only", "Not stated"], sel: new Set() },
+    tags:   { get: (ev) => ev.tags, order: null, sel: new Set() },
   };
 
   const parts = (iso) => { const [y, m, d] = iso.split("-").map(Number); return { y, m, d }; };
   const fmt = (iso) => { const p = parts(iso); return `${p.d} ${MONTHS[p.m - 1]} ${p.y}`; };
-
   function fmtRange(s, e) {
     if (!s) return "Dates TBA";
     if (!e || e === s) return fmt(s);
@@ -25,55 +27,55 @@
     if (a.y === b.y) return `${a.d} ${MONTHS[a.m - 1]} – ${b.d} ${MONTHS[b.m - 1]} ${a.y}`;
     return `${fmt(s)} – ${fmt(e)}`;
   }
-
-  const isPast = (ev) => ev.status === "past" || (ev.start && (ev.end || ev.start) < today);
+  const isPast = (ev) => (ev.start ? (ev.end || ev.start) < today : ev.status === "past");
   const nextDeadline = (ev) =>
     ev.deadlines.filter((d) => d.date >= today).sort((a, b) => a.date.localeCompare(b.date))[0] || null;
 
-  function daysUntil(iso) {
-    const ms = Date.parse(iso + "T00:00:00Z") - Date.parse(today + "T00:00:00Z");
-    return Math.round(ms / 86400000);
-  }
-
   function el(tag, attrs = {}, ...kids) {
     const n = document.createElement(tag);
-    for (const [k, v] of Object.entries(attrs)) {
-      if (k === "class") n.className = v; else n.setAttribute(k, v);
-    }
+    for (const [k, v] of Object.entries(attrs)) k === "class" ? (n.className = v) : n.setAttribute(k, v);
     for (const k of kids) if (k != null) n.append(k);
     return n;
   }
 
   function card(ev) {
     const title = ev.url ? el("a", { href: ev.url, rel: "noopener" }, ev.name) : ev.name;
-    const fmtShown = ev.format && ev.format !== "not stated"
-      && !(ev.location || "").toLowerCase().includes(ev.format) ? ev.format : null;
+    const fmtShown = ev.format !== "not stated" && !(ev.location || "").toLowerCase().includes(ev.format) ? ev.format : null;
     const meta = [fmtRange(ev.start, ev.end), ev.location, fmtShown].filter(Boolean).join(" · ");
     const nd = nextDeadline(ev);
-    let dl = null;
-    if (nd) {
-      const n = daysUntil(nd.date);
-      const when = n === 0 ? "today" : n === 1 ? "tomorrow" : `in ${n} days`;
-      dl = el("p", { class: "deadline" + (n <= 14 ? " soon" : "") },
-        `Next: ${nd.type.replace(/_/g, " ")} ${fmt(nd.date)} (${when})`);
-    }
+    const series = [ev.series.join(" · "), ev.via.length ? `via ${ev.via.join(", ")}` : ""].filter(Boolean).join(" — ");
     const badges = el("div", { class: "badges" });
-    if (!isPast(ev) && ev.start && ev.start <= today) badges.append(el("span", { class: "badge live" }, "happening now"));
     if (isPast(ev)) badges.append(el("span", { class: "badge" }, "past"));
     if (!ev.verified) badges.append(el("span", { class: "badge warn", title: "Found by web search; not yet checked against the official page" }, "⚠ unverified"));
-    const tags = el("div", { class: "card-tags" }, ...ev.tags.map((t) => el("span", { class: "chip small" }, t)));
     return el("article", { class: "card" + (isPast(ev) ? " is-past" : "") },
       el("h2", {}, title), el("p", { class: "meta" }, meta),
-      ev.series.length ? el("p", { class: "series" }, ev.series.join(" · ")) : null,
-      dl, badges.childElementCount ? badges : null, tags);
+      series ? el("p", { class: "series" }, series) : null,
+      nd ? el("p", { class: "deadline" }, nd.type === "deadline" ? `Next deadline: ${fmt(nd.date)}`
+        : `Next deadline: ${nd.type.replace(/_/g, " ")} — ${fmt(nd.date)}`) : null,
+      badges.childElementCount ? badges : null,
+      el("div", { class: "card-tags" }, ...ev.tags.map((t) => el("span", { class: "chip small" }, t))));
   }
 
   function sortKey(ev) {
-    if (state.sort === "deadline") {
-      const nd = nextDeadline(ev);
-      return (nd ? "0" + nd.date : "1") + (ev.start || "9999");
-    }
+    if (state.sort === "deadline") { const nd = nextDeadline(ev); return (nd ? "0" + nd.date : "1") + (ev.start || "9999"); }
     return ev.start || "9999";
+  }
+
+  // --- URL <-> state
+  function readURL() {
+    const q = new URLSearchParams(location.search);
+    if (q.get("sort") === "deadline") state.sort = "deadline";
+    state.past = q.get("past") === "1";
+    for (const [k, g] of Object.entries(GROUPS))
+      for (const v of (q.get(k) || "").split(",").filter(Boolean)) g.sel.add(v);
+  }
+  function writeURL() {
+    const q = new URLSearchParams();
+    if (state.sort !== "date") q.set("sort", state.sort);
+    if (state.past) q.set("past", "1");
+    for (const [k, g] of Object.entries(GROUPS)) if (g.sel.size) q.set(k, [...g.sel].join(","));
+    const s = q.toString().replace(/%2C/g, ",");
+    history.replaceState(null, "", s ? "?" + s : location.pathname);
   }
 
   function render() {
@@ -87,35 +89,48 @@
     if (!list.length) box.append(el("p", { class: "empty" }, "No meetings match."));
     document.getElementById("count").textContent = `${list.length} meeting${list.length === 1 ? "" : "s"}`;
     document.getElementById("clear-filters").hidden = !Object.values(GROUPS).some((g) => g.sel.size);
-    for (const g of Object.values(GROUPS))
-      for (const b of document.querySelectorAll(`#${g.box} button`))
-        b.classList.toggle("on", g.sel.has(b.dataset.value));
+    for (const b of document.querySelectorAll("[data-sort]")) b.setAttribute("aria-pressed", String(b.dataset.sort === state.sort));
+    document.getElementById("show-past").checked = state.past;
+    for (const dd of document.querySelectorAll(".dd")) {
+      const g = GROUPS[dd.dataset.group];
+      dd.querySelector(".n").textContent = g.sel.size ? `(${g.sel.size})` : "";
+      dd.classList.toggle("active", g.sel.size > 0);
+      for (const b of dd.querySelectorAll("button")) b.setAttribute("aria-pressed", String(g.sel.has(b.dataset.value)));
+    }
+    writeURL();
   }
 
-  // filter chips: fixed order where given, else most common first; only values that occur
-  for (const g of Object.values(GROUPS)) {
+  // --- build dropdown panels: fixed order where given, else most common first
+  readURL();
+  for (const dd of document.querySelectorAll(".dd")) {
+    const g = GROUPS[dd.dataset.group];
     const counts = {};
     for (const ev of EVENTS) for (const v of g.get(ev)) counts[v] = (counts[v] || 0) + 1;
     const values = g.order ? g.order.filter((v) => counts[v])
       : Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
-    const box = document.getElementById(g.box);
+    const panel = dd.querySelector(".panel");
     for (const v of values) {
-      const b = el("button", { type: "button", class: "chip", "data-value": v }, v);
+      const b = el("button", { type: "button", class: "chip", "data-value": v, "aria-pressed": "false" }, v);
       b.addEventListener("click", () => { g.sel.has(v) ? g.sel.delete(v) : g.sel.add(v); render(); });
-      box.append(b);
+      panel.append(b);
     }
+    dd.addEventListener("toggle", () => {  // one dropdown open at a time
+      if (dd.open) for (const o of document.querySelectorAll(".dd[open]")) if (o !== dd) o.open = false;
+    });
   }
+  document.addEventListener("click", (e) => {  // click outside closes dropdowns
+    if (!e.target.closest(".dd")) for (const o of document.querySelectorAll(".dd[open]")) o.open = false;
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") for (const o of document.querySelectorAll(".dd[open]")) o.open = false;
+  });
   document.getElementById("clear-filters").addEventListener("click", () => {
     for (const g of Object.values(GROUPS)) g.sel.clear();
     render();
   });
   for (const b of document.querySelectorAll("[data-sort]"))
-    b.addEventListener("click", () => {
-      state.sort = b.dataset.sort;
-      for (const x of document.querySelectorAll("[data-sort]")) x.classList.toggle("on", x === b);
-      render();
-    });
+    b.addEventListener("click", () => { state.sort = b.dataset.sort; render(); });
   document.getElementById("show-past").addEventListener("change", (e) => { state.past = e.target.checked; render(); });
-  if (window.GENERATED) document.getElementById("generated").textContent = `Updated ${fmt(window.GENERATED)}.`;
+  if (window.GENERATED) document.getElementById("generated").textContent = `Data updated ${fmt(window.GENERATED)}.`;
   render();
 })();

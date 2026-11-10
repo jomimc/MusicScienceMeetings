@@ -29,7 +29,7 @@ body:
     attributes:
       label: Location
   - type: input
-    id: format
+    id: event_format  # not "format": GitHub treats ?format= as a response type (406 Not Acceptable)
     attributes:
       label: Format
       description: in-person, online or hybrid
@@ -41,7 +41,7 @@ body:
     id: deadlines
     attributes:
       label: Deadlines
-      description: One per line, "type: YYYY-MM-DD". Types include abstract, paper, notification, registration.
+      description: 'One per line, as "type: YYYY-MM-DD". Types include abstract, paper, notification, registration.'
   - type: textarea
     id: comment
     attributes:

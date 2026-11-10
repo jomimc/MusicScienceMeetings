@@ -37,10 +37,13 @@
     const dates = ev.start ? (ev.end && ev.end !== ev.start ? `${ev.start} – ${ev.end}` : ev.start) : "";
     const deadlines = ev.deadlines.map((d) =>
       `${d.type.replace(/_/g, " ")}: ${d.date || "?"}${d.note ? ` (${d.note})` : ""}`).join("\n");
-    const q = new URLSearchParams({
+    // Field ids from .github/ISSUE_TEMPLATE/correction.yml. Never use "format" as a key: GitHub
+    // reads ?format= as the response type and answers 406. Empty values are left out.
+    const fields = {
       template: "correction.yml", title: `[Fix] ${ev.name}`, event_id: ev.id, name: ev.name, dates,
-      location: ev.location || "", format: ev.format === "not stated" ? "" : ev.format, url: ev.url || "", deadlines,
-    });
+      location: ev.location, event_format: ev.format === "not stated" ? "" : ev.format, url: ev.url, deadlines,
+    };
+    const q = new URLSearchParams(Object.entries(fields).filter(([, v]) => v));
     return `${REPO}/issues/new?${q}`;
   }
   const PENCIL = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" ' +

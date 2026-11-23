@@ -654,7 +654,7 @@
   location: Online
   format: online
   url: https://www.amsmusicology.org/calendar/2026-ams-annual-meeting-online/
-  status: ongoing
+  status: past
   verified: true
   source: https://www.amsmusicology.org/events-calendar/?ical=1
   checked: '2026-11-10'
@@ -668,7 +668,7 @@
   end: '2026-11-18'
   location: Rome (DHI Rome)
   url: https://www.musicology.org/events/comparative-perspectives-on-genetic-criticism-in-music/
-  status: ongoing
+  status: past
   verified: true
   source: https://www.musicology.org/events/?ical=1
   checked: '2026-11-10'
@@ -686,7 +686,7 @@
   - type: deadline
     date: '2026-09-12'
     note: 'Deadline: Saturday, September 12, 2026'
-  status: upcoming
+  status: past
   verified: true
   source: https://societymusictheory.org/events
   checked: '2026-11-10'
@@ -703,7 +703,7 @@
   end: '2026-11-19'
   location: San Diego, CA
   url: https://apcsociety.org/
-  status: upcoming
+  status: past
   verified: true
   source: https://apcsociety.org/
   checked: '2026-11-10'
@@ -723,7 +723,7 @@
   - type: other
     date: '2026-06-15'
     note: Call for papers extended until June 15, 2026
-  status: upcoming
+  status: past
   verified: true
   source: https://societymusictheory.org/events
   checked: '2026-11-10'
@@ -742,7 +742,7 @@
   - type: deadline
     date: '2026-10-23'
     note: 'Deadline: Friday, October 23, 2026'
-  status: upcoming
+  status: past
   verified: true
   source: https://societymusictheory.org/events
   checked: '2026-11-10'
@@ -811,6 +811,23 @@
   checked: '2026-11-10'
   tags:
   - musicology
+- id: 7th-cycle-of-webinars-organized-by-the-s-2026
+  series:
+  - smt-events
+  name: 7th Cycle of webinars organized by the Sociedad de Análisis y Teoría Musical (SATMUS)
+  type: conference
+  start: '2026-12-05'
+  location: Online
+  format: online
+  url: https://societymusictheory.org/events/7th-cycle-webinars-organized-sociedad-de-analisis-y-teoria-musical-satmus-2026
+  deadlines:
+  - type: deadline
+    date: '2026-11-20'
+    note: 'Deadline: Friday, November 20, 2026'
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-23'
+  status: upcoming
 - id: amps-apscom-2026
   series:
   - apscom
@@ -948,10 +965,14 @@
   - type: deadline
     date: '2026-09-15'
     note: call for proposals submission deadline
+  - type: registration
+    date: '2026-12-18'
+  - type: registration
+    date: '2027-01-02'
   status: upcoming
   verified: true
-  source: https://www.rma.ac.uk/?p=9887
-  checked: '2026-11-10'
+  source: https://www.rma.ac.uk/2026/11/21/registration-open-bfe-rma-research-students-conference-6-8-january-2027-in-oxford/
+  checked: '2026-11-23'
   notes: 'RMA call-for-proposals page. A third-party listing gave 4 Sep deadline; RMA page says 15 Sep 2026. Enquiries
     rmabfe27@music.ox.ac.uk. Changes: No longer unverified: dates and Oxford confirmed; format and deadline added'
 - id: ictm-2027
@@ -1230,6 +1251,22 @@
   tags:
   - computational
   - technology
+- id: henselfest-2027
+  series:
+  - smt-events
+  name: Henselfest
+  type: conference
+  start: '2027-04-01'
+  location: Berkeley, CA
+  url: https://societymusictheory.org/events/henselfest-2027
+  deadlines:
+  - type: deadline
+    date: '2026-11-18'
+    note: 'Deadline: Wednesday, November 18, 2026'
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-23'
+  status: upcoming
 - id: music-theory-society-of-new-york-state-a-2027
   series:
   - smt-events
@@ -1295,6 +1332,22 @@
   - ethnomusicology
   - theory
   - timbre
+- id: emo-con-the-sophomore-album-2027
+  series:
+  - smt-events
+  name: 'Emo Con: The Sophomore Album'
+  type: conference
+  start: '2027-04-15'
+  location: Washington University in St. Louis, MO
+  url: https://societymusictheory.org/events/emo-con-sophomore-album-2027
+  deadlines:
+  - type: deadline
+    date: '2027-01-14'
+    note: 'Deadline: Thursday, January 14, 2027'
+  verified: true
+  source: https://societymusictheory.org/events
+  checked: '2026-11-23'
+  status: upcoming
 - id: sempre-2027
   series:
   - sempre
